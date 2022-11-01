@@ -1,0 +1,43 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="API testing" verbose="1"> <!--parallel="classes" thread-count="2"> -->
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener
+			class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+
+	<test name="Delete API tests" preserve-order="true">
+		<classes>
+			<class name="com.trn.ns.test.API.DeleteAPITest" />
+		</classes>
+	</test>
+
+	<test name="GET API tests" preserve-order="true">
+		<classes>
+			<class name="com.trn.ns.test.API.GetAPITest" />
+		</classes>
+	</test>
+
+	<test name="Finding state API Verification tests"
+		preserve-order="true">
+		<classes>
+			<class name="com.trn.ns.test.API.FindingsStateAPITest" />
+		</classes>
+	</test>
+	
+	<test name="Update Password API Verification tests"
+		preserve-order="true">
+		<classes>
+			<class name="com.trn.ns.test.API.UpdatePasswordAPITest" />
+		</classes>
+	</test>
+	
+	
+	<test name="Plugin API Verification tests"
+		preserve-order="true">
+		<classes>
+			<class name="com.trn.ns.test.API.PlugInServiceTest" />
+		</classes>
+	</test>
+</suite>

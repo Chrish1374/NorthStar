@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patient>
+	<Name>TEST^Modality LUT</Name>
+	<Study name="STUDY01">
+		<Series id="STUDY01_SERIES01">
+			<SeriesDescription>12 in 16,range -2048 to +2047,signed,inverted/mono1,modality lut</SeriesDescription>
+     	</Series>
+     	
+     	<Series id="STUDY01_SERIES02">
+			<SeriesDescription>8 in 8,range 0 to +255,unsigned,mono2,slope 1,intercept 0</SeriesDescription>
+     	</Series>
+     	
+     	<Series id="STUDY01_SERIES03">
+			<SeriesDescription>12 in 16,range 0 to +4095,unsigned,mono2,slope 1,intercept -128</SeriesDescription>
+     	</Series>
+     	
+     	<Series id="STUDY01_SERIES04">
+			<SeriesDescription>12 in 16,range 0 to +4095,unsigned,mono2,slope 1,intercept -1024</SeriesDescription>
+     	</Series>
+     	
+     	<Series id="STUDY01_SERIES05">
+			<SeriesDescription>12 in 16,range 0 to +4095,high bits ones,mono2,slope 1, inter. 0</SeriesDescription>
+     	</Series>
+     	
+     	<Series id="STUDY01_SERIES06">
+			<SeriesDescription>12 in 16,range 0 to +4095,high bits ones,mono2,slope 1,in. -1024</SeriesDescription>
+     	</Series>
+     	
+     	<Series id="STUDY01_SERIES07">
+			<SeriesDescription>15 in 16,range 0 to +32767,unsigned,mono2,slope 1, intercept 0</SeriesDescription>
+     	</Series>
+     </Study>
+</Patient>

@@ -1,0 +1,44 @@
+{
+  "volumes": [
+    {
+      "attributes": {
+        "name": "input",
+        "sort-type": "position",
+        "modality": "CT",
+        "rows": 512,
+        "columns": 512,
+        "slope": 1.0,
+        "intercept": -1024.0,
+        "pixel-spacing": [
+          0.0,
+          0.0
+        ],
+        "image-orientation-patient": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        "content-time": "100534",
+        "content-date": "20200323",
+        "acquisition-time": "100534",
+        "acquisition-date": "20200323",
+        "kvp": 120.0,
+        "manufacturer": "SIEMENS"
+      },
+      "definition": [
+        {
+          "frame": 1,
+          "sop-instance-uid": "2.16.840.1.113669.632.21.848347667.1931659404.671155081199553054",
+          "image-position-patient": [
+            -229.0478515625,
+            -381.0478515625,
+            1596.0
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Viewer Page - GSPS PART 04 Tests" verbose="1"> <!--parallel="classes" thread-count="2"> -->
+
+
+
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+
+	
+
+	<test name="Group level navigation and paging" preserve-order="true">
+		<classes>
+			<class name="com.trn.ns.test.viewer.GSPS.GroupLevelGSPSTest" />
+		</classes>
+	</test>
+
+	<test name="User Interaction Feedback Test" preserve-order="true">
+		<groups>
+			<run>
+				<exclude name="multimonitor" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.trn.ns.test.viewer.GSPS.FeedbackUserInteractionTest" />
+		</classes>
+	</test>
+
+	<test name="GSPS Annotation Focus Test" preserve-order="true">
+		<groups>
+			<run>
+				<exclude name="multimonitor" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.trn.ns.test.viewer.GSPS.SetFocusOnGSPSFindingTest" />
+		</classes>
+	</test>
+	
+	<test name="Multiple GSPS results Test" preserve-order="true">
+		<groups>
+			<run>
+				<exclude name="multimonitor" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.trn.ns.test.viewer.GSPS.MultipleGSPSResultTest" />
+		</classes>
+	</test>
+	
+	<test name="Annotation Persists In DB Test" preserve-order="true">
+		<groups>
+			<run>
+				<exclude name="multimonitor" />
+			</run>
+		</groups>
+
+		<classes>
+			<class name="com.trn.ns.test.viewer.GSPS.AnnotationPersistsInDBTest" />
+		</classes>
+	</test>
+
+	<test name="Scroll Slider Test" preserve-order="true">
+		<groups>
+			<run>
+				<exclude name="multimonitor" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.trn.ns.test.viewer.GSPS.ScrollSliderTest" />
+		</classes>
+	</test>
+
+	<test name="Accept Reject using shortcut keys" preserve-order="true">
+		<classes>
+			<class name="com.trn.ns.test.viewer.GSPS.AcceptRejectApplicationShortcutsTest" />
+		</classes>
+	</test>
+	
+	<test name="GSPS Group Object Tests" preserve-order="true">
+
+		<classes>
+			<class name="com.trn.ns.test.viewer.GSPS.GSPSGroupObjectTest" />
+		</classes>
+	</test>
+	
+	<test name="Cut and Paste GSPS Findings using shortcut Test" preserve-order="true">
+
+		<classes>
+			<class name="com.trn.ns.test.viewer.GSPS.CutPasteFindingTest" />
+		</classes>
+	</test>
+	
+	<test name="Cut and Paste GSPS Findings using context menu Test" preserve-order="true">
+
+		<classes>
+			<class name="com.trn.ns.test.viewer.GSPS.CutPasteContextMenuTest" />
+		</classes>
+	</test>
+	
+	
+	<test name="Mirrored ROI Test" preserve-order="true">
+
+		<classes>
+			<class name="com.trn.ns.test.viewer.GSPS.MirrorROISupportTest" />
+		</classes>
+	</test>
+
+</suite>

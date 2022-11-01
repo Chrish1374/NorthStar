@@ -1,0 +1,151 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Viewer Page Tests" verbose="1"> <!--parallel="classes" thread-count="2"> -->
+
+
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener
+			class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+
+
+	
+	<test name="Non-DICOM Synchronization Test" preserve-order="true">
+		<groups>
+			<run>
+				<include name="BVT" />
+			</run>
+		</groups>
+		<classes>
+			<class
+				name="com.trn.ns.test.viewer.synchronization.NonDicomSyncTest" />
+		</classes>
+	</test>
+	
+	<test name="Orientation synchronization Test"
+		preserve-order="true">
+		<groups>
+			<run>
+				<include name="BVT" />
+			</run>
+		</groups>
+		<classes>
+			<class
+				name="com.trn.ns.test.viewer.synchronization.OrientationSyncTest" />
+		</classes>
+	</test>
+
+	<test name="Pan Synchronization Test" preserve-order="true">
+		<groups>
+			<run>
+				<include name="BVT" />
+			</run>
+		</groups>
+		<classes>
+			<class
+				name="com.trn.ns.test.viewer.synchronization.PanSynchronizationTest" />
+		</classes>
+	</test>
+
+	<test name="Scroll Sync From ActiveOverlay" preserve-order="true">
+		<groups>
+			<run>
+				<include name="BVT" />
+			</run>
+		</groups>
+		<classes>
+			<class
+				name="com.trn.ns.test.viewer.synchronization.ScrollSyncFromActiveOverlay" />
+		</classes>
+	</test>
+	
+	<test name="Scroll Sync Test" preserve-order="true">
+		<groups>
+			<run>
+				<include name="BVT" />
+			</run>
+		</groups>
+		<classes>
+			<class
+				name="com.trn.ns.test.viewer.synchronization.ScrollSyncTest" />
+		</classes>
+	</test>
+
+	
+
+	<test name="WindowLevelSync Test" preserve-order="true">
+	<groups>
+			<run>
+				<include name="BVT" />
+			</run>
+		</groups>
+		<classes>
+			<class
+				name="com.trn.ns.test.viewer.synchronization.WindowLevelSyncTest" />
+		</classes>
+	</test>
+	
+	<test name="Window Level From Active Overlay Test"
+		preserve-order="true">
+		<groups>
+			<run>
+				<include name="BVT" />
+			</run>
+		</groups>
+		<classes>
+			<class
+				name="com.trn.ns.test.viewer.synchronization.WWWLSyncFromActiveOverlayTest" />
+		</classes>
+	</test>
+	
+	<test name="ZoomSync from Overlay Test" preserve-order="true">
+		<groups>
+			<run>
+				<include name="BVT" />
+			</run>
+		</groups>
+		<classes>
+			<class
+				name="com.trn.ns.test.viewer.synchronization.ZoomSyncFromActiveOverlay" />
+		</classes>
+	</test>
+	
+	<test name="ZoomSync Test" preserve-order="true">
+		<groups>
+			<run>
+				<include name="BVT" />
+			</run>
+		</groups>
+		<classes>
+			<class
+				name="com.trn.ns.test.viewer.synchronization.ZoomSynchronizationTest" />
+		</classes>
+	</test>
+	
+	
+     <test name="Multuphase Display For Single Series" preserve-order="true">
+		<groups>
+			<run>
+				<include name="BVT" />
+			</run>
+		</groups>
+		<classes>
+			<class
+				name="com.trn.ns.test.viewer.synchronization.MultiphaseDisplayForSingleSeriesTest" />
+		</classes>
+	</test>		
+	
+	
+	<test name="Viewer Multiphase Test" preserve-order="true">
+	<groups>
+			<run>
+				<include name="BVT" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.trn.ns.test.viewer.synchronization.MultiphaseSeriesTest" />
+		</classes>
+	</test>
+	
+</suite>

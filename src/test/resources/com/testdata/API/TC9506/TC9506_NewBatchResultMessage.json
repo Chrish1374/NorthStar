@@ -1,0 +1,46 @@
+{
+	"batch-id": {
+		"id": "93d71de4-13a9-405b-bcde-54fe08324b0a",
+		"url": "http://liaison-w3:4566/results/machine/prod%2Fenvoyai%2Fdicom-stripe-series%3A1.0.1.17?study-instance-uid=2.16.840.1.113669.632.21.386289742.386289742.1770226253227767321&batch-id=93d71de4-13a9-405b-bcde-54fe08324b0a",
+		"status": "Initializing",
+		"finishedAt": null
+	},
+	"machine-id": {
+		"name": "prod/envoyai/dicom-stripe-series:1.0.1.17",
+		"url": "http://liaison-w3:4566/machines/prod%2Fenvoyai%2Fdicom-stripe-series%3A1.0.1.17",
+		"interactive": null,
+		"info": {
+			"name": "Test Stripe DICOM Series Machine",
+			"title": "Test machine for demonstration or testing purposes only",
+			"author": "",
+			"organization": "EnvoyAI",
+			"message": null
+		}
+	},
+	"input-summary": [
+		{
+			"patient-id": "CPU Test",
+			"accessionNumber": "CPU Test",
+			"study-instance-uid": "2.16.840.1.113669.632.21.386289742.386289742.1770226253227767321",
+			"url": "http://localhost:8042/dicom-web/studies/2.16.840.1.113669.632.21.386289742.386289742.1770226253227767321"
+		}
+	],
+	"input-elements": {
+		"dicom-series-in": {
+			"description": null,
+			"type": "Series",
+			"study-instance-uid": "2.16.840.1.113669.632.21.386289742.386289742.1770226253227767321",
+			"series-instance-uid": "2.16.840.1.113669.632.21.386289742.386289742.3174553041175568717",
+			"url": "http://localhost:8042/dicom-web/studies/2.16.840.1.113669.632.21.386289742.386289742.1770226253227767321/series/2.16.840.1.113669.632.21.386289742.386289742.3174553041175568717"
+		}
+	},
+	"result-elements": {
+		"dicom-series-out": {
+			"description": null,
+			"type": "Series",
+			"study-instance-uid": "2.16.840.1.113669.632.21.386289742.386289742.1770226253227767321",
+			"series-instance-uid": "2.16.840.1.114053.5500.1.2.20200709064201185468.1.100",
+			"url": "http://localhost:8042/dicom-web/studies/2.16.840.1.113669.632.21.386289742.386289742.1770226253227767321/series/2.16.840.1.114053.5500.1.2.20200709064201185468.1.100"
+		}
+	}
+}

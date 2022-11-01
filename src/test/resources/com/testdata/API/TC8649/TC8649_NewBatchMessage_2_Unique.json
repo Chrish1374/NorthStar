@@ -1,0 +1,48 @@
+{
+  "batch-id": {
+    "id": "icometrix-icobrain-v2_2",
+    "url": "http://localhost:63630/wiagate/results/icometrix-icobrain-v2",
+    "status": "Initializing"
+  },
+  "machine-id": {
+    "name": "icometrix-icobrain-v2_2",
+    "url": "http://localhost:63630/wiagate/machines/icometrix-icobrain-v2",
+    "interactive": "Type2",
+    "info": {
+      "name": "Icometrix Icobrain",
+      "title": "Icometrix Icobrain",
+      "author": "TeraRecon, Inc.",
+      "organization": "TeraRecon, Inc."
+    }
+  },
+  "input-summary": [
+    {
+      "patient-id": "Icometrix",
+      "accessionNumber": null,
+      "study-instance-uid": "1.2.840.113711.964270.1.17452.510636647.26.2116281012.1114030",
+      "url": "http://localhost:8042/dicom-web/studies/1.2.840.113711.964270.1.17452.510636647.26.2116281012.1114030",
+      "viewerUri": "http://localhost/#/viewer/1.2.840.113711.964270.1.17452.510636647.26.2116281012.1114030?username=scan&password=scan"
+    }
+  ],
+  "input-elements": {
+    "icometrix-icobrain-v2-study-in": {
+      "description": "",
+      "type": "Study",
+      "study-instance-uid": "1.2.840.113711.964270.1.17452.510636647.26.2116281012.1114030",
+      "url": "http://localhost:8042/dicom-web/studies/1.2.840.113711.964270.1.17452.510636647.26.2116281012.1114030",
+	  "series": [
+        
+		{
+			"type": "Series",
+			"series-instance-uid": "1.3.12.2.1107.5.2.31.30452.2017032709253779563406080.0.0.0",
+            "url": "http://localhost:8042/dicom-web/studies/1.2.840.113711.964270.1.17452.510636647.26.2116281012.1114030/series/1.3.12.2.1107.5.2.31.30452.2017032709253779563406080.0.0.0"
+		}
+      ]
+    },
+    "configuration": {
+      "type": "File",
+      "description": "",
+      "url": null
+    }
+  }
+}

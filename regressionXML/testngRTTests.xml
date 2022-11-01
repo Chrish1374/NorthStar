@@ -1,0 +1,54 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="RTStruct Tests" verbose="1"> <!--parallel="classes" thread-count="2"> -->
+
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener
+			class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+	
+	<test name="DICOM RTSTRUCT Accept reject Test"	preserve-order="true">
+
+		<classes>
+			<class
+				name="com.trn.ns.test.viewer.dicomRT.DicomRTAcceptRejectTest" />
+		</classes>
+	</test>
+
+	<test name="DICOM RT Navigation Test" preserve-order="true">
+		<classes>
+			<class
+				name="com.trn.ns.test.viewer.dicomRT.DicomRTNavigationTest" />
+		</classes>
+	</test>
+	
+	<test name="DICOM RTSTRUCT Test" preserve-order="true">
+
+		<classes>
+			<class name="com.trn.ns.test.viewer.dicomRT.DicomRTTest" />
+		</classes>
+	</test>
+
+	<test name="Output Panel for RT Test" preserve-order="true">
+		<classes>
+			<class name="com.trn.ns.test.viewer.dicomRT.OutputPanelForDICOMRTTest" />
+		</classes>
+	</test>
+	
+	<test name="DICOM RT Send TO PACS" preserve-order="true">
+		<classes>
+			<class
+				name="com.trn.ns.test.viewer.dicomRT.SendToPACSForDICOMRTTest" />
+		</classes>
+	</test>
+
+	<test name="DICOM RT Output panel with Send TO PACS" preserve-order="true">
+		<classes>
+			<class
+				name="com.trn.ns.test.viewer.dicomRT.SendToPACSWithOPDICOMRTTest" />
+		</classes>
+	</test>
+	
+
+</suite>

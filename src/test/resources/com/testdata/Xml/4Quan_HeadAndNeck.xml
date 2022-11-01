@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patient>
+	<Name>4Quan_HeadAndNeck</Name>
+	<Study name="STUDY01">
+		<Series id="STUDY01_SERIES01">
+			<SeriesDescription>Processed by LungStage</SeriesDescription>
+     	</Series>
+     	
+     	<Series id="STUDY01_SERIES02">
+			<SeriesDescription>ep2d_diff_3scan_trace_8B_value Processed by LungStage</SeriesDescription>
+     	</Series>
+     	
+     	<Result id="STUDY01_RESULT01">
+			<ResultDescription>dwi_npc_report</ResultDescription>
+     	</Result>
+     	<Result id="STUDY01_RESULT02">
+			<ResultDescription>dwi_npc_report2</ResultDescription>
+     	</Result>
+     </Study>
+</Patient>

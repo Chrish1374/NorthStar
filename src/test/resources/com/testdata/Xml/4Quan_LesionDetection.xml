@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patient>
+	<Name>4Quan_LesionDetection</Name>
+	<ID>4Quan_LesionDetection</ID>
+	<PatientClass>class</PatientClass>
+	<Study name="STUDY01">
+		<StudyDescription>FDG PET</StudyDescription>
+		<StudyDateTime>Jul 24, 2017 1:41:27 PM</StudyDateTime>
+		<Series id="STUDY01_SERIES01">
+			<SeriesDescription>Processed by LungStage</SeriesDescription>
+		</Series>
+		<Series id="STUDY01_SERIES02">
+			<SeriesDescription>WT 1.25 Processed by LungStage</SeriesDescription>
+		</Series>		
+	</Study>
+</Patient>
+

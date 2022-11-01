@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patient>
+	<Name>S2008-3CTP</Name>
+	<ID>AW2072888684.988.1208239246</ID>
+	<PatientSex>M</PatientSex>
+	<Study name="STUDY01">
+		<Accession>3304932</Accession>
+		<StudyDateTime>Jun 19, 2007 8:58:37 PM</StudyDateTime>
+		<Series id="STUDY01_SERIES01">
+			<SeriesDescription>3CM ABOVE FIRST RUN</SeriesDescription>
+		</Series>
+		   <Result id="STUDY01_RESULT01">
+			<ResultDescription>BF Pmap</ResultDescription>
+			</Result>
+	</Study>
+
+</Patient>
+

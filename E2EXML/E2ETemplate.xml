@@ -1,0 +1,159 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="E2E Tests" verbose="1"> <!--parallel="classes" thread-count="2"> -->
+
+
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener
+			class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+
+	
+	<test name="" preserve-order="true">
+	  <groups>
+			<run>
+				<include name="E2E" />
+			</run>
+		</groups>
+	
+		<classes>
+			<class name="" />
+		</classes>
+	</test>
+	
+	
+	<test name="" preserve-order="true">
+	  <groups>
+			<run>
+				<include name="E2E" />
+			</run>
+		</groups>
+	
+		<classes>
+			<class name="" />
+		</classes>
+	</test>
+	
+	
+	<test name="" preserve-order="true">
+	  <groups>
+			<run>
+				<include name="E2E" />
+			</run>
+		</groups>
+	
+		<classes>
+			<class name="" />
+		</classes>
+	</test>
+	
+	
+	<test name="" preserve-order="true">
+	  <groups>
+			<run>
+				<include name="E2E" />
+			</run>
+		</groups>
+	
+		<classes>
+			<class name="" />
+		</classes>
+	</test>
+	
+	
+	<test name="" preserve-order="true">
+	  <groups>
+			<run>
+				<include name="E2E" />
+			</run>
+		</groups>
+	
+		<classes>
+			<class name="" />
+		</classes>
+	</test>
+	
+	
+	<test name="" preserve-order="true">
+	  <groups>
+			<run>
+				<include name="E2E" />
+			</run>
+		</groups>
+	
+		<classes>
+			<class name="" />
+		</classes>
+	</test>
+	
+	
+	<test name="" preserve-order="true">
+	  <groups>
+			<run>
+				<include name="E2E" />
+			</run>
+		</groups>
+	
+		<classes>
+			<class name="" />
+		</classes>
+	</test>
+	
+	
+	<test name="" preserve-order="true">
+	  <groups>
+			<run>
+				<include name="E2E" />
+			</run>
+		</groups>
+	
+		<classes>
+			<class name="" />
+		</classes>
+	</test>
+	
+	
+	<test name="" preserve-order="true">
+	  <groups>
+			<run>
+				<include name="E2E" />
+			</run>
+		</groups>
+	
+		<classes>
+			<class name="" />
+		</classes>
+	</test>
+	
+	
+	<test name="" preserve-order="true">
+	  <groups>
+			<run>
+				<include name="E2E" />
+			</run>
+		</groups>
+	
+		<classes>
+			<class name="" />
+		</classes>
+	</test>
+	
+	
+	<test name="" preserve-order="true">
+	  <groups>
+			<run>
+				<include name="E2E" />
+			</run>
+		</groups>
+	
+		<classes>
+			<class name="" />
+		</classes>
+	</test>
+	
+	
+	
+
+	
+</suite>

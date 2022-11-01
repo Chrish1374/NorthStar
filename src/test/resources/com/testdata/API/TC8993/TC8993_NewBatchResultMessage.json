@@ -1,0 +1,56 @@
+{
+  "batch-id": {
+    "id": "randoent",
+    "url": "http://localhost:63630/wiagate/results/randoent",
+    "status": "Initializing"
+  },
+  "machine-id": {
+    "name": "randoent",
+    "url": "https://localhost:63630/wiagate/machines/randoent",
+    "interactive": "Type2",
+    "info": {
+      "name": "rando ent",
+      "title": "rando ent",
+      "author": "TeraRecon, Inc.",
+      "organization": "TeraRecon, Inc."
+    }
+  },
+  "input-summary": [
+    {
+      "patient-id": "rando patient",
+      "accessionNumber": null,
+      "study-instance-uid": "1.2.840.113619.2.55.3.671756986.106.1316467036.207",
+      "url": "http://localhost:8042/dicom-web/studies/1.2.840.113619.2.55.3.671756986.106.1316467036.207/series/1.2.840.113619.2.55.3.671756986.106.1316467036.212",
+      "viewerUri": "http://localhost/#/viewer/1.2.840.113619.2.55.3.671756986.106.1316467036.207?username=scan&password=scan"
+    }
+  ],
+  "input-elements": {
+	"output-dicom": {
+      "description": "",
+      "type": "Series",
+      "study-instance-uid": "1.2.840.113619.2.55.3.671756986.106.1316467036.207",
+      "series-instance-uid": "1.2.246.352.71.2.2088656855.722865.20110920093221",
+      "url": "http://localhost:8042/dicom-web/studies/1.2.840.113619.2.55.3.671756986.106.1316467036.207/series/1.2.246.352.71.2.2088656855.722865.20110920093221"   
+    }
+  },
+  "result-elements": {
+	"rando-study": {
+      "description": "",
+      "type": "Study",
+      "study-instance-uid": "1.2.840.113619.2.55.3.671756986.106.1316467036.207",
+      "url": "http://localhost:8042/dicom-web/studies/1.2.840.113619.2.55.3.671756986.106.1316467036.207/series/1.2.840.113619.2.55.3.671756986.106.1316467036.212",
+	  "series": [
+        {
+          "type": "Series",
+          "series-instance-uid": "1.2.840.113619.2.55.3.671756986.106.1316467036.212",
+          "url": "http://localhost:8042/dicom-web/studies/1.2.840.113619.2.55.3.671756986.106.1316467036.207/series/1.2.840.113619.2.55.3.671756986.106.1316467036.212"
+        }
+      ]
+    },
+    "configuration": {
+      "type": "File",
+      "description": "",
+      "url": null
+    }
+  }
+}

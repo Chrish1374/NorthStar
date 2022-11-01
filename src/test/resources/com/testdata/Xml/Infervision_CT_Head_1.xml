@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patient>
+	<Name>Infervision_CT_Head_1</Name>
+	<ID>Infervision_CT_Head_1</ID>
+
+	<Study name="STUDY01">
+	
+		<StudyDescription>HEAD</StudyDescription>
+		<StudyDateTime></StudyDateTime>
+		<Series id="STUDY01_SERIES01">
+			<SeriesDescription>BaseSeq 4.5 H31s</SeriesDescription>
+		</Series>
+		<Result id="STUDY01_SERIES02">
+			<ResultDescription>Result Infervision</ResultDescription>
+		</Result>			
+	</Study>
+</Patient>
+
+
+

@@ -1,0 +1,36 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Liasion E2E Tests" verbose="1"> <!--parallel="classes" thread-count="2"> -->
+
+
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener
+			class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+	<test name="E2E test" preserve-order="true">
+
+		<groups>
+			<run>
+				<include name="BVT" />
+			</run>
+		</groups>
+		<classes>
+			<class
+				name="com.trn.ns.test.viewer.liasionE2E.LiasionE2ETest" />
+		</classes>
+	</test>
+	
+	<test name="E2E test" preserve-order="true">
+
+		<groups>
+			<run>
+				<include name="BVT" />
+			</run>
+		</groups>
+		<classes>
+			<class
+				name="com.trn.ns.test.viewer.liasionE2E.MultipleBatchV3Test" />
+		</classes>
+	</test>
+ </suite>

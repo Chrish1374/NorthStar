@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patient>
+	<Name>PICC ONE</Name>
+	<Study name="STUDY01">
+		<Series id="STUDY01_SERIES01">
+			<SeriesDescription>1</SeriesDescription>
+		</Series>
+		<Result id="STUDY01_RESULT01">
+			<ResultDescription>picc-line-result</ResultDescription>
+		</Result>
+	</Study>
+</Patient>

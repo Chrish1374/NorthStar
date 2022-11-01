@@ -1,0 +1,88 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Viewer Page - GSPS PART 02 Tests" verbose="1"> 
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener
+			class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+
+	<test name="Accept Reject GSPS Findings Test01"	preserve-order="true">
+		<classes>
+			<class
+				name="com.trn.ns.test.viewer.GSPS.AcceptRejectGSPSFindingTest01" />
+		</classes>
+	</test>
+	
+	<test name="Accept Reject GSPS Findings Test02"	preserve-order="true">
+		<classes>
+			<class
+				name="com.trn.ns.test.viewer.GSPS.AcceptRejectGSPSFindingTest02" />
+		</classes>
+	</test>
+
+	<test name="Accept Reject GSPS Findings Test03"	preserve-order="true">
+	 <classes>
+			<class
+				name="com.trn.ns.test.viewer.GSPS.AcceptRejectGSPSFindingTest03" />
+		</classes>
+	</test>
+	
+	<test name="Accept Reject GSPS Findings Test04" preserve-order="true">
+		<classes>
+			<class
+				name="com.trn.ns.test.viewer.GSPS.AcceptRejectGSPSFindingTest04" />
+		</classes>
+	</test>
+
+	<test name="Result Applied Annotation Test" preserve-order="true">
+		<classes>
+			<class
+				name="com.trn.ns.test.viewer.GSPS.ResultAppliedAnnotationTest" />
+		</classes>
+	</test>
+
+	<test name="Deletion of Annotation Test" preserve-order="true">
+		<classes>
+			<class name="com.trn.ns.test.viewer.GSPS.DeleteAnnotationTest" />
+		</classes>
+	</test>
+
+	<test name="Finding Drop Down Test" preserve-order="true">
+		<classes>
+			<class name="com.trn.ns.test.viewer.GSPS.FindingDropDownTest" />
+		</classes>
+	</test>
+
+	<test name="Clonning Annotation -content Selector Test"	preserve-order="true">
+		<classes>
+			<class name="com.trn.ns.test.viewer.GSPS.CloneAnnotationTest" />
+		</classes>
+	</test>
+
+	<test name="Add Text Comment Test" preserve-order="true">
+		<classes>
+			<class name="com.trn.ns.test.viewer.GSPS.CommentAdditionTest" />
+		</classes>
+	</test>
+	
+	<test name="Add Text Comment to groups Test" preserve-order="true">
+		<classes>
+			<class name="com.trn.ns.test.viewer.GSPS.CommentAdditionGroupsTest" />
+		</classes>
+	</test>	
+	
+	<test name="Text Comment Persistence Test" preserve-order="true">
+		<classes>
+			<class name="com.trn.ns.test.viewer.GSPS.CommentPersistenceTest" />
+		</classes>
+	</test>
+	
+	<test name="Binary toolbar Test" preserve-order="true">
+		<classes>
+			<class name="com.trn.ns.test.viewer.GSPS.ARResultUsingBinarySelectorTest" />
+		</classes>
+	</test>
+
+
+</suite>

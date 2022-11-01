@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patient>
+	<Name>JIAJIE</Name>
+	<ID>P001590751</ID>
+	<PatientClass>class</PatientClass>
+	<PatientSex>M</PatientSex>
+	<PatientIssuerID>frhprod</PatientIssuerID>
+	<Machine>Infervision</Machine>
+	<Study name="STUDY01">
+		<StudyDescription>CT_BRAIN_WO</StudyDescription>
+		<StudyDateTime>Jul 18, 2013 9:42:20 PM</StudyDateTime>
+		<StudyUID>2.16.840.1.113669.632.21.486081.486212.16416582522216879.1424103
+		</StudyUID>
+		<AccessionNumber>ZHCT201611030619</AccessionNumber>
+	</Study>
+
+</Patient>
+

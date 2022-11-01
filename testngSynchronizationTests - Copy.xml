@@ -1,0 +1,29 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Viewer Page Tests" verbose="1"> <!--parallel="classes" thread-count="2"> -->
+
+
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener
+			class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+
+
+	
+	
+	
+	
+	<test name="Window Level From Active Overlay Test"
+		preserve-order="true">
+		<groups>
+			<run>
+				<exclude name="multimonitor" />
+			</run>
+		</groups>
+		<classes>
+			<class
+				name="com.trn.ns.test.viewer.synchronization.WWWLSyncFromActiveOverlayTest" />
+		</classes>
+	</test>
+</suite>

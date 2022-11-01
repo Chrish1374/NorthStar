@@ -1,0 +1,81 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Output Panel Tests" verbose="1"> <!--parallel="classes" thread-count="2"> -->
+
+
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener
+			class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+
+	<test name="Output Panel cine" preserve-order="true">
+		<classes>
+			<class
+				name="com.trn.ns.test.viewer.outputPanel.CineInOutputPanelTest" />
+		</classes>
+	</test>
+
+	<test name="Comments in Viewer Output Panel Test" preserve-order="true">
+		<classes>
+			<class
+				name="com.trn.ns.test.viewer.outputPanel.CommentFromOutputPanelTest" />
+		</classes>
+	</test>
+
+	<test name="Selecting findings in Viewer Output Panel Test" preserve-order="true">
+		<classes>
+			<class
+				name="com.trn.ns.test.viewer.outputPanel.CopyFindingsInOutputPanelTest"/>
+		</classes>
+	</test>
+
+		
+	<test name="Output Panel For Non-DICOM Test"
+		preserve-order="true">
+
+		<classes>
+			<class
+				name="com.trn.ns.test.viewer.outputPanel.OutputPanelForNonDICOMTest" />
+		</classes>
+	</test>
+	
+	<test name="Multiline support in Output Panel"
+		preserve-order="true">
+		<classes>
+			<class
+				name="com.trn.ns.test.viewer.outputPanel.TextAnnotationInOutputPanelTest" />
+		</classes>
+	</test>
+	
+	
+	<test name="Thumbnail Selection on Output Panel"
+		preserve-order="true">
+		<classes>
+			<class
+				name="com.trn.ns.test.viewer.outputPanel.ThumbnailSelectionOnOutputPanelTest" />
+		</classes>
+	</test>
+
+	<test name="Output Panel Redesign test" preserve-order="true">
+		<classes>
+			<class
+				name="com.trn.ns.test.viewer.outputPanel.ViewerOPRedesignTest" />
+		</classes>
+	</test>
+
+	<test name="Viewer Output Panel -  Multi User Scenarios Test" preserve-order="true">
+		<classes>
+			<class
+				name="com.trn.ns.test.viewer.outputPanel.ViewerOPMultiUsersTest" />
+		</classes>
+	</test>
+	
+	<test name="Viewer Output Panel -  Dynamic behavior Test" preserve-order="true">
+		<classes>
+			<class
+				name="com.trn.ns.test.viewer.outputPanel.ViewerDynamicOPTest" />
+		</classes>
+	</test>
+	
+</suite>

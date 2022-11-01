@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patient>
+	<Name>TeraRecon_BrainTDA</Name>
+	<Study name="STUDY01">
+	<Result id="STUDY01_RESULT01">
+
+		<ResultDescription>TDAColorMap_BV_18Phase2</ResultDescription>
+		<PatientExternalID>ID</PatientExternalID>	
+		<AcquisitionDevice>AquisitionVal</AcquisitionDevice>
+		<AccessionNumber>2011030626547792</AccessionNumber>
+		<ImageMatrix>512 x 512</ImageMatrix>
+		<StudyAcquisitionSite>AquSiteVal</StudyAcquisitionSite>
+		<ImagePosition>-119.765,-119.766,-489.25</ImagePosition>
+		<SliceThickness>5 mm</SliceThickness>
+		<Detector>DetVal</Detector>
+		<SliceLocation>-489.25</SliceLocation>
+		<Kvp>0</Kvp>
+		<FOV>0</FOV>
+		<ImageNumberCurrentSCrollPosition>24</ImageNumberCurrentSCrollPosition>
+		<ImageNumberMaxSCrollPosition>32</ImageNumberMaxSCrollPosition>
+		<mAs>0</mAs>
+		<Target>TartVal</Target>
+		<ImageType>DERIVED</ImageType>
+		<ImageAcquisitionDateTime>Nov 11, 2016 12:00:00 AM</ImageAcquisitionDateTime>
+		<WindowWidth>255</WindowWidth>
+		<WindowCenter>127</WindowCenter>
+		<Orientation>
+			<Orientation.Up>A</Orientation.Up>
+			<Orientation.Down>P</Orientation.Down>
+			<Orientation.Left>L</Orientation.Left>
+			<Orientation.Right>R</Orientation.Right>
+	   </Orientation>
+	</Result>
+	<Result id="STUDY01_RESULT02">
+		<ResultDescription>TDAColorMap_BF_18Phases 2</ResultDescription>
+		<ImageNumberCurrentSCrollPosition>24</ImageNumberCurrentSCrollPosition>
+	</Result>
+	<Result id="STUDY01_RESULT03">
+		<ResultDescription>TDAColorMap_TOT_18Phases 2</ResultDescription>
+		<ImageNumberCurrentSCrollPosition>24</ImageNumberCurrentSCrollPosition>
+	</Result>
+	<Result id="STUDY01_RESULT04">
+		<ResultDescription>TDAColorMap_RT_18Phases 2</ResultDescription>
+		<ImageNumberCurrentSCrollPosition>24</ImageNumberCurrentSCrollPosition>
+	</Result>
+	<Result id="STUDY01_RESULT05">
+		<ResultDescription>TDAColorMap_TMAX_18Phases 2</ResultDescription>
+		<ImageNumberCurrentSCrollPosition>24</ImageNumberCurrentSCrollPosition>
+	</Result>
+	<Result id="STUDY01_RESULT06">
+		<ResultDescription>TDAColorMap_TTP_18Phases 2</ResultDescription>
+		<ImageNumberCurrentSCrollPosition>24</ImageNumberCurrentSCrollPosition>
+	</Result>
+	<Result id="STUDY01_RESULT08">
+		<ResultDescription>TDAColorMap_MAP_18Phases 2</ResultDescription>
+		<ImageNumberCurrentSCrollPosition>24</ImageNumberCurrentSCrollPosition>
+	</Result>
+	
+	<Result id="STUDY01_RESULT14">
+		<ResultDescription>Phase 14</ResultDescription>
+		<ImageNumberCurrentSCrollPosition>24</ImageNumberCurrentSCrollPosition>
+	</Result>
+		
+	</Study>
+	
+	
+            
+            
+
+</Patient>

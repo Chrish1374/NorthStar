@@ -1,0 +1,38 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Secondary Capture Tests" verbose="1"> <!--parallel="classes" thread-count="2"> -->
+
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener
+			class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+
+	<test name="Accept Reject SC Test" preserve-order="true">
+		<classes>
+			<class name="com.trn.ns.test.viewer.SC.AcceptRejectForSCTest" />
+		</classes>
+	</test>
+
+	<test name="Output panel for SC Test" preserve-order="true">
+		<classes>
+			<class
+				name="com.trn.ns.test.viewer.SC.OutputPanelForSCDataTest" />
+		</classes>
+	</test>
+	
+	<test name="Comments Addition in Output panel for SC Test" preserve-order="true">
+		<classes>
+			<class
+				name="com.trn.ns.test.viewer.SC.CommentAdditionOPSCTest" />
+		</classes>
+	</test>
+
+	<test name="Send To PACS SC Test" preserve-order="true">
+		<classes>
+			<class name="com.trn.ns.test.viewer.SC.SendToPACSForSCTest" />
+		</classes>
+	</test>
+	
+
+</suite>

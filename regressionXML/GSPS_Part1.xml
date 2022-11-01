@@ -1,0 +1,63 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Viewer Page - Annotations Tests" verbose="1"> <!--parallel="classes" thread-count="2"> -->
+
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener
+			class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+
+	<test name="Circle Annotation Test" preserve-order="true">
+		<classes>
+			<class name="com.trn.ns.test.viewer.GSPS.CircleAnnotationTest" />
+		</classes>
+	</test>
+
+	<test name="Ellipse Annotation Test" preserve-order="true">
+		<classes>
+			<class
+				name="com.trn.ns.test.viewer.GSPS.EllipseImageAnnotationTest" />
+		</classes>
+	</test>
+
+	<test name="Point Annotation Test" preserve-order="true">
+		<classes>
+			<class name="com.trn.ns.test.viewer.GSPS.PointAnnotationTest" />
+		</classes>
+	</test>
+
+	<test name="Text Annotation Test" preserve-order="true">
+		<classes>
+			<class name="com.trn.ns.test.viewer.GSPS.TextAnnotationTest" />
+		</classes>
+	</test>
+
+	<test name="Text Annotation with Multiline text Test"
+		preserve-order="true">
+		<classes>
+			<class
+				name="com.trn.ns.test.viewer.GSPS.TextAnnotationMultiLineTest" />
+		</classes>
+	</test>
+
+	<test name="Distance Measurement Test" preserve-order="true">
+		<classes>
+			<class name="com.trn.ns.test.viewer.GSPS.LinearMeasurement" />
+		</classes>
+	</test>
+
+	<test name="Line Test" preserve-order="true">
+		<classes>
+			<class name="com.trn.ns.test.viewer.GSPS.LineAnnotation" />
+		</classes>
+	</test>
+
+	<test name="Free Hand Polyline" preserve-order="true">
+		<classes>
+			<class
+				name="com.trn.ns.test.viewer.GSPS.FreeHandPolylineAnnotationTest" />
+		</classes>
+	</test>
+
+</suite>

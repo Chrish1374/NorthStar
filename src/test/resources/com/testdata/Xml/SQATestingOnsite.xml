@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patient>
+	<Name>SQA^TestingOnsite3^^^</Name>
+	<ID>5D</ID>
+	<PatientClass>class</PatientClass>
+	<PatientSex>F</PatientSex>
+	<Study name="STUDY01">
+		<StudyDescription>CCTA</StudyDescription>
+		<StudyDateTime>Dec 27, 2005 10:30:51 AM</StudyDateTime>
+
+		<Series id="STUDY01_SERIES01">
+			<SeriesDescription>Scout</SeriesDescription>
+
+			<ImageNumberCurrentSCrollPosition>1
+			</ImageNumberCurrentSCrollPosition>
+			<ImageNumberMaxSCrollPosition>2</ImageNumberMaxSCrollPosition>
+
+			<ImageAcquisitionDateTime>Dec 27, 2005 10:30:51 AM
+			</ImageAcquisitionDateTime>
+			<WindowWidth>500</WindowWidth>
+			<WindowCenter>50</WindowCenter>
+		</Series>
+		<Series id="STUDY01_SERIES02">
+			<SeriesDescription>SmartScore - Gated 0.35sec</SeriesDescription>
+
+		</Series>
+		<Series id="STUDY01_SERIES03">
+			<SeriesDescription>Timing Bolus</SeriesDescription>
+		</Series>
+		<Series id="STUDY01_SERIES04">
+			<SeriesDescription>SS Segment 30-74 BPM 0.625mm</SeriesDescription>
+		</Series>
+		<Series id="STUDY01_SERIES05">
+			<SeriesDescription>SS Segment 30-74 BPM 0.625mm</SeriesDescription>
+		</Series>
+		
+	</Study>
+
+</Patient>

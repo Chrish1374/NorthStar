@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patient>
+	<Name>TEST^VOILUT</Name>
+	<Study name="STUDY01">
+		<Series id="STUDY01_SERIES01">
+			<SeriesDescription>8 in 8,range 0 to +255,unsigned,mono2,no luts</SeriesDescription>
+     	</Series>
+     	
+     	<Series id="STUDY01_SERIES02">
+			<SeriesDescription>8 in 8,range 0 to +255,unsigned,mono2,center 1...</SeriesDescription>
+     	</Series>
+     	
+     	<Series id="STUDY01_SERIES03">
+			<SeriesDescription>8 in 8,range +25 to +75,unsigned,mono2,center ...</SeriesDescription>
+     	</Series>
+     	
+     	<Series id="STUDY01_SERIES04">
+			<SeriesDescription>8 in 8,range 0 to 255,unsigned,mono2,voi lut sl...</SeriesDescription>
+     	</Series>
+     	
+     	<Series id="STUDY01_SERIES06">
+			<SeriesDescription>12 in 16,range -2048 to +2047,signed,mono2,no...</SeriesDescription>
+     	</Series>
+     	
+     	
+     </Study>
+</Patient>

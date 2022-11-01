@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patient>
+	<Name>AH4^pdf</Name>
+	<ID>AH4^pdf</ID>
+	<Study name="STUDY01">
+		<StudyDescription>CT_BRAIN_WO</StudyDescription>
+		<Series id="STUDY01_SERIES01">
+			<SeriesDescription>2</SeriesDescription>
+		</Series>
+		<Series id="STUDY01_SERIES02">
+			<SeriesDescription>3</SeriesDescription>
+		</Series>
+		<Series id="STUDY01_SERIES03">
+			<SeriesDescription>Imported WIA Results</SeriesDescription>
+		</Series>
+	</Study>
+</Patient>

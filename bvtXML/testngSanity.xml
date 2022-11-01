@@ -1,0 +1,152 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="NorthStar Selenium Automation Test Suite" verbose="1"> <!--parallel="classes" thread-count="2"> -->
+
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener
+			class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+
+	<test name="Basic Viewer Tests" preserve-order="true">
+		<groups>
+			<run>
+				<include name="Sanity" />
+			</run>
+		</groups>
+		<packages>
+			<package name="com.trn.ns.test.viewer.basic.*" />
+		</packages>
+	</test>
+
+	<test name="Binary Selector Test" preserve-order="true">
+		<groups>
+			<run>
+				<include name="Sanity" />
+			</run>
+		</groups>
+		<packages>
+			<package name="com.trn.ns.test.viewer.acceptRejectBinarySelector" />
+		</packages>
+	</test>
+
+	<test name="Content Selector Test" preserve-order="true">
+		<groups>
+			<run>
+				<include name="Sanity" />
+			</run>
+		</groups>
+
+		<packages>
+			<package name="com.trn.ns.test.viewer.contentSelector.*" />
+		</packages>
+
+	</test>
+
+	<test name="DICOM RT Test" preserve-order="true">
+		<groups>
+			<run>
+				<include name="Sanity" />
+			</run>
+		</groups>
+
+		<packages>
+			<package name="com.trn.ns.test.viewer.dicomRT.*" />
+		</packages>
+	</test>
+
+
+	<test name="Send To PACS Test" preserve-order="true">
+		<groups>
+			<run>
+				<include name="Sanity" />
+			</run>
+		</groups>
+		<packages>
+			<package name="com.trn.ns.test.viewer.envoyAI.*" />
+		</packages>
+	</test>
+
+
+	<test name="Layout Test" preserve-order="true">
+		<groups>
+			<run>
+				<include name="Sanity" />
+			</run>
+		</groups>
+		<packages>
+			<package name="com.trn.ns.test.viewer.layout.*" />
+
+		</packages>
+	</test>
+
+
+	<test name="Load Modatlity Test" preserve-order="true">
+		<groups>
+			<run>
+				<include name="Sanity" />
+			</run>
+		</groups>
+		<packages>
+			<package
+				name="com.trn.ns.test.viewer.loadingAndDataFormatSupport.*" />
+		</packages>
+	</test>
+
+	<test name="Output Panel Test" preserve-order="true">
+		<groups>
+			<run>
+				<include name="Sanity" />
+			</run>
+		</groups>
+		<packages>
+			<package name="com.trn.ns.test.viewer.outputPanel.*" />
+		</packages>
+	</test>
+
+	<test name="Overlays Test" preserve-order="true">
+		<groups>
+			<run>
+				<include name="Sanity" />
+			</run>
+		</groups>
+		<packages>
+			<package name="com.trn.ns.test.viewer.overlays.*" />
+		</packages>
+	</test>
+
+	<test name="Synchronization Test" preserve-order="true">
+		<groups>
+			<run>
+				<include name="Sanity" />
+			</run>
+		</groups>
+		<packages>
+			<package name="com.trn.ns.test.viewer.synchronization.*" />
+		</packages>
+	</test>
+
+
+	<test name="4D Test" preserve-order="true">
+		<groups>
+			<run>
+				<include name="Sanity" />
+			</run>
+		</groups>
+		<packages>
+			<package name="com.trn.ns.test.viewer.SR4D.*" />
+		</packages>
+	</test>
+
+
+	<test name="GSPS Test" preserve-order="true">
+		<groups>
+			<run>
+				<include name="Sanity" />
+			</run>
+		</groups>
+		<packages>
+			<package name="com.trn.ns.test.viewer.GSPS.*" />
+		</packages>
+	</test>
+</suite>

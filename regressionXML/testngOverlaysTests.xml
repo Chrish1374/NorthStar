@@ -1,0 +1,30 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Viewer Page - Overlays Tests" verbose="1"> <!--parallel="classes" thread-count="2"> -->
+
+
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener
+			class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+
+	<test name="Display overlays test"	preserve-order="true">
+
+		<classes>
+			<class name="com.trn.ns.test.viewer.overlays.DisplayOverlayTest" />
+			<class name="com.trn.ns.test.viewer.overlays.TextOverlayTest" />
+		</classes>
+	</test>
+	
+	<test name="Image Orientation Test"	preserve-order="true">
+
+		<classes>
+			<class name="com.trn.ns.test.viewer.overlays.ImageOrientationTest" />
+			<class name="com.trn.ns.test.viewer.overlays.OrientationTest" />
+		</classes>
+	</test>
+	
+	
+
+</suite>

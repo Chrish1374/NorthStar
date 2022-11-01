@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patient>
+	<Name>AXIAL_OddWidth</Name>
+	<ID>AXIAL_OddWidth</ID>
+	<PatientClass>class</PatientClass>
+	<PatientSex>O</PatientSex>
+</Patient>
+

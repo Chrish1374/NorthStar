@@ -1,0 +1,6 @@
+{
+  "Url": "http://10.1.8.72:4566/results/machine/prod%2Fvida-diagnostics%2Fdiscoveryreport%3ALungPrint1.1_expires_May_20_2020?study-instance-uid=2.16.840.1.113669.632.21.317465061.317465061.6108243293039770878&batch-id=41f6bf8b-227f-4cc9-8154-03bcd50031d4",
+  "study-instance-uid": "2.16.840.1.113669.632.21.317465061.317465061.6108243293039770878",
+  "machine-id": "prod/vida-diagnostics/discoveryreport:LungPrint1.1_expires_May_20_2020",
+  "batch-id": "41f6bf8b-227f-4cc9-8154-03bcd50031d4"
+}

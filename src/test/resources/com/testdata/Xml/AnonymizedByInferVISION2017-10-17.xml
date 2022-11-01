@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patient>
+	<Name>Anonymized by inferVISION 2017-10-17</Name>
+	<PatientID>ID: P00108811</PatientID>
+	<DOB>DOB: Apr 20, 1973</DOB>
+	<Sex>Sex: F</Sex>
+	<Study name="STUDY01">
+		<StudyID>4877</StudyID>
+		<AccessionNumber>Accession Number: R01973773</AccessionNumber>
+		<ReferringPhysicianName>Anonymized by inferVISION 2017-10-17
+		</ReferringPhysicianName>
+		<CompletionFlag>Completion Flag: PARTIAL</CompletionFlag>
+		<VerificationFlag>Verification Flag: UNVERIFIED</VerificationFlag>
+		<Findings1>Findings: 2 nodules were detected. Details are as follows,</Findings1>
+		<Findings2>Nodule1: series: 202 image: 23 Jump To Image
+ Type: 0-3nodule
+ Position: Unknown
+ Lobe Position: R_super_lb_poster
+ Min Density: -762.0 Hu
+ Max Density: -801.0 Hu
+ Volume: 53.8439941406 mm^3
+ Long Diameter: 3.6 mm
+ Short Diameter: 3.6 mm
+ Probability: 0.972594499588
+ Slice Range: [23]
+Nodule2: series: 202 image: 37 Jump To Image
+ Type: solid nodule
+ Position: Unknown
+ Lobe Position: R_infer_lb_anter_basal
+ Min Density: -615.0 Hu
+ Max Density: -724.0 Hu
+ Volume: 89.12109375 mm^3
+ Long Diameter: 5.2 mm
+ Short Diameter: 5.2 mm
+ Probability: 0.995695412159
+ Slice Range: [37]
+Nodule3: series: 202 image: 42 Jump To Image
+ Type: solid nodule
+ Position: Unknown
+ Lobe Position: R_infer_lb_anter_basal
+ Min Density: -280.0 Hu
+ Max Density: -579.0 Hu
+ Volume: 128.111572266 mm^3
+ Long Diameter: 6.9 mm
+ Short Diameter: 4.8 mm
+ Probability: 0.965403914452
+ Slice Range: [42]</Findings2>
+		<StudyDescription>Chest S</StudyDescription>
+		<Series id="STUDY01_SERIES01">
+			<SeriesDescription>iDose (4)</SeriesDescription>
+		</Series>
+		<Series id="STUDY01_SERIES02">
+			<SeriesDescription>[RESEARCH USE ONLY] iDose (4)</SeriesDescription>
+			<StudyDateAndTime>
+			</StudyDateAndTime>
+		</Series>
+	</Study>
+</Patient>

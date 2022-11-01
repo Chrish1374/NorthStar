@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patient>
+<Name>PMAP_As_Source</Name>
+	<ID>Q25N833P1OSTATE-01-0001</ID>
+	<PatientClass>class</PatientClass>
+	<PatientSex>M</PatientSex>
+	<Study name="STUDY01">
+	<Accession>2001074932525979</Accession>
+		<StudyDateTime>Jul 14, 1971 2:08:10 PM</StudyDateTime>
+		<Series id="STUDY01_SERIES01">
+			<SeriesDescription>Apparent Diffusion Coefficient (mm?/s)</SeriesDescription>
+		</Series>
+	</Study>
+
+</Patient>
+

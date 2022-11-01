@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patient>
+	<Name>Imbio_Texture_CTLung</Name>
+	<ID>Imbio_Texture_CTLung</ID>
+	<PatientClass>class</PatientClass>
+	<Study name="STUDY01">
+		<StudyDescription>CT THORAX WO IV CONTRAST</StudyDescription>
+		<StudyDateTime>May 9, 2012 6:17:36 PM</StudyDateTime>
+	
+		<Series id="STUDY01_SERIES01">
+			<SeriesDescription>HELICAL INSPIRATION</SeriesDescription>
+		</Series>
+		<Result id="STUDY01_RESULT01">
+			<ResultDescription>output-lung-texture-pdf</ResultDescription>
+		</Result>	
+			<Result id="STUDY01_RESULT02">
+			<ResultDescription>LTA RGB v1.3 - Not For Clinical Use</ResultDescription>
+		</Result>
+	</Study>
+</Patient>

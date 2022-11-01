@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patient>
+	<Name>LPixel</Name>
+	<ID>LPixel</ID>
+	<PatientClass>class</PatientClass>
+	<PatientSex></PatientSex>
+	<Study name="STUDY01">
+		<StudyDescription></StudyDescription>
+		<StudyDateTime>Sep 9, 2014 12:00:00 AM</StudyDateTime>
+		<Series id="STUDY01_SERIES01">
+			<SeriesDescription>301</SeriesDescription>
+		</Series>	
+	</Study>
+		<Study name="STUDY02">
+		<StudyDescription></StudyDescription>
+		<StudyDateTime>Jul 10, 2014 12:00:00 AM</StudyDateTime>
+		<Series id="STUDY02_SERIES01">
+			<SeriesDescription>301</SeriesDescription>
+		</Series>	
+	</Study>
+			<Study name="STUDY03">
+		<StudyDescription></StudyDescription>
+		<StudyDateTime>Aug 8, 2014 12:00:00 AM</StudyDateTime>
+		<Series id="STUDY03_SERIES01">
+			<SeriesDescription>501</SeriesDescription>
+		</Series>	
+	</Study>
+</Patient>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patient>
+	<Name>Qure.ai_XRay_Patient1</Name>
+	<ID>Qure.ai_XRay_Patient1</ID>
+	<PatientClass>class</PatientClass>
+	<PatientSex>M</PatientSex>
+	<Study name="STUDY01">
+		<StudyDescription></StudyDescription>
+		<StudyDateTime></StudyDateTime>
+		<Result id="STUDY01_RESULT01">
+			<ResultDescription>CXR_Heatmap</ResultDescription>
+		</Result>
+		<Result id="STUDY01_RESULT01">
+			<ResultDescription>CXR_Report</ResultDescription>
+		</Result>
+		<Series id="STUDY01_SERIES01">
+			<SeriesDescription>392.168</SeriesDescription>
+		</Series>
+		<Series id="STUDY01_SERIES02">
+			<SeriesDescription>1001</SeriesDescription>
+		</Series>
+	</Study>
+</Patient>

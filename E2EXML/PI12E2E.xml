@@ -1,0 +1,321 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="PI12 - E2E Tests" verbose="1"> <!--parallel="classes" thread-count="2"> -->
+
+
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener
+			class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+
+
+	<test
+		name="F1005 - Support all mandatory modules in exported GSPS Objects"
+		preserve-order="true">
+		<groups>
+			<run>
+				<include name="E2E" />
+			</run>
+		</groups>
+
+		<classes>
+			<class name="com.trn.ns.test.viewer.envoyAI.SentDICOMInfoTest" />
+		</classes>
+	</test>
+
+
+	<test
+		name="F1084 - Eureka - Viewer redesign: Viewbox structural change"
+		preserve-order="true">
+		<groups>
+			<run>
+				<include name="E2E" />
+			</run>
+		</groups>
+
+		<classes>
+			<class name="com.trn.ns.test.viewer.basic.ViewerBorderTest" />
+			<class name="com.trn.ns.test.viewer.basic.ViewboxNumberTest" />
+			<class name="com.trn.ns.test.viewer.dicomRT.DicomRTNavigationTest" />
+		</classes>
+	</test>
+
+
+	<test name="F1081 - Eureka - Viewer redesign: General Outline and 
+	F1126 - Eureka - Viewer redesign: viewbox and viewer notifications"
+		preserve-order="true">
+		<groups>
+			<run>
+				<include name="E2E" />
+				<include name="F1126" />
+			</run>
+		</groups>
+
+		<classes>
+			<class name="com.trn.ns.test.basic.NavigationForNonUILogin" />
+			<class name="com.trn.ns.test.viewer.basic.ViewerToolbarTest" />
+			<class name="com.trn.ns.test.viewer.basic.DirectViewerAccessTest" />
+			<class name="com.trn.ns.test.patientList.NewPatientListTest" />
+			<class name="com.trn.ns.test.viewer.basic.ViewerThemeTest" />
+
+			<class name="com.trn.ns.test.viewer.layout.LayoutChangeTest" />
+			<class name="com.trn.ns.test.viewer.layout.SaveByDefaultTest" />
+			<class name="com.trn.ns.test.viewer.layout.ViewerLayoutTest" />
+			<class name="com.trn.ns.test.viewer.overlays.TextOverlayTest" />
+		</classes>
+	</test>
+
+
+
+	<test
+		name="F1091 - Eureka - Viewer redesign: new accept / Reject and finding navigation"
+		preserve-order="true">
+		<groups>
+			<run>
+				<include name="E2E" />
+			</run>
+		</groups>
+
+		<classes>
+			<class name="com.trn.ns.test.viewer.GSPS.FindingDropDownTest" />
+		</classes>
+	</test>
+
+
+	<test name="F1082 - Eureka - Viewer redesign: Minimizable Tabs"
+		preserve-order="true">
+		<groups>
+			<run>
+				<include name="E2E" />
+			</run>
+		</groups>
+
+		<classes>
+			<class name="com.trn.ns.test.viewer.basic.ViewerTabsTest" />
+			<class name="com.trn.ns.test.viewer.contentSelector.ContentSelectorTest01" />
+			<class name="com.trn.ns.test.viewer.outputPanel.ViewerOPRedesignTest" />
+		</classes>
+	</test>
+
+
+	<test
+		name="F1126 - Eureka - Viewer redesign: viewbox and viewer notifications"
+		preserve-order="true">
+		<groups>
+			<run>
+				<include name="E2E" />
+			</run>
+		</groups>
+
+		<classes>
+			<class name="com.trn.ns.test.viewer.loadingAndDataFormatSupport.UnSupportedDataTest" />
+		</classes>
+	</test>
+
+
+	<test
+		name="F1125 - Eureka - Viewer redesign: New output panel Layout"
+		preserve-order="true">
+		<groups>
+			<run>
+				<include name="E2E" />
+			</run>
+		</groups>
+
+		<classes>
+			<class name="com.trn.ns.test.viewer.dicomRT.OutputPanelForDICOMRTTest" />
+			<class name="com.trn.ns.test.viewer.envoyAI.SendToPACSConfigUITest" />
+			<class name="com.trn.ns.test.viewer.outputPanel.CineInOutputPanelTest" />
+			<class name="com.trn.ns.test.viewer.outputPanel.CommentFromOutputPanelTest" />
+			<class name="com.trn.ns.test.viewer.outputPanel.OutputPanelForNonDICOMTest" />
+			<class name="com.trn.ns.test.viewer.outputPanel.TextAnnotationInOutputPanelTest" />
+			<class name="com.trn.ns.test.viewer.outputPanel.ThumbnailSelectionOnOutputPanelTest" />
+			<class name="com.trn.ns.test.viewer.outputPanel.ViewerOPRedesignTest" />
+			<class name="com.trn.ns.test.viewer.outputPanel.ViewerDynamicOPTest" />
+			<class name="com.trn.ns.test.viewer.SC.CommentAdditionOPSCTest" />
+			<class name="com.trn.ns.test.viewer.SR4D.OutputPanelForSRTest" />
+		</classes>
+	</test>
+
+
+	<test name="F1093 - Eureka - Viewer redesign: Finding slider bar"
+		preserve-order="true">
+		<groups>
+			<run>
+				<include name="E2E" />
+			</run>
+		</groups>
+
+		<classes>
+			<class name="com.trn.ns.test.viewer.GSPS.ScrollSliderTest" />
+		</classes>
+	</test>
+
+
+	<test
+		name="F1092 - Eureka - Viewer redesign: Viewbox background color"
+		preserve-order="true">
+		<groups>
+			<run>
+				<include name="E2E" />
+			</run>
+		</groups>
+
+		<classes>
+			<class name="com.trn.ns.test.viewer.basic.ViewboxBGTest" />
+		</classes>
+	</test>
+
+
+	<test name="F1090 - Eureka - Viewer redesign: new radial menu"
+		preserve-order="true">
+		<groups>
+			<run>
+				<include name="E2E" />
+			</run>
+		</groups>
+
+		<classes>
+			<class name="com.trn.ns.test.viewer.basic.QuickToolbarTest" />
+			<class name="com.trn.ns.test.viewer.basic.RadialMenuTest" />
+			<class name="com.trn.ns.test.viewer.plane.PlaneTest" />			
+			<class name="com.trn.ns.test.viewer.SC.AcceptRejectForSCTest" />
+			
+			<class name="com.trn.ns.test.viewer.GSPS.CircleAnnotationTest" />
+			<class name="com.trn.ns.test.viewer.GSPS.EllipseImageAnnotationTest" />
+			<class name="com.trn.ns.test.viewer.GSPS.FreeHandPolylineAnnotationTest" />
+			<class name="com.trn.ns.test.viewer.GSPS.LineAnnotation" />
+			<class name="com.trn.ns.test.viewer.GSPS.LinearMeasurement" />
+			<class name="com.trn.ns.test.viewer.GSPS.PointAnnotationTest" />
+			<class name="com.trn.ns.test.viewer.GSPS.TextAnnotationTest" />
+			<class name="com.trn.ns.test.viewer.GSPS.TriangulationToolTest" />
+				
+			<class name="com.trn.ns.test.viewer.synchronization.MultiphaseDisplayForSingleSeriesTest" />
+			<class name="com.trn.ns.test.viewer.synchronization.PanSynchronizationTest" />
+			<class name="com.trn.ns.test.viewer.synchronization.ScrollSyncTest" />
+			<class name="com.trn.ns.test.viewer.synchronization.WindowLevelSyncTest" />
+			<class name="com.trn.ns.test.viewer.synchronization.ZoomSynchronizationTest" />
+		</classes>
+	</test>
+
+	<test
+		name="F1086 - Eureka - Viewer redesign: Series Tab- [New Content Selector]"
+		preserve-order="true">
+		<groups>
+			<run>
+				<include name="E2E" />
+			</run>
+		</groups>
+
+		<classes>
+			<class name="com.trn.ns.test.viewer.contentSelector.ContentSelectorTest01" />
+			<class name="com.trn.ns.test.viewer.contentSelector.ContentSelectorTest02" />
+		</classes>
+	</test>
+
+
+	<test name="F1085 - Eureka - Viewer redesign: Viewbox tools"
+		preserve-order="true">
+		<groups>
+			<run>
+				<include name="E2E" />
+			</run>
+		</groups>
+
+		<classes>
+			<class name="com.trn.ns.test.viewer.basic.ViewBoxToolPanelTest" />
+			<class name="com.trn.ns.test.viewer.synchronization.WWWLPresetToolTest" />
+			
+			<class name="com.trn.ns.test.viewer.dicomRT.DicomRTAcceptRejectTest" />
+			<class name="com.trn.ns.test.viewer.dicomRT.DicomRTNavigationTest" />
+			<class name="com.trn.ns.test.viewer.dicomRT.DicomRTTest" />
+			
+		</classes>
+	</test>
+
+
+	<test name="F1153 - Volume Rendering: Support basic functionality"
+		preserve-order="true">
+		<groups>
+			<run>
+				<include name="E2E" />
+			</run>
+		</groups>
+
+		<classes>
+			<class name="com.trn.ns.test.viewer.plane.TextOverlaysPlaneTest" />
+			<class name="com.trn.ns.test.viewer.plane.PlaneTest" />
+			<class name="com.trn.ns.test.viewer.outputPanel.OutputPanelForNonDICOMTest" />
+			<class name="com.trn.ns.test.viewer.SR4D.OutputPanelForSRTest" />
+		</classes>
+	</test>
+
+
+	<test name="F1083 - Eureka - Viewer redesign: Viewbox overlay"
+		preserve-order="true">
+		<groups>
+			<run>
+				<include name="E2E" />
+			</run>
+		</groups>
+
+		<classes>
+			<class name="com.trn.ns.test.viewer.overlays.TextOverlayTest" />
+			<class name="com.trn.ns.test.viewer.overlays.DisplayOverlayTest" />
+		</classes>
+	</test>
+
+
+
+
+
+	<test name="F1095 - Eureka - Viewer redesign: Rerun scenario"
+		preserve-order="true">
+		<groups>
+			<run>
+				<include name="E2E" />
+			</run>
+		</groups>
+
+		<classes>
+			<class name="com.trn.ns.test.viewer.liasionE2E.ViewerRerunUIest" />
+		</classes>
+	</test>
+
+	<test
+		name="F1094 - Eureka - Viewer redesign: Sync to PACS, new batch and result notifications and
+		F1126 - Eureka - Viewer redesign: viewbox and viewer notifications"
+		preserve-order="true">
+		<groups>
+			<run>
+				<include name="E2E" />
+			</run>
+		</groups>
+
+		<classes>
+
+			<class
+				name="com.trn.ns.test.viewer.envoyAI.SendToPACSForCADSRTest" />
+
+			<class
+				name="com.trn.ns.test.viewer.envoyAI.SendToPACSFuncPart2Test" />
+			<class
+				name="com.trn.ns.test.viewer.liasionE2E.NotificationLookAndFeelTest" />
+		</classes>
+	</test>
+
+  <test name="F262- Eureka - Output Panel Filter Selection"
+		preserve-order="true">
+		<groups>
+			<run>
+				<include name="E2E" />
+			</run>
+		</groups>
+
+		<classes>
+			<class name="com.trn.ns.test.viewer.outputPanel.ViewerOPRedesignTest" />
+		</classes>
+	</test>
+
+</suite>

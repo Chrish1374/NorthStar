@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patient>
+	<Name>Breast_Time_Intensity</Name>
+	<Study name="STUDY01">
+		<StudyDescription>Breast MRI Bil W or WO</StudyDescription>
+	</Study>
+</Patient>

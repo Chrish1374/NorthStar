@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patient>
+	<Name>DigitalReferenceObject^</Name>
+	<Study name="STUDY01">
+		<Series id="STUDY01_SERIES01">
+			<SeriesDescription>(20111031) Transmission Object</SeriesDescription>
+		</Series>
+		<Series id="STUDY01_SERIES02">
+			<SeriesDescription>(20111031) Emission Object Noise Free</SeriesDescription>
+		</Series>
+	</Study>
+
+</Patient>
+

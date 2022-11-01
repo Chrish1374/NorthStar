@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patient>
+	<Name>aidoc_CervicalSpine_DE686</Name>
+	<Study name="STUDY01">
+		<Series id="STUDY01_SERIES01">
+			<SeriesDescription>AXIAL</SeriesDescription>
+			<ImageNumberCurrentSCrollPosition>78</ImageNumberCurrentSCrollPosition>
+		</Series>
+	</Study>
+</Patient>

@@ -1,0 +1,101 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Viewer Page Synchronization 01 Tests" verbose="1"> <!--parallel="classes" thread-count="2"> -->
+
+
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener
+			class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+
+
+	<test name="Load Synchronization Test" preserve-order="true">
+		<groups>
+			<run>
+				<exclude name="multimonitor" />
+			</run>
+		</groups>
+		<classes>
+			<class
+				name="com.trn.ns.test.viewer.synchronization.LoadSyncTest" />
+		</classes>
+	</test>
+	
+	<test name="Non-DICOM Synchronization Test" preserve-order="true">
+		<groups>
+			<run>
+				<exclude name="multimonitor" />
+			</run>
+		</groups>
+		<classes>
+			<class
+				name="com.trn.ns.test.viewer.synchronization.NonDicomSyncTest" />
+		</classes>
+	</test>
+	
+	<test name="Orientation synchronization Test"
+		preserve-order="true">
+		<groups>
+			<run>
+				<exclude name="multimonitor" />
+			</run>
+		</groups>
+		<classes>
+			<class
+				name="com.trn.ns.test.viewer.synchronization.OrientationSyncTest" />
+		</classes>
+	</test>
+
+	<test name="Pan Synchronization Test" preserve-order="true">
+		<groups>
+			<run>
+				<exclude name="multimonitor" />
+			</run>
+		</groups>
+		<classes>
+			<class
+				name="com.trn.ns.test.viewer.synchronization.PanSynchronizationTest" />
+		</classes>
+	</test>
+
+	<test name="Scroll Sync From ActiveOverlay" preserve-order="true">
+		<groups>
+			<run>
+				<exclude name="multimonitor" />
+			</run>
+		</groups>
+		<classes>
+			<class
+				name="com.trn.ns.test.viewer.synchronization.ScrollSyncFromActiveOverlay" />
+		</classes>
+	</test>
+	
+	<test name="Scroll Sync Test" preserve-order="true">
+		<groups>
+			<run>
+				<exclude name="multimonitor" />
+			</run>
+		</groups>
+		<classes>
+			<class
+				name="com.trn.ns.test.viewer.synchronization.ScrollSyncTest" />
+		</classes>
+	</test>
+
+	<test name="Synchronization mode Test" preserve-order="true">
+		<groups>
+			<run>
+				<exclude name="multimonitor" />
+			</run>
+		</groups>
+		<classes>
+			<class
+				name="com.trn.ns.test.viewer.synchronization.SyncModeTest" />
+		</classes>
+	</test>
+
+	
+	
+
+</suite>

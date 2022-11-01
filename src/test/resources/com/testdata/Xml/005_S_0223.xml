@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patient>
+    <Name>005_S_0223</Name>
+    <ID>005_S_0223</ID>
+    <PatientClass>class</PatientClass>
+    <PatientSex>F</PatientSex>
+    <Study name="STUDY01">
+    <StudyDescription>adni bulk#9921511</StudyDescription>
+    <StudyDateAndTime>Mar 17, 2007 11:26:03 AM</StudyDateAndTime>
+        <Series id="STUDY01_SERIES01">
+            <SeriesDescription>MP-RAGE</SeriesDescription>
+        </Series>
+        <Result id="STUDY01_RESULT01">
+        <ResultDescription>NQSeg</ResultDescription>
+        </Result>
+           <Result id="STUDY01_RESULT02">
+        <ResultDescription>NQSegCorSC</ResultDescription>
+        </Result>
+           <Result id="STUDY01_RESULT03">
+        <ResultDescription>NQSegAxlSC</ResultDescription>
+        </Result>
+           <Result id="STUDY01_RESULT04">
+        <ResultDescription>NQSegSagSC</ResultDescription>
+        </Result>
+           <Result id="STUDY01_RESULT05">
+        <ResultDescription>NQSeg</ResultDescription>
+        </Result>
+    </Study>
+     <Study name="STUDY02">
+    <StudyDescription>ADNI Bulk #9921511</StudyDescription>
+    <StudyDateAndTime>Mar 18, 2008 1:12:23 PM</StudyDateAndTime>
+        <Series id="STUDY01_SERIES01">
+            <SeriesDescription>MP-RAGE</SeriesDescription>
+        </Series>
+        <Result id="STUDY01_RESULT01">
+        <ResultDescription>NQSeg</ResultDescription>
+        </Result>
+           <Result id="STUDY01_RESULT02">
+        <ResultDescription>NQSegCorSC</ResultDescription>
+        </Result>
+           <Result id="STUDY01_RESULT03">
+        <ResultDescription>NQSegAxlSC</ResultDescription>
+        </Result>
+           <Result id="STUDY01_RESULT04">
+        <ResultDescription>NQSegSagSC</ResultDescription>
+        </Result>
+           <Result id="STUDY01_RESULT05">
+        <ResultDescription>NQSeg</ResultDescription>
+        </Result>
+    </Study>
+</Patient>
+
+

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patient>
+	<Name>LUNIT_CT_ChestPA</Name>
+	<Study name="STUDY01">
+		<Series id="STUDY01_SERIES01">
+			<SeriesDescription>Chest pa - Modified by BICL</SeriesDescription>
+		</Series>
+		<Result id="STUDY01_RESULT01">
+			<ResultDescription>LUNIT_ChestResult</ResultDescription>
+		</Result>		
+		
+	</Study>
+</Patient>

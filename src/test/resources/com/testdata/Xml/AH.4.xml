@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patient>
+	<Name>AH.4</Name>
+	<ID>DP.4</ID>
+	<PatientClass>class</PatientClass>
+	<PatientSex>M</PatientSex>
+	<PatientIssuerID>frhprod</PatientIssuerID>
+	<Study name="STUDY01">
+		<StudyDescription>CT_BRAIN_WO</StudyDescription>
+		<StudyDateTime>Jul 18, 2013 9:42:20...</StudyDateTime>
+		<StudyUID>2.16.840.1.113669.632.21.486081.486212.16416582522216879.1424103
+		</StudyUID>
+		<Series id="STUDY01_SERIES01">
+			<SeriesDescription>2</SeriesDescription>
+			<ImageMatrix>512 x 512</ImageMatrix>
+			<!-- ImagePosition>-112.7793,-275.6889,-31.03265</ImagePosition -->
+			<ImagePosition>-112.78,-275.69,-26.18</ImagePosition>
+			<SliceThickness>4.8 mm</SliceThickness>
+
+			<SliceLocation>-62.9</SliceLocation>
+			<Kvp>120</Kvp>
+			<FOV>0</FOV>
+			<ImageNumberCurrentSCrollPosition>15</ImageNumberCurrentSCrollPosition>
+			<ImageNumberMaxSCrollPosition>30</ImageNumberMaxSCrollPosition>
+
+			<mAs>320</mAs>
+			<ImageType>ORIGINAL</ImageType>
+			<ImageAcquisitionDateTime>Jul 18, 2013 9:43:54...</ImageAcquisitionDateTime>
+			<WindowWidth>80</WindowWidth>
+			<WindowCenter>35</WindowCenter>
+			<Orientation>
+				<Orientation.Up>A</Orientation.Up>
+				<Orientation.Down>P</Orientation.Down>
+				<Orientation.Left>R</Orientation.Left>
+				<Orientation.Right>L</Orientation.Right>
+			</Orientation>
+
+		</Series>
+		<Series id="STUDY01_SERIES02">
+			<SeriesDescription>3</SeriesDescription>
+		</Series>
+
+		<Series id="STUDY01_SERIES03">
+			<SeriesDescription>Result1-2.16.840.1.113669.632.21.486081.486212.16416582522216879
+			</SeriesDescription>
+		</Series>
+
+		<Series id="STUDY01_SERIES04">
+			<SeriesDescription>Result3-2.16.840.1.113669.632.21.486081.486212.16416582522216879
+			</SeriesDescription>
+
+		</Series>
+
+		<Series id="STUDY01_SERIES05">
+			<SeriesDescription>Imported WIA Results</SeriesDescription>
+
+		</Series>
+	</Study>
+
+</Patient>
+

@@ -1,0 +1,263 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="NorthStar Final SQA Checklist - GSPS" verbose="1">
+
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener
+			class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+
+	<test name="Accept Reject Tests" preserve-order="true">
+		<groups>
+			<run>
+				<include name="BVT" />
+			</run>
+		</groups>
+
+		<classes>
+			<class
+				name="com.trn.ns.test.viewer.GSPS.AcceptRejectGSPSFindingTest01" />
+			<class
+				name="com.trn.ns.test.viewer.GSPS.AcceptRejectGSPSFindingTest02" />
+			<class
+				name="com.trn.ns.test.viewer.GSPS.AcceptRejectGSPSFindingTest03" />
+		</classes>
+	</test>
+
+	<test name="Annotation Persistent" preserve-order="true">
+		<groups>
+			<run>
+				<include name="BVT" />
+			</run>
+		</groups>
+
+		<classes>
+			<class
+				name="com.trn.ns.test.viewer.GSPS.AnnotationPersistsInDBTest" />
+		</classes>
+	</test>
+
+	<test name="Bump tool Tests" preserve-order="true">
+		<groups>
+			<run>
+				<include name="BVT" />
+			</run>
+		</groups>
+
+		<classes>
+			<class name="com.trn.ns.test.viewer.GSPS.BumpToolCircleTest" />
+		</classes>
+	</test>
+
+	<test name="Circle Annotation Tests" preserve-order="true">
+		<groups>
+			<run>
+				<include name="BVT" />
+			</run>
+		</groups>
+
+		<classes>
+			<class name="com.trn.ns.test.viewer.GSPS.CircleAnnotationTest" />
+		</classes>
+	</test>
+
+	<test name="Clones Annotation Tests" preserve-order="true">
+		<groups>
+			<run>
+				<include name="BVT" />
+			</run>
+		</groups>
+
+		<classes>
+			<class name="com.trn.ns.test.viewer.GSPS.CloneAnnotationTest" />
+		</classes>
+	</test>
+
+	<test name="Comments Addition Tests" preserve-order="true">
+		<groups>
+			<run>
+				<include name="BVT" />
+			</run>
+		</groups>
+
+		<classes>
+			<class name="com.trn.ns.test.viewer.GSPS.CommentAdditionTest" />
+			<class
+				name="com.trn.ns.test.viewer.GSPS.CommentAdditionGroupsTest" />
+		</classes>
+	</test>
+
+	<test name="Ellipse Annotation Tests" preserve-order="true">
+		<groups>
+			<run>
+				<include name="BVT" />
+			</run>
+		</groups>
+
+		<classes>
+			<class
+				name="com.trn.ns.test.viewer.GSPS.EllipseImageAnnotationTest" />
+		</classes>
+	</test>
+
+	<test name="Finding Drop Down Tests" preserve-order="true">
+		<groups>
+			<run>
+				<include name="BVT" />
+			</run>
+		</groups>
+
+		<classes>
+			<class name="com.trn.ns.test.viewer.GSPS.FindingDropDownTest" />
+		</classes>
+	</test>
+
+	<test name="Polyline annotation Tests" preserve-order="true">
+		<groups>
+			<run>
+				<include name="BVT" />
+			</run>
+		</groups>
+
+		<classes>
+			<class
+				name="com.trn.ns.test.viewer.GSPS.FreeHandPolylineAnnotationTest" />
+		</classes>
+	</test>
+
+	<test name="Line Annotation Tests" preserve-order="true">
+		<groups>
+			<run>
+				<include name="BVT" />
+			</run>
+		</groups>
+
+		<classes>
+			<class name="com.trn.ns.test.viewer.GSPS.LineAnnotation" />
+		</classes>
+	</test>
+
+	<test name="Linear Measurement Tests" preserve-order="true">
+		<groups>
+			<run>
+				<include name="BVT" />
+			</run>
+		</groups>
+
+		<classes>
+			<class name="com.trn.ns.test.viewer.GSPS.LinearMeasurement" />
+		</classes>
+	</test>
+
+	<test name="Localizer Line Tests" preserve-order="true">
+		<groups>
+			<run>
+				<include name="BVT" />
+			</run>
+		</groups>
+
+		<classes>
+			<class name="com.trn.ns.test.viewer.GSPS.LocalizerLineTest" />
+		</classes>
+	</test>
+
+	<test name="Point Annotation Tests" preserve-order="true">
+		<groups>
+			<run>
+				<include name="BVT" />
+			</run>
+		</groups>
+
+		<classes>
+			<class name="com.trn.ns.test.viewer.GSPS.PointAnnotationTest" />
+		</classes>
+	</test>
+
+
+	<test name="Scroll Slider Tests" preserve-order="true">
+		<groups>
+			<run>
+				<include name="BVT" />
+			</run>
+		</groups>
+
+		<classes>
+			<class name="com.trn.ns.test.viewer.GSPS.ScrollSliderTest" />
+		</classes>
+	</test>
+
+	<test name="Text Annotation Tests" preserve-order="true">
+		<groups>
+			<run>
+				<include name="BVT" />
+			</run>
+		</groups>
+
+		<classes>
+			<class name="com.trn.ns.test.viewer.GSPS.TextAnnotationTest" />
+		</classes>
+	</test>
+
+	<test name="Triangulation Tool Tests" preserve-order="true">
+		<groups>
+			<run>
+				<include name="BVT" />
+			</run>
+		</groups>
+
+		<classes>
+			<class name="com.trn.ns.test.viewer.GSPS.TriangulationToolTest" />
+		</classes>
+	</test>
+
+	<test name="Watermark and banner Tests" preserve-order="true">
+		<groups>
+			<run>
+				<include name="BVT" />
+			</run>
+		</groups>
+
+		<classes>
+			<class
+				name="com.trn.ns.test.viewer.GSPS.WatermarkForDifferentBatchTest" />
+		</classes>
+	</test>
+	<test name="GSPS Group Object Tests" preserve-order="true">
+		<groups>
+			<run>
+				<include name="BVT" />
+			</run>
+		</groups>
+
+		<classes>
+			<class name="com.trn.ns.test.viewer.GSPS.GSPSGroupObjectTest" />
+		</classes>
+	</test>
+
+
+	<test name="Cut and Paste GSPS Findings Test"
+		preserve-order="true">
+		<groups>
+			<run>
+				<include name="BVT" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.trn.ns.test.viewer.GSPS.CutPasteFindingTest" />
+		</classes>
+	</test>
+
+	<test name="Interpolation Polyline test" preserve-order="true">
+
+		<groups>
+			<run>
+				<include name="BVT" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.trn.ns.test.viewer.GSPS.InterpolationTest" />
+		</classes>
+	</test>
+
+</suite>

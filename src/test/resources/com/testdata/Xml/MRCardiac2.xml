@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patient>
+	<Name>MR Cardiac2</Name>
+	<ID>irv7</ID>
+	<PatientClass>class</PatientClass>
+	<PatientSex>M</PatientSex>
+	<Study name="STUDY01">
+		<StudyDescription>MRI Cardiac w/Cont w/Flow Quant-Ross</StudyDescription>
+		<StudyDateTime>Nov 9, 2012 10:15:43 AM</StudyDateTime>
+
+		<Series id="STUDY01_SERIES01">
+			<SeriesDescription>trufi_vla_loc</SeriesDescription>
+		</Series>
+		<Series id="STUDY01_SERIES02">
+			<SeriesDescription>PERFUSION_EPI_MOCO_NORM</SeriesDescription>
+		</Series>
+
+		<Series id="STUDY01_SERIES03">
+			<SeriesDescription>DME_single-shot 600</SeriesDescription>
+		</Series>
+		
+		<Result id="STUDY01_RESULT01">
+			<ResultDescription>trufi_cine_VLA</ResultDescription>
+		</Result>
+		
+		<Result id="STUDY01_RESULT02">
+			<ResultDescription>PhoenixZIPReport</ResultDescription>
+		</Result>
+	</Study>
+
+</Patient>
+

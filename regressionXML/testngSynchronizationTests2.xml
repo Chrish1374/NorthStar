@@ -1,0 +1,75 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Viewer Page Synchronization 02 Tests" verbose="1"> <!--parallel="classes" thread-count="2"> -->
+
+
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener
+			class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+
+	<test name="WindowLevelSync Test" preserve-order="true">
+
+		<classes>
+			<class
+				name="com.trn.ns.test.viewer.synchronization.WindowLevelSyncTest" />
+		</classes>
+	</test>
+	
+	<test name="Window Level From Active Overlay Test"
+		preserve-order="true">
+		<groups>
+			<run>
+				<exclude name="multimonitor" />
+			</run>
+		</groups>
+		<classes>
+			<class
+				name="com.trn.ns.test.viewer.synchronization.WWWLPresetToolTest" />
+		</classes>
+	</test>
+	
+	<test name="ZoomSync from Overlay Test" preserve-order="true">
+		<groups>
+			<run>
+				<exclude name="multimonitor" />
+			</run>
+		</groups>
+		<classes>
+			<class
+				name="com.trn.ns.test.viewer.synchronization.ZoomSyncFromActiveOverlay" />
+		</classes>
+	</test>
+	
+	<test name="ZoomSync Test" preserve-order="true">
+		<groups>
+			<run>
+				<exclude name="multimonitor" />
+			</run>
+		</groups>
+		<classes>
+			<class
+				name="com.trn.ns.test.viewer.synchronization.ZoomSynchronizationTest" />
+		</classes>
+	</test>
+		
+    <test name="Multuphase Display For Single Series" preserve-order="true">
+		<groups>
+			<run>
+				<exclude name="multimonitor" />
+			</run>
+		</groups>
+		<classes>
+			<class
+				name="com.trn.ns.test.viewer.synchronization.MultiphaseDisplayForSingleSeriesTest" />
+		</classes>
+	</test>		
+		
+	<test name="Viewer Multiphase Test" preserve-order="true">
+		<classes>
+			<class name="com.trn.ns.test.viewer.synchronization.MultiphaseSeriesTest" />
+		</classes>
+	</test>
+	
+</suite>

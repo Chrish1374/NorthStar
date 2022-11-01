@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patient>
+	<Name>320fail</Name>
+	<ID>320fail</ID>
+	<Study name="STUDY01">
+		<StudyDescription>Covid CT Case</StudyDescription>
+	</Study>
+</Patient>
+

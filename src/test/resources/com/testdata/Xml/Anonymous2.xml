@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patient>
+	<Name>Anonymized2</Name>
+	<Study name="STUDY01">
+		<StudyUID>1.2.276.0.7230010.3.1.2.1100559579.7120.1596003855.690</StudyUID>
+		<Series id="STUDY01_SERIES01">
+			<SeriesDescription>1</SeriesDescription>
+			<SeriesInstanceID>1.2.276.0.7230010.3.1.3.1100559579.7120.1596003856.698</SeriesInstanceID>
+     	</Series>
+     	<Result id="STUDY01_SERIES02">
+			<ResultDescription>output-png</ResultDescription>
+			<ResultInstanceID>1.2.276.0.7230010.3.1.3.1100559579.7120.1596003855.691</ResultInstanceID>
+     	</Result>
+     </Study>
+</Patient>

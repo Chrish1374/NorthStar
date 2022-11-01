@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patient>
+	<Name>Subject 60_DeleteStudyAPI</Name>
+	<ID>Subject 60_DeleteStudyAPI</ID>
+	<PatientBirthDate>Jan 1, 1900</PatientBirthDate>
+	<PatientClass>class</PatientClass>
+	<PatientSex>F</PatientSex>
+	<PatientIssuerID>%60</PatientIssuerID>
+	<Study name="STUDY01">
+		<StudyDescription>Caput^Rutine</StudyDescription>
+		</Study>
+	
+	<Study name="STUDY02">
+		<StudyDescription>MR Caput</StudyDescription>
+	</Study>
+</Patient>

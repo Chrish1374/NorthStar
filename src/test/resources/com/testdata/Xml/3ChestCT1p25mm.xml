@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patient>
+	<Name>3ChestCT1p25mm</Name>
+	<PatientID>3ChestCT1p25mm</PatientID>
+	<PatientClass>class</PatientClass>
+    <DOB>DOB: Mar 24, 1951</DOB>
+	<Sex>Sex: F</Sex>
+	<Study name="STUDY01">
+		<StudyID></StudyID>
+		<AccessionNumber>Accession Number: 3ChestCT1p25mm</AccessionNumber>
+		<ReferringPhysicianName>Referring Physician's Name: 3ChestCT1p25mm
+		</ReferringPhysicianName>
+		<CompletionFlag>Completion Flag: PARTIAL</CompletionFlag>
+		<VerificationFlag>Verification Flag: UNVERIFIED</VerificationFlag>
+		<StudyDescription>CHEST</StudyDescription>
+		<StudyDateTime>Jun 4, 2015 8:55:50 AM</StudyDateTime>
+		<Series id="STUDY01_SERIES01">
+			<SeriesDescription>1.25mm</SeriesDescription>
+		</Series>
+        <Result id="STUDY01_RESULT01">
+			<ResultDescription>[RESEARCH USE ONLY] 1.25mm</ResultDescription>
+			</Result>	
+	</Study>
+
+</Patient>
+

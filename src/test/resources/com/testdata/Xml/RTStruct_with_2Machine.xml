@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patient>
+	<Name>RTStruct_with_2Machine</Name>
+	<ID>T75G753-1P-A878</ID>
+	<PatientClass>class</PatientClass>
+	<Study name="STUDY01">
+		<Result id="STUDY01_RESULT01">
+			<ResultDescription>Microsoft Corp. Radiomics AIC RT Structure Set</ResultDescription>
+		</Result>
+		<Result id="STUDY01_RESULT02">
+			<ResultDescription>Microsoft Corp. Radiomics AIC RT Structure Set_1</ResultDescription>
+		</Result>
+	</Study>
+</Patient>
+

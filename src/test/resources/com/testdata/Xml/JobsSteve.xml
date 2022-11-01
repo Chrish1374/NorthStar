@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patient>
+	<Name>JobsSteveWithResult</Name>
+	<Study name="STUDY01">
+		<StudyDescription>PET-CT body scan F18-FDG</StudyDescription>
+		<StudyDateTime>May 27, 2013 2:28:07 PM</StudyDateTime>
+		<Series id="STUDY01_SERIES01">
+			<SeriesDescription>Capture Apr/19/2017 01:56:55 PM</SeriesDescription>
+		</Series>
+		<Series id="STUDY01_SERIES02">
+			<SeriesDescription>Result1-2.16.840.1.113669.632.21.1350179354.538351610.3705862329</SeriesDescription>
+		</Series>
+		<Series id="STUDY01_SERIES03">
+			<SeriesDescription>p1115s0_wb_nac.img: 3D-RAMLA</SeriesDescription>
+		</Series>
+	</Study>
+
+</Patient>

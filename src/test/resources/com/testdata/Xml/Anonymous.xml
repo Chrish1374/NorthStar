@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patient>
+	<Name>anonymous</Name>
+	<Study name="STUDY01">
+		<StudyUID>1.2.840.113619.2.30.1.1762853596.1887.1006294119.505</StudyUID>
+		<Series id="STUDY01_SERIES01">
+			<SeriesDescription>1</SeriesDescription>
+			<SeriesInstanceID>1.2.840.113619.2.30.1.1762853596.1887.1006294119.509</SeriesInstanceID>
+     	</Series>
+     	<Result id="STUDY01_RESULT01">
+			<ResultDescription>output-png</ResultDescription>
+			<ResultInstanceID>2.16.840.1.113669.632.21.15.1646.3225981.2769394.526053903493979</ResultInstanceID>
+     	</Result>
+     	<Result id="STUDY01_RESULT02">
+			<ResultDescription>output-jpeg</ResultDescription>
+			<ResultInstanceID>2.16.840.1.113669.632.21.31.9258.3929544.1146502.184703973873159</ResultInstanceID>
+     	</Result>
+     	<Result id="STUDY01_RESULT03">
+			<ResultDescription>output-bmp</ResultDescription>
+			<ResultInstanceID>2.16.840.1.113669.632.21.26.6778.2720860.5257514.247282701791570</ResultInstanceID>
+     	</Result>
+     </Study>
+</Patient>

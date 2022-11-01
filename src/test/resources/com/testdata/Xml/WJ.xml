@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patient>
+	<Name>WJ</Name>
+	<PatientID>TDA</PatientID>
+	<PatientClass>class</PatientClass>
+    <DOB>DOB: Oct 15, 1958</DOB>
+	<Sex>Sex: F</Sex>
+</Patient>
+

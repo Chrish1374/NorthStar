@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patient>
+	<Name>AAA2</Name>
+	<Study name="STUDY01">
+		<StudyDescription>AAAStudy</StudyDescription>
+	</Study>
+</Patient>

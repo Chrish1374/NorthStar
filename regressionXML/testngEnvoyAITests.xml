@@ -1,0 +1,72 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Send To PACS Tests" verbose="1"> <!--parallel="classes" thread-count="2"> -->
+
+
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener
+			class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+
+	<test name="Send to PACS Config UI Test" preserve-order="true">
+		<classes>
+			<class
+				name="com.trn.ns.test.viewer.envoyAI.SendToPACSConfigUITest" />
+		</classes>
+	</test>
+
+	<test name="Send to PACS function Test" preserve-order="true">
+		<classes>
+			<class name="com.trn.ns.test.viewer.envoyAI.SendToPACSFuncTest" />
+			<class
+				name="com.trn.ns.test.viewer.envoyAI.SendToPACSFuncPart2Test" />
+
+		</classes>
+	</test>
+
+	<test name="Send to PACS for CAD-SR" preserve-order="true">
+		<classes>
+			<class
+				name="com.trn.ns.test.viewer.envoyAI.SendToPACSForCADSRTest" />
+		</classes>
+	</test>
+
+	<test name="Send to PACS for SR" preserve-order="true">
+
+		<classes>
+			<class
+				name="com.trn.ns.test.viewer.envoyAI.SendToPACSForSRTest" />
+		</classes>
+	</test>
+
+	<test name="User Action Tracking Functionality"
+		preserve-order="true">
+
+		<classes>
+			<class
+				name="com.trn.ns.test.viewer.envoyAI.UserActionTrackingTest" />
+		</classes>
+	</test>
+	
+	<test name="DICOM Info Verification Test"
+		preserve-order="true">
+
+		<classes>
+			<class
+				name="com.trn.ns.test.viewer.envoyAI.SentDICOMInfoTest" />
+		</classes>
+	</test>
+
+
+
+
+
+
+
+
+
+
+
+
+</suite>

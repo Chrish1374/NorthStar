@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patient>
+	<Name>Quibim_3DTrabecularBone</Name>
+	<Study name="STUDY01">
+		<Series id="STUDY01_SERIES01">
+			<SeriesDescription>0.6 BONE</SeriesDescription>
+		</Series>
+		<Result id="STUDY01_RESULT01">
+			<ResultDescription>ROI_Overlay</ResultDescription>
+		</Result>		
+		<Result id="STUDY01_RESULT02">
+			<ResultDescription>3DReconstruction</ResultDescription>
+		</Result>		
+		<Result id="STUDY01_RESULT03">
+			<ResultDescription>StructuredReport</ResultDescription>
+		</Result>
+		<Result id="STUDY01_RESULT04">
+			<ResultDescription>ROI_Overlay2</ResultDescription>
+		</Result>
+	</Study>
+</Patient>

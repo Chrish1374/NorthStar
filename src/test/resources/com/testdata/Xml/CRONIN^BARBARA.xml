@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patient>
+	<Name>CRONIN^BARBARA</Name>
+	<Study name="STUDY01">
+		<Series id="STUDY01_SERIES01">
+			<SeriesDescription>Topogram  0.6  T20f</SeriesDescription>
+     	</Series>
+     </Study>
+</Patient>

@@ -1,0 +1,162 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Viewer Page Tests" verbose="1"> <!--parallel="classes" thread-count="2"> -->
+
+
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener
+			class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+
+	<test name="Output Panel cine" preserve-order="true">
+		<groups>
+			<run>
+				<include name="BVT" />
+			</run>
+		</groups>
+		<classes>
+			<class
+				name="com.trn.ns.test.viewer.outputPanel.CineInOutputPanelTest" />
+		</classes>
+	</test>
+
+	<test name="Output Panel Expand Collapse" preserve-order="true">
+		<groups>
+			<run>
+				<include name="BVT" />
+			</run>
+		</groups>
+		<classes>
+			<class
+				name="com.trn.ns.test.viewer.outputPanel.ExpandCollapseFunctTest" />
+		</classes>
+	</test>
+
+	<test name="Output Panel Non DICOM Test" preserve-order="true">
+		<groups>
+			<run>
+				<include name="BVT" />
+			</run>
+		</groups>
+		<classes>
+			<class
+				name="com.trn.ns.test.viewer.outputPanel.OutputPanelForNonDICOMTest" />
+		</classes>
+	</test>
+
+	<test name="Output Panel Machine Level Filters"
+		preserve-order="true">
+    <groups>
+			<run>
+				<include name="BVT" />
+			</run>
+		</groups>
+		<classes>
+			<class
+				name="com.trn.ns.test.viewer.outputPanel.OutputPanelMachineLevelFilterTest" />
+		</classes>
+	</test>
+
+	<test name="Multiline support in Output Panel"
+		preserve-order="true">
+		<groups>
+			<run>
+				<include name="BVT" />
+			</run>
+		</groups>
+		<classes>
+			<class
+				name="com.trn.ns.test.viewer.outputPanel.TextAnnotationInOutputPanelTest" />
+		</classes>
+	</test>
+
+
+	<test name="Thumbnail Selection on Output Panel"
+		preserve-order="true">
+		<groups>
+			<run>
+				<include name="BVT" />
+			</run>
+		</groups>
+		<classes>
+			<class
+				name="com.trn.ns.test.viewer.outputPanel.ThumbnailSelectionOnOutputPanelTest" />
+		</classes>
+	</test>
+
+	<test name="Output Panel Redesign test" preserve-order="true">
+		<groups>
+			<run>
+				<include name="BVT" />
+			</run>
+		</groups>
+		<classes>
+			<class
+				name="com.trn.ns.test.viewer.outputPanel.ViewerOPRedesignTest" />
+		</classes>
+	</test>
+
+
+	<test name="Viewer Output Panel Test" preserve-order="true">
+		<groups>
+			<run>
+				<include name="BVT" />
+			</run>
+		</groups>
+		<classes>
+			<class
+				name="com.trn.ns.test.viewer.outputPanel.ViewerOutputPanelTest" />
+		</classes>
+	</test>
+	
+	<test name="Comments in Viewer Output Panel Test" preserve-order="true">
+		<groups>
+			<run>
+				<include name="BVT" />
+			</run>
+		</groups>
+		<classes>
+			<class
+				name="com.trn.ns.test.viewer.outputPanel.CommentFromOutputPanelTest" />
+		</classes>
+	</test>
+
+
+	<test name="Selecting findings in Viewer Output Panel Test" preserve-order="true">
+		<groups>
+			<run>
+				<include name="BVT" />
+			</run>
+		</groups>
+		<classes>
+			<class
+				name="com.trn.ns.test.viewer.outputPanel.CopyFindingsInOutputPanelTest"/>
+		</classes>
+	</test>
+	
+	<test name="Filter findings in Output Panel Test" preserve-order="true">
+		<groups>
+			<run>
+				<include name="BVT" />
+			</run>
+		</groups>
+		<classes>
+			<class
+				name="com.trn.ns.test.viewer.outputPanel.FilterFindingsInOutputPanelTest"/>
+		</classes>
+	</test>
+	
+	
+		<test name="AI Sync findings window Test" preserve-order="true">
+		<groups>
+			<run>
+				<include name="BVT" />
+			</run>
+		</groups>
+		<classes>
+			<class
+				name="com.trn.ns.test.AISyncPreview.AISyncPreviewTest"/>
+		</classes>
+	</test>
+</suite>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patient>
+	<Name>Corticometrix_1</Name>
+	<ID>Corticometrix_1</ID>
+	<PatientClass>class</PatientClass>
+	<PatientSex></PatientSex>
+	<PatientIssuerID>%60</PatientIssuerID>
+	<Study name="STUDY01">
+		<StudyDescription></StudyDescription>
+		<StudyDateTime></StudyDateTime>
+		<StudyUID>1.3.12.2.1107.5.2.38.51006.30000016081722224739000000040
+		</StudyUID>
+		<Series id="STUDY01_SERIES01">
+			<SeriesDescription>MEMPR_iso1mm RMS</SeriesDescription>
+			<ImageMatrix>512 x 512</ImageMatrix>
+			
+			<SliceThickness>4.800000190734863 mm</SliceThickness>
+
+			<SliceLocation>-67.69999694824219</SliceLocation>
+			<Kvp>120</Kvp>
+			<FOV>0</FOV>
+			<ImageNumberCurrentSCrollPosition>88
+			</ImageNumberCurrentSCrollPosition>
+			<ImageNumberMaxSCrollPosition>176</ImageNumberMaxSCrollPosition>
+
+			<mAs>338</mAs>
+			<ImageType>ORIGINAL</ImageType>
+			<ImageAcquisitionDateTime>Jul 18, 2013 9:43:51 PM
+			</ImageAcquisitionDateTime>
+			<WindowWidth>343</WindowWidth>
+			<WindowCenter>138</WindowCenter>
+			<Orientation>
+				<Orientation.Up>H</Orientation.Up>
+				<Orientation.Down>F</Orientation.Down>
+				<Orientation.Left>A</Orientation.Left>
+				<Orientation.Right>P</Orientation.Right>
+			</Orientation>
+
+		</Series>
+		<Result id="STUDY01_RESULT02">
+			<ResultDescription>neuro_report</ResultDescription>
+		</Result>
+
+	</Study>
+
+</Patient>

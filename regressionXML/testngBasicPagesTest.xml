@@ -1,0 +1,146 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Basic Admin Tests" verbose="1"> <!--parallel="classes" thread-count="2"> -->
+
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener
+			class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+
+	<test name="About Icon Test" preserve-order="true">
+		<classes>
+			<class name="com.trn.ns.test.basic.AboutIconTest" />
+		</classes>
+	</test>
+
+	<test name="Active Directory Page Tests" preserve-order="true">
+		<classes>
+			<class
+				name="com.trn.ns.test.basic.ActiveDirectoryTest" />
+		</classes>
+	</test>
+
+	<test name="Register and Admin Page Tests" preserve-order="true">
+		<classes>
+			<class
+				name="com.trn.ns.test.basic.AdminLaunchPageTest" />
+		</classes>
+	</test>
+	
+	<test name="Context Info Functionality test" preserve-order="true">
+		<classes>
+			<class
+				name="com.trn.ns.test.basic.ContextInfoFunctionalityTest" />
+		</classes>
+	</test>	
+	
+	<test name="DateAndTime Verification Test" preserve-order="true">
+		<groups>
+			<run>
+				<exclude name="multimonitor" />
+			</run>
+		</groups>
+		<classes>
+			<class
+				name="com.trn.ns.test.basic.DateAndTimeVerificationTest" />
+		</classes>
+	</test>
+		
+	<test name="Password Encryption Tests" preserve-order="true">
+		<classes>
+			<class
+				name="com.trn.ns.test.basic.EncryptedPasswordTest" />
+		</classes>
+	</test>
+	
+	<test name="Eureka Theme test" preserve-order="true">
+		<classes>
+			<class
+				name="com.trn.ns.test.basic.EurekaHeaderTest" />
+		</classes>
+	</test>
+		
+	<test name="Header Verification Test" preserve-order="true">
+		<groups>
+			<run>
+				<exclude name="multimonitor" />
+			</run>
+		</groups>
+		<classes>
+			<class
+				name="com.trn.ns.test.basic.HeaderVerificationTest" />
+		</classes>
+	</test>
+	
+	<test name="Login Test" preserve-order="true">
+		<classes>
+			<class name="com.trn.ns.test.basic.LoginTest" />
+		</classes>
+	</test>
+
+	<test name="Mapping keys and mouse events Test"
+		preserve-order="true">
+		<classes>
+			<class
+				name="com.trn.ns.test.basic.MappingKeysAndMouseEvents" />
+		</classes>
+	</test>
+
+	<test name="MFA Token test" preserve-order="true">
+		<classes>
+			<class
+				name="com.trn.ns.test.basic.MFASupportTest" />
+		</classes>
+	</test>
+	
+	<test name="Navigation Between Application Pages"
+		preserve-order="true">
+		<classes>
+			<class
+				name="com.trn.ns.test.basic.NavigationBetweenAppPages" />
+		</classes>
+	</test>
+	
+	<test name="Non UI Login Test" preserve-order="true">
+		<classes>
+			<class
+				name="com.trn.ns.test.basic.NavigationForNonUILogin" />
+		</classes>
+	</test>
+	
+	<test name="Error and Logout Page" preserve-order="true">
+		<classes>
+			<class
+				name="com.trn.ns.test.basic.NavigationToErrorPages" />
+		</classes>
+	</test>
+		
+	<test name="NS Title Verification Test" preserve-order="true">
+		<groups>
+			<run>
+				<exclude name="multimonitor" />
+			</run>
+		</groups>
+		<classes>
+			<class
+				name="com.trn.ns.test.basic.PageTitleVerificationTest" />
+		</classes>
+	</test>
+	
+	<test name="Password Policy Page Test" preserve-order="true">
+		<classes>
+			<class
+				name="com.trn.ns.test.basic.PasswordPolicyTest" />
+		</classes>
+	</test>
+		
+	<test name="New User creation Test" preserve-order="true">
+		<classes>
+			<class
+				name="com.trn.ns.test.basic.UserCreationTest" />
+		</classes>
+	</test>
+
+	
+</suite>

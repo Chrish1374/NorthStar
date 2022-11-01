@@ -1,0 +1,26 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="NorthStar Selenium Automation Test Suite" verbose="1"> <!--parallel="classes" thread-count="2"> -->
+
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener
+			class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+
+	<test name="Basic Admin Tests" preserve-order="true">
+	
+		<packages>
+			<package name="com.trn.ns.test.basic" />
+		</packages>
+	</test>
+
+	<test name="Patient list Test" preserve-order="true">
+		
+		<packages>
+			<package name="com.trn.ns.test.patientList" />
+		</packages>
+	</test>
+
+	
+</suite>

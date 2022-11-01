@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patient>
+	<Name>CR-THORAX-CHEST1-WithResult</Name>
+	<ID>CR_WR</ID>
+	<PatientClass>class</PatientClass>
+	<PatientSex>F</PatientSex>
+	<Study name="STUDY01">
+		<StudyDescription>CHEST</StudyDescription>
+		<StudyDateTime>Jan 20, 2003 11:05:36 AM</StudyDateTime>
+		<Series id="STUDY01_SERIES01">
+			<SeriesDescription>500</SeriesDescription>
+		</Series>
+		<Series id="STUDY01_SERIES02">
+			<SeriesDescription>410096</SeriesDescription>
+		</Series>
+		<Series id="STUDY01_SERIES03">
+			<SeriesDescription>410097</SeriesDescription>
+		</Series>
+	</Study>
+</Patient>

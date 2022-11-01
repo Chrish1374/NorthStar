@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patient>
+	<Name>Phantom of Grids</Name>
+	<Study name="STUDY01">
+	
+		  <Series id="STUDY01_SERIES01">
+     	    <SeriesDescription>0000</SeriesDescription>
+     	  </Series>
+     </Study>
+</Patient>

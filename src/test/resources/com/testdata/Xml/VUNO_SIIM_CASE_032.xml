@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patient>
+    <Name>VUNO_SIIM_CASE_032</Name>
+    <ID>8071751404</ID>
+    <PatientClass>class</PatientClass>
+    <PatientSex>M</PatientSex>
+    <Study name="STUDY01">
+        <Series id="STUDY01_SERIES01">
+            <SeriesDescription>10</SeriesDescription>
+        </Series>
+        <Result id="STUDY01_RESULT01">
+        <ResultDescription>2001</ResultDescription>
+        </Result>
+    </Study>
+
+</Patient>
+
+

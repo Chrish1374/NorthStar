@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patient>
+	<Name>Test^PixelSpacing</Name>
+	<Study name="STUDY01">
+	
+		  <Series id="STUDY01_SERIES01">
+     	    <SeriesDescription>Computed Radiography - Pixel Spacing and Imager Pixel Spacing</SeriesDescription>
+     	  </Series>
+     	  <Series id="STUDY01_SERIES02">
+     	    <SeriesDescription>Computed Radiography - Only Imager Pixel Spacing</SeriesDescription>
+     	  </Series>
+     </Study>
+</Patient>

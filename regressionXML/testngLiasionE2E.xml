@@ -1,0 +1,50 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Liasion E2E Tests" verbose="1"> <!--parallel="classes" thread-count="2"> -->
+
+
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener
+			class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+	<test name="E2E test" preserve-order="true">
+
+		<classes>
+			<class
+				name="com.trn.ns.test.viewer.liasionE2E.LiasionE2ETest" />
+		</classes>
+	</test>
+	
+	<test name="Liaison V3 batch test" preserve-order="true">
+
+		<classes>
+			<class
+				name="com.trn.ns.test.viewer.liasionE2E.MultipleBatchV3Test" />
+		</classes>
+	</test>
+	
+	<test name="Notification look and feel test" preserve-order="true">
+
+		<classes>
+			<class
+				name="com.trn.ns.test.viewer.liasionE2E.NotificationLookAndFeelTest" />
+		</classes>
+	</test>
+	
+	<test name="Send to Pacs Error verification With Liasion test" preserve-order="true">
+
+		<classes>
+			<class
+				name="com.trn.ns.test.viewer.liasionE2E.SendToPACSLiasionTest" />
+		</classes>
+	</test>
+	
+	<test name="Re-run UI redesign test" preserve-order="true">
+
+		<classes>
+			<class
+				name="com.trn.ns.test.viewer.liasionE2E.ViewerRerunUIest" />
+		</classes>
+	</test>
+ </suite>

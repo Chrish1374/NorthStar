@@ -1,0 +1,119 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Viewer Basic Tests" verbose="1"> <!--parallel="classes" thread-count="2"> -->
+
+
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener
+			class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+
+	<test name="NonUI Viewer Test" preserve-order="true">
+		<classes>
+			<class name="com.trn.ns.test.viewer.basic.DirectViewerAccessTest" />
+		</classes>
+	</test>
+	
+	<test name="Double Click One Up Test" preserve-order="true">
+		<classes>
+			<class name="com.trn.ns.test.viewer.basic.DoubleClickOneUpTest" />
+		</classes>
+	</test>
+
+	
+		
+	<test name="Keyboard Shortcuts Test" preserve-order="true">
+		<classes>
+			<class name="com.trn.ns.test.viewer.basic.KeyboardEventsTest" />
+		</classes>
+	</test>
+
+	<test name="Log verification Test" preserve-order="true">
+		<classes>
+			<class name="com.trn.ns.test.viewer.basic.LogGenerationTest" />
+		</classes>
+	</test>
+
+	<test name="RadialMenu Test" preserve-order="true">
+
+		<classes>
+			<class name="com.trn.ns.test.viewer.basic.RadialMenuTest" />
+		</classes>
+	</test>
+	
+	<test name="Quick toolbar Test" preserve-order="true">
+
+		<classes>
+			<class name="com.trn.ns.test.viewer.basic.QuickToolbarTest" />
+		</classes>
+	</test>
+
+	<test name="Banner Test" preserve-order="true">
+		<classes>
+			<class name="com.trn.ns.test.viewer.basic.ViewerBannerTest" />
+		</classes>
+	</test>		
+	
+	<test name="Viewer Border Test" preserve-order="true">
+		<classes>
+			<class name="com.trn.ns.test.viewer.basic.ViewerBorderTest" />
+		</classes>
+	</test>
+	
+	<test name="Viewer Popup Theme Test" preserve-order="true">
+		<classes>
+			<class name="com.trn.ns.test.viewer.basic.ViewerThemeTest" />
+		</classes>
+	</test>
+	
+	<test name="Viewer Toolbar Test" preserve-order="true">
+		<classes>
+			<class name="com.trn.ns.test.viewer.basic.ViewerToolbarTest" />
+		</classes>
+	</test>
+	
+	<test name="Viewbox background Test" preserve-order="true">
+		<classes>
+			<class name="com.trn.ns.test.viewer.basic.ViewboxBGTest" />
+		</classes>
+	</test>
+	
+	<test name="VLI Framework and Plane Test" preserve-order="true">
+		<classes>
+			<class name="com.trn.ns.test.viewer.plane.basic.PlaneTest" />
+		</classes>
+	</test>
+	
+	<test name="Overlays after Plane change Test" preserve-order="true">
+		<classes>
+			<class name="com.trn.ns.test.viewer.plane.TextOverlaysPlaneTest" />
+		</classes>
+	</test>
+	
+	<test name="OP and Series Tab Test" preserve-order="true">
+		<classes>
+			<class name="com.trn.ns.test.viewer.basic.ViewerTabsTest" />
+		</classes>
+	</test>
+	
+	<test name="More viewer toolbar Test" preserve-order="true">
+		<classes>
+			<class name="com.trn.ns.test.viewer.basic.ViewerToolbarTest" />
+		</classes>
+	</test>
+	
+	
+	<test name="viewbox Number Test" preserve-order="true">
+		<classes>
+			<class name="com.trn.ns.test.viewer.basic.ViewboxNumberTest" />
+		</classes>
+	</test>
+	
+	<test name="External Command Test" preserve-order="true">
+		<classes>
+			<class name="com.trn.ns.test.viewer.basic.ExternalCommandTest" />
+		</classes>
+	</test>
+	
+</suite>

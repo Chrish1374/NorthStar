@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patient>
+	<Name>LTA Study</Name>
+	<ID>95471001</ID>
+	<PatientBirthDate>Aug 3, 1977</PatientBirthDate>
+	<PatientClass>class</PatientClass>
+	<PatientSex>F</PatientSex>
+	<Study name="STUDY01">
+		<StudyDescription>Head^01_CT_SINUS (Adult)</StudyDescription>
+		<StudyDateTime>May 22, 2007 7:36:51 AM</StudyDateTime>
+
+		<ReferringPhysiciansName>Pettigrew</ReferringPhysiciansName>
+		<EnvoyAI>
+			<EnvoyAI.title></EnvoyAI.title>
+			<EnvoyAI.description></EnvoyAI.description>
+		</EnvoyAI>
+		<Series id="STUDY01_SERIES01">
+			<PatientExternalID>ID</PatientExternalID>
+			<SeriesDescription>Topogram 0.6 T20s</SeriesDescription>
+			<AcquisitionDevice>AquisitionVal</AcquisitionDevice>
+
+			<AccessionNumber>1002043</AccessionNumber>
+			<ImageMatrix>512 x 512</ImageMatrix>
+			<StudyAcquisitionSite>AquSiteVal</StudyAcquisitionSite>
+
+			<ImagePosition>0,-429.5,384.5</ImagePosition>
+			<SliceThickness>0.6000000238418579 mm</SliceThickness>
+			<Detector>DetVal</Detector>
+			<SliceLocation>1</SliceLocation>
+			<Kvp>120</Kvp>
+			<FOV>0</FOV>
+			<ImageNumberCurrentSCrollPosition>1</ImageNumberCurrentSCrollPosition>
+			<ImageNumberMaxSCrollPosition>1</ImageNumberMaxSCrollPosition>
+
+			<mAs>93</mAs>
+			<Target>TartVal</Target>
+			<ImageType>ORIGINAL</ImageType>
+			<ImageAcquisitionDateTime>Nov 11, 2016 12:00:00 AM</ImageAcquisitionDateTime>
+			<WindowWidth>500</WindowWidth>
+			<WindowCenter>50</WindowCenter>
+			
+			<Orientation>
+			<Orientation.Up>H</Orientation.Up>
+			<Orientation.Down>F</Orientation.Down>
+			<Orientation.Left>A</Orientation.Left>
+			<Orientation.Right>P</Orientation.Right>
+			</Orientation>
+		</Series>
+
+	</Study>
+
+</Patient>

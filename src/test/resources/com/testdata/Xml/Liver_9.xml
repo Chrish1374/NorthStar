@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patient>
+	<ID>23131651-77</ID>
+	<Name>Liver 9</Name>
+	<Study name="STUDY01">
+		<StudyDescription>O-TP-Liver (Dynamic multi-phase) CT. WITH ¡® WITHOUT ENHANCEMENT</StudyDescription>
+		<StudyDateTime>Feb 5, 2013 11:29:12 AM</StudyDateTime>
+		<Series id="STUDY01_SERIES01">
+			<SeriesDescription>Non Contrast 2.0 B30f</SeriesDescription>
+		</Series>
+		<Series id="STUDY01_SERIES02">
+			<SeriesDescription>Arterial Phase 2.0 B10f</SeriesDescription>
+		</Series>
+		
+		<Series id="STUDY01_SERIES03">
+			<SeriesDescription>Portal V Phase 2.0 B10f</SeriesDescription>
+		</Series>
+		
+		<Series id="STUDY01_SERIES04">
+			<SeriesDescription>Delay Phase 2.0 B10f</SeriesDescription>
+		</Series>
+		
+		<Series id="STUDY01_SERIES05">
+			<SeriesDescription>Imported WIA Results</SeriesDescription>
+		</Series>
+
+		
+		
+	</Study>
+</Patient>

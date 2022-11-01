@@ -1,0 +1,86 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Viewer Page - Loading support Tests" verbose="1"> <!--parallel="classes" thread-count="2"> -->
+
+
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener
+			class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+
+	<test name="Default Slice Position Rendering Test"
+		preserve-order="true">
+
+		<classes>
+			<class
+				name="com.trn.ns.test.viewer.loadingAndDataFormatSupport.DefaultSlicePositionRenderingTest" />
+		</classes>
+	</test>
+
+	<test name="Image Quality Test" preserve-order="true">
+		<classes>
+			<class
+				name="com.trn.ns.test.viewer.loadingAndDataFormatSupport.ImageQualityTest" />
+		</classes>
+	</test>
+
+	<test name="JPG Rendering Test" preserve-order="true">
+		<classes>
+			<class
+				name="com.trn.ns.test.viewer.loadingAndDataFormatSupport.RenderingJpgTest" />
+		</classes>
+	</test>
+
+	<test name="Supported Modalities Test" preserve-order="true">
+		<classes>
+			<class
+				name="com.trn.ns.test.viewer.loadingAndDataFormatSupport.SupportedModalitiesTest" />
+		</classes>
+	</test>
+
+	<test name="UnSupported Data Test" preserve-order="true">
+		<classes>
+			<class
+				name="com.trn.ns.test.viewer.loadingAndDataFormatSupport.UnSupportedDataTest" />
+		</classes>
+	</test>
+	
+	<test name="Multiframe support Test" preserve-order="true">
+		<classes>
+			<class name="com.trn.ns.test.viewer.loadingAndDataFormatSupport.MultiframeSupportTest" />
+		</classes>
+	</test>
+	
+	<test name="Slice Order Test" preserve-order="true">
+		<classes>
+			<class name="com.trn.ns.test.viewer.loadingAndDataFormatSupport.SliceOrderTest" />
+		</classes>
+	</test>
+	
+	<test name="Lossy Overlay Test" preserve-order="true">
+
+		<classes>
+			<class
+				name="com.trn.ns.test.viewer.loadingAndDataFormatSupport.LossyOverlayTest" />
+		</classes>
+	</test>
+
+	<test name="PDF Test" preserve-order="true">
+
+		<classes>
+			<class
+				name="com.trn.ns.test.viewer.loadingAndDataFormatSupport.PdfDisplayTest" />
+		</classes>
+	</test>
+
+	<test name="Lossy Annotations Test" preserve-order="true">
+
+		<classes>
+			<class
+				name="com.trn.ns.test.viewer.loadingAndDataFormatSupport.LossyAnnotationTest" />
+		</classes>
+	</test>
+
+
+</suite>

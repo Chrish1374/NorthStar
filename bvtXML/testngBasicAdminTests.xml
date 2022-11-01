@@ -1,0 +1,24 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Basic Admin Tests" verbose="1"> <!--parallel="classes" thread-count="2"> -->
+
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener
+			class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+	
+	<test name="Context Info Functionality test" preserve-order="true">
+	  <groups>
+			<run>
+				<include name="BVT" />
+			</run>
+		</groups>
+		<classes>
+			<class
+				name="com.trn.ns.test.basic.ContextInfoFunctionalityTest" />
+				
+		</classes>
+	</test>
+
+</suite>

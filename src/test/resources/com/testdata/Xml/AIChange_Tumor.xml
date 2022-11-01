@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patient>
+	<Name>AIChange_Tumor</Name>
+	<ID>AIChange_Tumor</ID>
+	<PatientClass>class</PatientClass>
+	<PatientSex>M</PatientSex>
+	<PatientIssuerID>frhprod</PatientIssuerID>
+	<Study name="STUDY01">
+		<StudyDescription>MRI Hd wo+w</StudyDescription>
+		<StudyDateTime>Jul 10, 2013 10:58:17 AM</StudyDateTime>
+		<StudyUID>2.16.840.1.113669.632.21.486081.486212.16416582522216879.1424103
+		</StudyUID>
+		<Series id="STUDY01_SERIES01">
+			<SeriesDescription>Ax DWI_ADC</SeriesDescription>
+
+			<ImageNumberCurrentSCrollPosition>19
+			</ImageNumberCurrentSCrollPosition>
+			<ImageNumberMaxSCrollPosition>38</ImageNumberMaxSCrollPosition>
+			<WindowWidth>4577</WindowWidth>
+			<WindowCenter>1808</WindowCenter>
+			<Orientation>
+				<Orientation.Up>A</Orientation.Up>
+				<Orientation.Down>P</Orientation.Down>
+				<Orientation.Left>R</Orientation.Left>
+				<Orientation.Right>L</Orientation.Right>
+			</Orientation>
+
+		</Series>
+		<Series id="STUDY01_SERIES02">
+			<SeriesDescription>Ax DWI_TRACEW</SeriesDescription>
+			<ImageNumberCurrentSCrollPosition>19
+			</ImageNumberCurrentSCrollPosition>
+		</Series>
+
+		<Series id="STUDY01_SERIES03">
+			<SeriesDescription>Ax MPRAGE</SeriesDescription>
+			<ImageNumberCurrentSCrollPosition>19
+			</ImageNumberCurrentSCrollPosition>
+		</Series>
+
+		<Series id="STUDY01_SERIES04">
+			<SeriesDescription>Ax T2 Flair FS</SeriesDescription>
+			<ImageNumberCurrentSCrollPosition>19
+			</ImageNumberCurrentSCrollPosition>
+		</Series>
+		<Series id="STUDY01_SERIES05">
+			<SeriesDescription>CD: DWI-ADC - SC-Overlay</SeriesDescription>
+			<ImageNumberCurrentSCrollPosition>1
+			</ImageNumberCurrentSCrollPosition>
+		</Series>
+
+		<Series id="STUDY01_SERIES06">
+			<SeriesDescription>CD: PWI-CBF - SC-Overlay</SeriesDescription>
+			<ImageNumberCurrentSCrollPosition>19
+			</ImageNumberCurrentSCrollPosition>
+		</Series>
+
+		<Series id="STUDY01_SERIES07">
+			<SeriesDescription>CD: PWI-CBV - SC-Overlay</SeriesDescription>
+			<ImageNumberCurrentSCrollPositioN>19
+			</ImageNumberCurrentSCrollPositioN>
+		</Series>
+
+		<Series id="STUDY01_SERIES08">
+			<SeriesDescription>CD: PWI-MTT - SC-Overlay</SeriesDescription>
+			<ImageNumberCurrentSCrollPosition>19
+			</ImageNumberCurrentSCrollPosition>
+		</Series>
+
+		<Series id="STUDY01_SERIES09">
+			<SeriesDescription>CD: PWI-TTP - SC-Overlay</SeriesDescription>
+			<ImageNumberCurrentSCrollPosition>19
+			</ImageNumberCurrentSCrollPosition>
+		</Series>
+
+		<Series id="STUDY01_SERIES10">
+			<SeriesDescription>CD: PWI-TTP - SC-Overlay</SeriesDescription>
+			<ImageNumberCurrentSCrollPosition>19
+			</ImageNumberCurrentSCrollPosition>
+		</Series>
+		<Series id="STUDY01_SERIES11">
+			<SeriesDescription>CD: T1-Post - SC-Overlay</SeriesDescription>
+			<ImageNumberCurrentSCrollPosition>19
+			</ImageNumberCurrentSCrollPosition>
+		</Series>
+		<Series id="STUDY01_SERIES12">
+			<SeriesDescription>CD: T1-Pre - SC-Overlay</SeriesDescription>
+			<ImageNumberCurrentSCrollPosition>19
+			</ImageNumberCurrentSCrollPosition>
+		</Series>
+		<Series id="STUDY01_SERIES13">
+			<SeriesDescription>CD: T2 - SC-Overlay</SeriesDescription>
+			<ImageNumberCurrentSCrollPosition>19
+			</ImageNumberCurrentSCrollPosition>
+		</Series>
+	</Study>
+
+</Patient>

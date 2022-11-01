@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patient>
+	<Name>SPECTRA_DATABASE</Name>
+	<Study name="STUDY01">
+		<Series id="STUDY01_SERIES01">
+			<SeriesDescription>T1 SAG TSE</SeriesDescription>
+     	</Series>
+     	
+     	<Series id="STUDY01_SERIES02">
+			<SeriesDescription>DP FS SAG TSE</SeriesDescription>
+     	</Series>
+     	
+     	<Series id="STUDY01_SERIES03">
+			<SeriesDescription>DP FS CORO TSE</SeriesDescription>
+     	</Series>
+     	
+     	<Series id="STUDY01_SERIES04">
+			<SeriesDescription>DP FS AX TSE</SeriesDescription>
+     	</Series>
+     	
+     	<Series id="STUDY01_SERIES05">
+			<SeriesDescription>T1 CORO TSE</SeriesDescription>
+     	</Series>
+     </Study>
+</Patient>

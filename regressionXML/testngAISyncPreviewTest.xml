@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="AI Sync Preview testing" verbose="1"> <!--parallel="classes" thread-count="2"> -->
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener
+			class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+
+	<test name="AI Sync Popup Test" preserve-order="true">
+		<classes>
+			<class name="com.trn.ns.test.AISyncPreview.AISyncPreviewTest" />
+		</classes>
+	</test>
+
+	
+</suite>

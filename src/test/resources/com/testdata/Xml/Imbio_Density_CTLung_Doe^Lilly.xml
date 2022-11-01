@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patient>
+	<Name>Imbio_Density_CTLung_Doe^Lilly</Name>
+	<ID>Imbio_Density_CTLung_Doe^Lilly</ID>
+
+	<Study name="STUDY01">
+		<StudyDescription>CT COPD 4</StudyDescription>
+		<Series id="STUDY01_SERIES01">
+			<SeriesDescription>COPD_INSP_0.75mm_B45f</SeriesDescription>
+		</Series>
+		<Series id="STUDY01_SERIES02">
+			<SeriesDescription>COPD_EXP_0.75mm_B45f</SeriesDescription>
+		</Series>
+		<Result id="STUDY01_RESULT01">
+			<ResultDescription>LDA_Function</ResultDescription>
+		</Result>
+		<Result id="STUDY01_RESULT02">
+			<ResultDescription>LDA_Inspiration</ResultDescription>
+		</Result>
+		<Result id="STUDY01_RESULT03">
+			<ResultDescription>LDA Func RGB v2.4.4</ResultDescription>
+		</Result>
+		<Result id="STUDY01_RESULT04">
+			<ResultDescription>LDA Insp RGB v2.4.4</ResultDescription>
+		</Result>
+	</Study>
+</Patient>
+
+
+

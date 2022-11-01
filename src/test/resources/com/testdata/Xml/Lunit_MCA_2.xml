@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patient>
+	<Name>LUNIT MCA 2</Name>
+	<ID>LUNIT MCA 2</ID>
+	<PatientClass>class</PatientClass>
+	<PatientSex>F</PatientSex>
+	<Study name="STUDY01">
+		<StudyDescription>Chest PA</StudyDescription>
+		<StudyDateTime>Jan 12, 2010 4:46:27 PM</StudyDateTime>
+		<Series id="STUDY01_SERIES01">
+			<SeriesDescription>Chest pa - Modified by BICL</SeriesDescription>
+		</Series>
+	</Study>
+
+</Patient>
+

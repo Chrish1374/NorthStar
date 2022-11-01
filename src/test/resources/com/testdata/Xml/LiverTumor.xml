@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patient>
+	<Name>LiverTumor</Name>
+	<ID>6357723715</ID>
+	<PatientClass>class</PatientClass>
+	<PatientSex>F</PatientSex>
+	<Study name="STUDY01">
+		<StudyDescription>CT Abdomen</StudyDescription>
+		<StudyDateTime>Mar 28, 2017 5:15:15 PM</StudyDateTime>
+		<Series id="STUDY01_SERIES01">
+			<SeriesDescription>100</SeriesDescription>
+			
+			<ImageNumberCurrentSCrollPosition>1</ImageNumberCurrentSCrollPosition>
+			<ImageNumberMaxSCrollPosition>1</ImageNumberMaxSCrollPosition>
+
+			<ImageAcquisitionDateTime>Mar 28, 2017 5:15:15 PM</ImageAcquisitionDateTime>
+			<WindowWidth>1951</WindowWidth>
+			<WindowCenter>-191</WindowCenter>
+		</Series>
+		<Series id="STUDY01_SERIES02">
+			<SeriesDescription>locator</SeriesDescription>
+		</Series>
+		<Series id="STUDY01_SERIES03">
+			<SeriesDescription>locator- 1</SeriesDescription>
+		</Series>
+		<Series id="STUDY01_SERIES04">
+			<SeriesDescription>locator- 2</SeriesDescription>
+		</Series>
+		<Series id="STUDY01_SERIES05">
+			<SeriesDescription>locator- 3</SeriesDescription>
+		</Series>
+		<Series id="STUDY01_SERIES06">
+			<SeriesDescription>locator- 4</SeriesDescription>
+		</Series>
+		<Series id="STUDY01_SERIES07">
+			<SeriesDescription>locator- 5</SeriesDescription>
+		</Series>
+		<Series id="STUDY01_SERIES08">
+			<SeriesDescription>Volumetrie Lebersegment 2/3</SeriesDescription>
+		</Series>
+		
+		<Series id="STUDY01_SERIES09">
+			<SeriesDescription>tracker</SeriesDescription>
+		</Series>
+		<Series id="STUDY01_SERIES10">
+			<SeriesDescription>Tracker Graph</SeriesDescription>
+		</Series>
+		<Series id="STUDY01_SERIES11">
+			<SeriesDescription>art., iDose (3)</SeriesDescription>
+		</Series>
+		<Series id="STUDY01_SERIES12">
+			<SeriesDescription>1mm art., iDose (3)</SeriesDescription>
+		</Series>
+		<Series id="STUDY01_SERIES13">
+			<SeriesDescription>venös, iDose (3)</SeriesDescription>
+		</Series>
+		<Series id="STUDY01_SERIES14">
+			<SeriesDescription>1 mm venös, iDose (3)</SeriesDescription>
+		</Series>
+		<Series id="STUDY01_SERIES15">
+			<SeriesDescription>3mm venös, iDose (3)</SeriesDescription>
+		</Series>
+		<Series id="STUDY01_SERIES16">
+			<SeriesDescription>Exam Summary</SeriesDescription>
+		</Series>
+		
+	</Study>
+</Patient>

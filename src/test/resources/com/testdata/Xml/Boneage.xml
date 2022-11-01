@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patient>
+	<Name>Bone Age Study</Name>
+	<ID>045261381207</ID>
+	<PatientBirthDate></PatientBirthDate>
+	<PatientClass>class</PatientClass>
+	<PatientSex>F</PatientSex>
+	<Study name="STUDY01">
+		<StudyDescription>BONE AGE STUDY</StudyDescription>
+		<StudyDateTime>May 30, 2017 4:12:48 PM</StudyDateTime>
+		<ReferringPhysiciansName></ReferringPhysiciansName>
+		<EnvoyAI>
+			<EnvoyAI.title></EnvoyAI.title>
+			<EnvoyAI.description></EnvoyAI.description>
+		</EnvoyAI>
+		<Series id="STUDY01_SERIES01">
+			<PatientExternalID>ID</PatientExternalID>
+			<type>DICOM</type>
+			<SeriesDescription>BONE AGE</SeriesDescription>
+			<AcquisitionDevice></AcquisitionDevice>
+
+			<AccessionNumber></AccessionNumber>
+			<ImageMatrix>1861 x 1267</ImageMatrix>
+			<StudyAcquisitionSite></StudyAcquisitionSite>
+
+			<ImagePosition>0,0,0</ImagePosition>
+			<SliceThickness>0 mm</SliceThickness>
+			<Detector></Detector>
+			<SliceLocation>0</SliceLocation>
+			<Kvp>60</Kvp>
+			<FOV>0</FOV>
+			<ImageNumberCurrentSCrollPosition>1</ImageNumberCurrentSCrollPosition>
+			<ImageNumberMaxSCrollPosition>1</ImageNumberMaxSCrollPosition>
+
+			<mAs>1</mAs>
+			<Target></Target>
+			<ImageType></ImageType>
+			<ImageAcquisitionDateTime></ImageAcquisitionDateTime>
+			<WindowWidth>4096</WindowWidth>
+			<WindowCenter>2048</WindowCenter>
+		</Series>
+
+		<Result id="STUDY01_RESULT01">
+			<type>jpeg</type>
+			<ResultDescription>atlas-1</ResultDescription>
+			<zoom>50</zoom>
+		</Result>
+		
+		<Result id="STUDY01_RESULT02">
+			<type>jpeg</type>
+			<ResultDescription>atlas</ResultDescription>
+			<zoom>50</zoom>
+		</Result>
+		
+		<Result id="STUDY01_RESULT03">
+			<type>jpeg</type>
+			<ResultDescription>atlas+1</ResultDescription>
+			<zoom>50</zoom>
+		</Result>
+		
+
+	</Study>
+</Patient>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patient>
+	<Name>TEST^SR Tanaka Hanako</Name>
+	<PatientID>ID: FUJI00001</PatientID>
+	<DOB>DOB: Aug 24, 1925</DOB>
+	<Sex>Sex: M</Sex>
+	<Study name="STUDY01">
+	<StudyID> </StudyID>
+	<AccessionNumber>Accession Number: FUJI95701</AccessionNumber>
+	<ReferringPhysicianName> </ReferringPhysicianName>
+	<CompletionFlag>Completion Flag: PARTIAL</CompletionFlag>
+	<VerificationFlag>Verification Flag: UNVERIFIED</VerificationFlag>
+	<Request>Request: Upper GI - double contrast stomach</Request>
+	<History>History: Gastric pain.</History>
+	<Procedure>Procedure: Double contrast technique of the stomach was performed.</Procedure>
+	<Findings1>Finding: Demonstrated is a gastric wall lesion along the greater curvature of the stomach. Radiating gastric folds are seen extending into the lesion without significant surrounding edema. No additional abnormalities are detected. Given the lack of surrounding edema of this single lesion within the stomach the primary diagnosis of gastric carcinoma remains the main differential diagnosis and must be excluded. Gastric ulcer, although a possibility, is thought to be less likely given the lack of surrounding edema.</Findings1>
+	<Findings2>Finding: Gastric wall mass lesion along greater curvature of the stomach. Pattern compatible with gastric carcinoma.</Findings2>
+	<BestIllustration>Jump To Image</BestIllustration>
+	 <StudyDescription>OFFIS Structured Reporting Samples</StudyDescription>
+		<Series id="STUDY01_SERIES01">
+			<SeriesDescription>1</SeriesDescription>
+     	</Series>
+     	<Series id="STUDY01_SERIES02">
+			<SeriesDescription>RSNA '95, Fuji, CR</SeriesDescription>
+			<StudyDateAndTime> </StudyDateAndTime>
+     	</Series>
+     </Study>
+</Patient>

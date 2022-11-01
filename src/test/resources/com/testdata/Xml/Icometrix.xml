@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patient>
+	<Name>icometrix</Name>
+	<ID>000001</ID>
+	<PatientClass>class</PatientClass>
+	<PatientSex>M</PatientSex>
+	<PatientIssuerID>DEFAULT</PatientIssuerID>
+	<Study name="STUDY01">
+		<StudyDescription></StudyDescription>
+		<StudyDateTime>Aug 9, 2016 12:00:00 AM</StudyDateTime>
+		<StudyUID>1.2.840.113711.964270.1.24324.491876807.26.2116281012.16960</StudyUID>
+		<NumberOfImages>336</NumberOfImages>
+		<Series id="STUDY01_RESULT01">
+			<SeriesDescription>T1 GM WM-HYPO SAG</SeriesDescription>
+			<ImageMatrix>512 x 512</ImageMatrix>
+			<!-- ImagePosition>-112.7793,-275.6889,-31.03265</ImagePosition -->
+			<ImagePosition>-112.779296875,-275.68892013834,-31.03265245543
+			</ImagePosition>
+			<SliceThickness>4.800000190734863 mm</SliceThickness>
+
+			<SliceLocation>-67.69999694824219</SliceLocation>
+			<Kvp>120</Kvp>
+			<FOV>0</FOV>
+			<ImageNumberCurrentSCrollPosition>73
+			</ImageNumberCurrentSCrollPosition>
+			<ImageNumberMaxSCrollPosition>147</ImageNumberMaxSCrollPosition>
+
+			<mAs>338</mAs>
+			<ImageType>ORIGINAL</ImageType>
+			<ImageAcquisitionDateTime>Aug 9, 2016 12:00:00 AM
+			</ImageAcquisitionDateTime>
+			<WindowWidth>255</WindowWidth>
+			<WindowCenter>127</WindowCenter>
+			<Orientation>
+				<Orientation.Up>H</Orientation.Up>
+				<Orientation.Down>F</Orientation.Down>
+				<Orientation.Left>A</Orientation.Left>
+				<Orientation.Right>P</Orientation.Right>
+			</Orientation>
+
+		</Series>
+		<Series id="STUDY01_RESULT02">
+			<SeriesDescription>FLAIR WM-HYPER SAG</SeriesDescription>
+		</Series>
+
+		<Series id="STUDY01_RESULT03">
+			<SeriesDescription>icobrain-report</SeriesDescription>
+		</Series>
+
+		<Series id="STUDY01_SERIES04">
+			<SeriesDescription>3D Sag T1 mprage</SeriesDescription>
+
+		</Series>
+
+		<Series id="STUDY01_SERIES05">
+			<SeriesDescription>C+ FLAIR 3D SAG POST GADO</SeriesDescription>
+
+		</Series>
+	</Study>
+
+</Patient>

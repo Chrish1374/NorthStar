@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patient>
+	<Name>TEST^SR Wilkins Charles</Name>
+	<ID>GE0514-sr</ID>
+	<Study name="STUDY01">
+	 <StudyDescription>OFFIS Structured Reporting Samples</StudyDescription>
+		<Series id="STUDY01_SERIES01">
+			<SeriesDescription>RSNA '95, GE, CT</SeriesDescription>
+     	</Series>
+     	<Series id="STUDY01_SERIES02">
+			<SeriesDescription>2</SeriesDescription>
+     	</Series>
+     </Study>
+</Patient>

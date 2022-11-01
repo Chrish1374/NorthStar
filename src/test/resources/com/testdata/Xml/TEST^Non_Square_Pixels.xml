@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patient>
+	<Name>TEST^Non square pixels</Name>
+	<Study name="STUDY01">
+	
+		  <Series id="STUDY01_SERIES01">
+     	    <SeriesDescription>Non square pixels: Pixel Spacing</SeriesDescription>
+     	  </Series>
+     </Study>
+</Patient>

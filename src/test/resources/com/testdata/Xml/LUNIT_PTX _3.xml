@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patient>
+	<Name>LUNIT PTX 3</Name>
+	<ID>LUNIT PTX 3</ID>
+	<PatientClass>class</PatientClass>
+	<PatientSex>M</PatientSex>
+	<Study name="STUDY01">
+		<StudyDateTime>Mar 29, 2010 2:48:41 PM</StudyDateTime>
+		<Series id="STUDY01_SERIES01">
+			<SeriesDescription>1001</SeriesDescription>
+		</Series>
+	</Study>
+
+</Patient>
+

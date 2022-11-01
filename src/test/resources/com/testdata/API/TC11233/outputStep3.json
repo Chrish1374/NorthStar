@@ -1,0 +1,102 @@
+{
+  "volumes": [
+    {
+      "attributes": {
+        "name": "input_1",
+        "sort-type": "position",
+        "modality": "CT",
+        "rows": 512,
+        "columns": 512,
+        "slope": 1.0,
+        "intercept": -1024.0,
+        "pixel-spacing": [
+          0.0,
+          0.0
+        ],
+        "image-orientation-patient": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        "content-time": "111926",
+        "content-date": "19970502",
+        "acquisition-time": null,
+        "acquisition-date": null,
+        "kvp": 120.0,
+        "manufacturer": "SIEMENS"
+      },
+      "definition": [
+        {
+          "frame": 1,
+          "sop-instance-uid": "1.3.6.1.4.1.14519.5.2.1.7777.4006.432136986903544900852103988424",
+          "image-position-patient": [
+            -222.0458984375,
+            -428.0458984375,
+            -74.0
+          ]
+        },
+        {
+          "frame": 1,
+          "sop-instance-uid": "1.3.6.1.4.1.14519.5.2.1.7777.4006.275454645550735797504714284963",
+          "image-position-patient": [
+            -222.0458984375,
+            -428.0458984375,
+            -76.0
+          ]
+        }
+      ]
+    },
+    {
+      "attributes": {
+        "name": "input_2",
+        "sort-type": "position",
+        "modality": "CT",
+        "rows": 512,
+        "columns": 512,
+        "slope": 1.0,
+        "intercept": -1024.0,
+        "pixel-spacing": [
+          0.0,
+          0.0
+        ],
+        "image-orientation-patient": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        "content-time": "111926",
+        "content-date": "19970502",
+        "acquisition-time": null,
+        "acquisition-date": null,
+        "kvp": 120.0,
+        "manufacturer": "SIEMENS"
+      },
+      "definition": [
+        {
+          "frame": 1,
+          "sop-instance-uid": "1.3.6.1.4.1.14519.5.2.1.7777.4006.267816079980542284376467841400",
+          "image-position-patient": [
+            -222.0458984375,
+            -428.0458984375,
+            -82.0
+          ]
+        },
+        {
+          "frame": 1,
+          "sop-instance-uid": "1.3.6.1.4.1.14519.5.2.1.7777.4006.108613929166395411665978019329",
+          "image-position-patient": [
+            -222.0458984375,
+            -428.0458984375,
+            -88.0
+          ]
+        }
+      ]
+    }
+  ]
+}

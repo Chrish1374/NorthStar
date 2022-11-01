@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patient>
+	<Name>PHANTOM^CHEST</Name>
+	<Study name="STUDY01">
+
+		<Series id="STUDY01_SERIES01">
+			<SeriesDescription>1</SeriesDescription>
+		</Series>
+		<PR id="STUDY01_PR01">
+			<PRDescription>1</PRDescription>
+		</PR>
+	</Study>
+</Patient>

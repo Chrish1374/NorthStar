@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patient>
+	<Name>QureCXR1</Name>
+	<PatientID>QureCXR1</PatientID>
+<Study name="STUDY01">
+	<Findings1>Preliminary Findings by Automated Analysis: Tag                   |  Presence              |  Location            
+Abnormal              |  YES                   |  -                   
+Bluntedcp             |  YES                   |  RL                  
+Cardiomegaly          |  NO                    |  -                   
+Cavity                |  YES                   |  RU, RL              
+Consolidation         |  YES                   |  RU, RL              
+Hilarlymphadenopathy  |  NO                    |  -                   
+Nodule                |  YES                   |  LU, RU              
+Opacity               |  YES                   |  LU, RU, RL          
+Peffusion             |  YES                   |  RL                  
+Pneumothorax          |  NO                    |  -                   </Findings1>
+  </Study>
+</Patient>
+

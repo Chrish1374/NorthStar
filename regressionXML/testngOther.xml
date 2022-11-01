@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="NorthStar Selenium Automation Test Suite" verbose="1"> <!--parallel="classes" thread-count="2"> -->
+
+	<suite-files>
+		<suite-file path="./regressionXML/testngLayoutTest.xml" />
+		<suite-file path="./regressionXML/testngOP1.xml.xml" />
+		<suite-file path="./regressionXML/testngViewerBasic.xml" />
+		<suite-file path="./regressionXML/testngPMAPTests.xml" />
+		<suite-file path="./regressionXML/testngRTTests.xml" />
+		
+	</suite-files>
+</suite>
+
+

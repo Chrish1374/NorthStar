@@ -1,0 +1,63 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="NorthStar Selenium Automation Test Suite" verbose="1"><!-- 
+		parallel="classes" thread-count="2" -->
+
+
+	<listeners>
+		<!-- <listener class-name="com.generic.listeners.TestNGCustomReportListener" 
+			/> -->
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+
+	
+	<test name="Loading and Rendering Tests">
+		<groups>
+			<run>
+				<exclude name="multimonitor" />
+			</run>
+		</groups>
+		<packages>
+			<package name="com.trn.ns.test.viewer.loadingAndDataFormatSupport" />
+		</packages>
+	</test>
+	
+	
+	<test name="Viewer Basic Tests">
+		<groups>
+			<run>
+				<exclude name="multimonitor" />
+			</run>
+		</groups>
+		<packages>
+			<package name="com.trn.ns.test.viewer.basic" />
+		</packages>
+	</test>
+
+
+	<test name="Viewer layout Tests">
+		<groups>
+			<run>
+				<exclude name="multimonitor" />
+			</run>
+		</groups>
+		<packages>
+			<package name="com.trn.ns.test.viewer.layout" />
+		</packages>
+	</test>
+	
+	
+	<test name="Viewer overlays Tests">
+		<groups>
+			<run>
+				<exclude name="multimonitor" />
+			</run>
+		</groups>
+		<packages>
+			<package name="com.trn.ns.test.viewer.overlays" />
+		</packages>
+	</test>
+	
+
+</suite>

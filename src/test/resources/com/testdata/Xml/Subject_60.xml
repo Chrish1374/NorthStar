@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patient>
+	<Name>Subject_60</Name>
+	<ID>0</ID>
+	<PatientBirthDate>Jan 1, 1900</PatientBirthDate>
+	<PatientClass>class</PatientClass>
+	<PatientSex>F</PatientSex>
+	<PatientIssuerID>%60</PatientIssuerID>
+	<Study name="STUDY01">
+		<StudyDescription>Caput^Rutine</StudyDescription>
+		<StudyDateTime>Feb 15, 2007 12:37:23 PM</StudyDateTime>
+		<StudyUID>1.2.752.24.3.1200539205.1480003</StudyUID>
+	</Study>
+	
+	<Study name="STUDY02">
+		<StudyDescription>MR Caput</StudyDescription>
+		<StudyDateTime>Sep 3, 2007 12:52:08 PM</StudyDateTime>
+	</Study>
+</Patient>

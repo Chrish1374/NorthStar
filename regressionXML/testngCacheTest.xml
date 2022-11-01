@@ -1,0 +1,22 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Cache Test" verbose="1"> <!--parallel="classes" thread-count="2"> -->
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener
+			class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+
+	<test name="RPD Cache tests" preserve-order="true">
+		<classes>
+			<class name="com.trn.ns.test.viewer.caching.AutoModeRpdCaching" />
+		</classes>
+	</test>
+	
+	<test name="Lossy Cache tests" preserve-order="true">
+		<classes>
+			<class name="com.trn.ns.test.viewer.caching.LossyCaching" />
+		</classes>
+	</test>
+	
+</suite>

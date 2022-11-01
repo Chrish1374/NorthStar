@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patient>
+	<Name>AIChange_MS</Name>
+	<ID>AIChange_MS</ID>
+	<PatientClass>class</PatientClass>
+	<PatientSex>F</PatientSex>
+	<PatientIssuerID>frhprod</PatientIssuerID>
+	<Study name="STUDY01">
+		<StudyDescription>MRI Head (converted from AVW)</StudyDescription>
+		<StudyDateTime>Feb 4, 2004 2:22:00 PM</StudyDateTime>
+		<StudyUID>2.16.840.1.113669.632.21.486081.486212.16416582522216879.1424103
+		</StudyUID>
+		<Result id="STUDY01_RESULT01">
+			<ResultDescription>CD: FLAIR - SC-Overlay</ResultDescription>
+</Result>
+		<Result id="STUDY01_RESULT02">
+			<ResultDescription>CD: MTS - SC-Overlay</ResultDescription>
+			<ImageNumberCurrentSCrollPosition>24
+			</ImageNumberCurrentSCrollPosition>
+		</Result>
+
+		<Result id="STUDY01_RESULT03">
+			<ResultDescription>CD: PD - SC-Overlay</ResultDescription>
+			<ImageNumberCurrentSCrollPosition>24
+			</ImageNumberCurrentSCrollPosition>
+		</Result>
+
+		<Result id="STUDY01_RESULT04">
+			<ResultDescription>CD: T1-Post - SC-Overlay</ResultDescription>
+			<ImageNumberCurrentSCrollPosition>24
+			</ImageNumberCurrentSCrollPosition>
+		</Result>
+		<Result id="STUDY01_RESULT05">
+			<ResultDescription>CD: T1-Pre - SC-Overlay</ResultDescription>
+			<ImageNumberCurrentSCrollPosition>24
+			</ImageNumberCurrentSCrollPosition>
+		</Result>
+
+		<Result id="STUDY01_RESULT06">
+			<ResultDescription>CD: T2 - SC-Overlay</ResultDescription>
+			<ImageNumberCurrentSCrollPosition>24
+			</ImageNumberCurrentSCrollPosition>
+		</Result>
+	</Study>
+
+</Patient>

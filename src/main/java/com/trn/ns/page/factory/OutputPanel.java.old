@@ -1,0 +1,792 @@
+package com.trn.ns.page.factory;
+
+import java.awt.AWTException;
+import java.awt.Robot;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.Date;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.LinkedHashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.FindBys;
+import org.openqa.selenium.support.PageFactory;
+
+import com.trn.ns.page.constants.NSGenericConstants;
+import com.trn.ns.page.constants.ViewerPageConstants;
+import com.trn.ns.utilities.Utilities;
+
+
+public class OutputPanel extends ViewerSliderAndFindingMenu {
+
+	private WebDriver driver;
+
+	public OutputPanel(WebDriver driver) {
+		super(driver);
+		this.driver = driver;
+		PageFactory.initElements(driver, this);
+	}
+
+
+	@FindBy(css="div.outputpanel")
+	public WebElement outputPanelSection;
+	//outputPanel Component declarartion
+		public By byOutputPanel = By.className("outputpanel");
+		public By opActiveTab  = By.cssSelector("div[id^='mat-tab-label-'][id$='0']");
+		
+
+	@FindBy(css=".option:nth-child(1) svg rect")
+	private WebElement acceptedButton;
+
+	@FindBy(css=".option:nth-child(2) svg rect")
+	private WebElement rejectedButton;
+
+	@FindBy(css=".option:nth-child(3) svg rect")
+	private WebElement pendingButton;
+
+
+	@FindBy(css="div.dockedTabContainer div:nth-child(2)")
+	public WebElement outputPanelTab;
+
+	@FindBy(css="ns-icon#iconMinimizeToolWindows svg#icn-eureka-minimize")
+	public WebElement outputPanelMinimizeIcon;
+
+	@FindBy(css="#container > div.toolbar > div.optionIcons > ns-icon:nth-child(1) > div > svg")
+	public WebElement filterFindingsIcon;
+	
+	@FindBy(css="#container > div.toolbar > div.optionIcons > ns-icon:nth-child(2) > div > svg")
+	public WebElement syncAllFindingsIcon;
+	
+	@FindBy(id="outputPanelDiv")
+	public WebElement outputpanelDiv;
+
+	@FindBys({@FindBy(xpath="//*[contains(@id,'finding-')]")})
+	public List<WebElement> findingsList;
+
+	@FindBys({@FindBy(css="div#thumb-nail")})
+	public List<WebElement> thumbnailList;
+
+	@FindBy(css="div#outputPanel")
+	public WebElement entireOutputPanel;
+
+	@FindBys({@FindBy(css="#thumb-nail > div.viewbox-lite-annotation > ns-textoverlay > svg > g > g > text:nth-child(4)")})
+	public List<WebElement> thumbailMeasurementTextList;
+
+	@FindBy(css="[id*='finding'] div.message")     
+	public WebElement warningMessage;
+
+	@FindBy(css="div.alert-close")     
+	public WebElement closeIcon;
+
+	@FindBy(css=".viewbox-lite-jump-icon svg#JumpTo")
+	public List <WebElement> jumpToFindingIcon;
+
+	@FindBy(css="div.icon-thumbnail-container")
+	public WebElement srThumbnail;
+
+	public By spinningWheel = By.cssSelector("#thumb-nail > div.loader-position.ng-star-inserted > ns-spinner > div");
+
+	@FindBy(id="findingSummary")
+	public WebElement findingSummary;
+
+	@FindBy(css="#findingSummary .findingsummary-seriesDescription")
+	public WebElement findingSummarySeriesDesc;
+
+	@FindBy(css="#findingSummary .findingsummary-count")
+	public WebElement findingSummaryCount;
+
+	@FindBy(css="#container > perfect-scrollbar > div > div.ps__rail-y > div")
+	public WebElement verticalScrollBarInOP;
+
+	@FindBy(css="#container > div > div.loader > ns-spinner > div")
+	public WebElement spinnerLoader;
+
+	@FindBys({@FindBy(css="div.state-indicator")})
+	public List<WebElement> findingStateIndicator;
+	
+	@FindBys({@FindBy(id="editabletext")})
+	public List<WebElement> commentsForFindings;
+
+	@FindBy(id="editabletext")
+	public WebElement commentbox;
+
+	@FindBy(css="div.selectAll ns-icon rect.unchecked-outline")
+	public WebElement deSelectedAllIcon;
+
+	@FindBy(css="div.selectAll ns-icon rect.checked-background")
+	public WebElement selectAllIcon;
+	
+	@FindBy(css=".optionIcons div div:nth-child(1)")
+	public WebElement filterCommentIcon;
+
+	@FindBy(css=".selectAllOff:nth-of-type(1) .highLight")
+	public WebElement deselectedFilterCommentIcon;
+
+	@FindBy(css=".selectAllOn:nth-of-type(1) .highLight")
+	public WebElement selectedFilterCommentIcon;
+
+	@FindBy(css="div.container-fluid.padleft-zero > div.row.content.pad-right-ten > div > div:nth-child(2) >div:nth-child(2) div")
+	public WebElement sliceLevelComment;
+
+	@FindBys({@FindBy(css="div ns-finding-level-comment div.padding")})
+	public List<WebElement> sliceLabel;
+
+	@FindBy(css=".optionIcons div div.defaultIcon")
+	public WebElement filteringCommentIcon;
+
+	@FindBys({@FindBy(css="g[ns-text] > text:nth-child(2)")})
+	public List<WebElement> scResultComment;
+
+	@FindBys({@FindBy(css="div.ellipses.list-style")})
+	public List<WebElement> textAnnotationTextList;
+	
+	@FindBys({@FindBy(xpath="//*[contains(text(),'"+ViewerPageConstants.OUTPUT_PANEL_COMMENT_TEXT+"')]")})
+	public List<WebElement> textAnnotationCommentList;
+	
+	public boolean openAndCloseOutputPanel(boolean openOrClose) throws InterruptedException{
+
+		boolean flag = false;
+		if(openOrClose){ //opening the panel if parameter is passed as true
+
+			if(!isElementPresent(By.cssSelector("div#container div.ps-content"))) {
+				clickUsingAction(outputPanelTab);
+				waitForElementVisibility(outputPanelSection);
+			}
+			flag = false;
+			LOGGER.info(Utilities.getCurrentThreadId() + "viewer output panel opened");
+		}
+		else{
+			LOGGER.info(Utilities.getCurrentThreadId() + "Checking for viewer output panel open");
+			if(isElementPresent(outputPanelSection)){
+				clickUsingAction(outputPanelMinimizeIcon);
+				LOGGER.info(Utilities.getCurrentThreadId() + "viewer output panel close");
+				flag = true;
+			}
+		}
+		return flag;
+
+	}
+
+	public void waitForOutputPanelToLoad() throws InterruptedException {
+
+		waitForElementVisibility(acceptedButton);
+		waitForElementVisibility(rejectedButton);
+		waitForElementVisibility(pendingButton);
+
+	}
+
+		public boolean playCineOnThumbnail(int findingNumber) throws InterruptedException
+	{
+
+		Actions action = new Actions(driver);
+		action.moveToElement(thumbnailList.get(findingNumber-1),35, 35).build().perform();	
+		LOGGER.info(Utilities.getCurrentThreadId() + "playing cine on Thumbnail "+findingNumber+" successfully.");
+		return getElements(By.cssSelector("div.viewbox-lite-jump-icon ns-icon")).get(findingNumber-1).getAttribute("style").contains("fill-opacity:0.0");
+
+	}
+
+	public  WebElement getLineOfTextAnnotationsInOutPutPanel(int whichThumbnail){
+
+		WebElement elements = driver.findElement(By.cssSelector("#finding-"+(whichThumbnail-1)+" line[stroke-dasharray]"));
+		return elements;
+
+	}
+
+	public void clickOnJumpIcon(int findingNumber) throws InterruptedException
+	{
+		scrollIntoView(thumbnailList.get(findingNumber-1));
+		clickUsingAction(thumbnailList.get(findingNumber-1));
+		waitForTimePeriod(4000);
+		LOGGER.info(Utilities.getCurrentThreadId() + "Clicked on Jump Icon "+findingNumber+" successfully.");
+
+	}
+
+	public void mouseHoverOnThumbnail(int findingNumber) throws InterruptedException
+	{
+		mouseHover(VISIBILITY,thumbnailList.get(findingNumber-1));
+		waitForTimePeriod(3000);
+		LOGGER.info(Utilities.getCurrentThreadId() + "Mouse hover on Thumbnail "+findingNumber+" successfully.");
+
+	}
+
+	public void mouseHoverOnJumpIcon(int findingNumber) throws InterruptedException
+	{
+		Actions action = new Actions(driver);
+		action.moveToElement(thumbnailList.get(findingNumber-1)).moveByOffset(30, 30).build().perform();		
+		action.moveByOffset(-30, -30).perform();
+
+		//WebElement element = getElement(By.cssSelector(".viewbox-lite-jump-icon image#svg_1"));
+		//action.moveToElement(element).build().perform();	
+
+		LOGGER.info(Utilities.getCurrentThreadId() + "Mouse hover on Thumbnail "+findingNumber+" successfully.");
+
+	}
+
+	public void waitForAcceptedButtonIsEnabled() {
+
+		waitForElementVisibility(driver.findElement(By.xpath("//div[text()='"+ViewerPageConstants.ACCEPTED_TEXT+"']")));
+	}
+
+	public void waitForPendingButtonIsEnabled() {
+
+		waitForElementVisibility(driver.findElement(By.xpath("//div[text()='"+ViewerPageConstants.PENDING_TEXT+"']")));
+	}
+
+	public void waitForRejectedButtonIsEnabled() {
+
+		waitForElementVisibility(driver.findElement(By.xpath("//div[text()='"+ViewerPageConstants.REJECTED_TEXT+"']")));
+	}
+
+	public void enableFiltersInOutputPanel(boolean acceptOption, boolean rejectOption,boolean pendingOption) throws InterruptedException {
+
+		   openAndCloseOutputPanel(true);
+	        click(filterFindingsIcon);
+	        waitForElementVisibility(By.cssSelector("ns-findings-filter .container"));
+	        
+		if(rejectOption) {
+			if(!rejectedButton.getAttribute(NSGenericConstants.CLASS_ATTR).equalsIgnoreCase(NSGenericConstants.CHECKED_BACKGROUND))
+				clickUsingAction(rejectedButton);
+
+		}else
+			if(rejectedButton.getAttribute(NSGenericConstants.CLASS_ATTR).equalsIgnoreCase(NSGenericConstants.CHECKED_BACKGROUND))
+				clickUsingAction(rejectedButton);
+
+		if(pendingOption) {
+			if(!pendingButton.getAttribute(NSGenericConstants.CLASS_ATTR).equalsIgnoreCase(NSGenericConstants.CHECKED_BACKGROUND))
+				clickUsingAction(pendingButton);
+
+		}else
+			if(pendingButton.getAttribute(NSGenericConstants.CLASS_ATTR).equalsIgnoreCase(NSGenericConstants.CHECKED_BACKGROUND))
+				clickUsingAction(pendingButton);
+
+		if(acceptOption) {
+			if(!acceptedButton.getAttribute(NSGenericConstants.CLASS_ATTR).equalsIgnoreCase(NSGenericConstants.CHECKED_BACKGROUND))
+				click(acceptedButton);
+		}
+		else {
+
+			if(acceptedButton.getAttribute(NSGenericConstants.CLASS_ATTR).equalsIgnoreCase(NSGenericConstants.CHECKED_BACKGROUND))
+				click(acceptedButton);
+
+		}
+		click(getElement(By.id("studySummary")));
+		waitForElementVisibility(syncAllFindingsIcon);
+		waitForElementInVisibility(spinningWheel);
+
+	}
+
+	public List<List<String>> getMultiLineTextEntriesInOP(){		
+
+		List<List<String>> lst1 = new ArrayList<List<String>>();
+		List<String> lst2 = new ArrayList<String>();
+		for(WebElement item : textAnnotationTextList) {
+
+			item.findElements(By.xpath("div/div")).stream().map(WebElement::getText).forEach(lst2::add);			
+			lst1.add(lst2);
+		}
+		return lst1;
+
+	}
+
+	public List<List<String>> getMultiLineCommenEntriesInOP(){		
+
+		List<List<String>> lst1 = new ArrayList<List<String>>();
+		List<String> lst2 = new ArrayList<String>();
+
+		//		List<WebElement> allTheTextAnn = driver.findElements(By.cssSelector("div.ellipses.list-style:last-child"));
+		for(WebElement item : textAnnotationCommentList) {
+
+			item.findElements(By.xpath("span")).stream().map(WebElement::getText).forEach(lst2::add);			
+			lst1.add(lst2);
+		}
+		return lst1;
+
+	}
+
+	public List<String> getMultiLineCommenEntriesInOP(int findingNumber){		
+
+		List<String> lst2 = new ArrayList<String>();
+
+		List<WebElement> elements = getElements(By.cssSelector("#editabletext")).get(findingNumber-1).findElements(By.cssSelector("span:nth-child(2)"));
+
+		for(int i =0 ;i<elements.size();i++) {
+
+			scrollIntoView(elements.get(i));
+			lst2.add(getText(elements.get(i)));	
+		}
+		return lst2;
+
+	}
+	
+
+	public  WebElement getCommentsForFindings(int whichThumbnail){
+
+		WebElement elements = driver.findElement(By.cssSelector("#finding-"+(whichThumbnail-1)+" editabletext"));
+		return elements;
+
+	}
+
+	public boolean verifyOutputPanelIsOpened() {
+
+		return isElementPresent(By.cssSelector("div#container")) && isElementPresent(opActiveTab) ;
+	}
+
+	public WebElement getThumbnailImage(int whichFinding){
+
+		return driver.findElement(By.id("thumbnailImage-"+(whichFinding-1)));
+	}
+
+	public void clickOnThumbnail(int findingNumber) throws InterruptedException
+	{
+
+		scrollIntoView(thumbnailList.get(findingNumber-1));
+		Actions action = new Actions(driver);
+		action.moveToElement(thumbnailList.get(findingNumber-1)).moveByOffset(30, 30).build().perform();	
+		action.moveByOffset(-30, -30).click().build().perform();
+		LOGGER.info(Utilities.getCurrentThreadId() + "Clicked on Thumbnail "+findingNumber+" successfully.");
+
+	}
+
+	public void clickOnThumbnailNotAtCenter(int findingNumber) 
+	{
+
+		Actions action = new Actions(driver);
+		action.moveToElement(thumbnailList.get(findingNumber-1)).moveByOffset(30, 30).click().build().perform();
+		LOGGER.info(Utilities.getCurrentThreadId() + "Clicked on Thumbnail "+findingNumber+" successfully.");
+
+	}
+
+	public void clickOnNonDICOMThumbnail(int findingNumber) throws InterruptedException
+	{
+
+
+		Actions action = new Actions(driver);
+
+		try {
+
+			WebElement ele = thumbnailList.get(findingNumber-1).findElement(By.cssSelector(".nonDicom-container > img"));
+			action.moveToElement(ele).moveByOffset(1, 1).build().perform();
+
+		}
+		catch(Exception e){
+			WebElement ele = thumbnailList.get(findingNumber-1).findElement(By.cssSelector("#pdf-viewer"));
+			action.moveToElement(ele).moveByOffset(1, 1).build().perform();
+
+			try {
+				Robot r = new Robot();
+				for(int i=5;i<100;i++) {
+					r.mouseMove(ele.getLocation().getX()+140, ele.getLocation().getY()+100+i);
+					if(isElementPresent(By.cssSelector("#Arrow")))
+						break;
+				}
+			}catch(AWTException ex) {}
+		}
+
+
+		WebElement element = getElement(By.cssSelector("#Arrow"));
+		action.click(element).perform();	
+
+		LOGGER.info(Utilities.getCurrentThreadId() + "Clicked on Thumbnail "+findingNumber+" successfully.");
+
+	}
+
+	public boolean verifyAnnotationsPresenceInThumbnail(int whichThumbnail) throws InterruptedException {
+
+		playCineOnThumbnail(whichThumbnail);
+		boolean status = true;
+		List<WebElement> annotations = new ArrayList<WebElement>();
+		for(int a=0;a<20;a++) {
+			annotations = driver.findElement(By.xpath("//*[@id='thumbnailCanvas-"+(whichThumbnail-1)+"']/../div[contains(@class,'viewbox-lite-annotation')]")).findElements(By.cssSelector("g[ns-measurements] g"));
+			if(annotations.size()==0) {			
+				status = false;
+				break;
+			}
+
+		}
+
+		return status;
+
+
+	}
+
+	
+	public String getMeasurementTextFromThumnail(int whichThumbnail) throws InterruptedException {
+
+		String text = new String();
+		WebElement thumbnail = thumbailMeasurementTextList.get(whichThumbnail-1);
+		text=thumbnail.getText();
+		return text;
+
+
+	}
+
+	public void stopCineOnThumbnail(int whichThumbnail) throws InterruptedException {
+
+		mouseHover(thumbnailList.get(whichThumbnail-1));	
+	}
+
+
+	
+	
+
+
+	public void checkSelectAllOption() {
+		
+		List<WebElement> selectAllIcons = getElements(By.cssSelector("div.selectAll ns-icon svg"));
+		for(WebElement icon : selectAllIcons) {
+			if(getAttributeValue(icon.findElement(By.cssSelector("rect")),NSGenericConstants.CLASS_ATTR).equalsIgnoreCase(ViewerPageConstants.SELECT_ALL_ICON_DESELECTED)) {
+					click(icon);
+					break;
+			}
+		}
+	}
+	
+
+	public WebElement getThumbnailCheckbox(int whichThumbnail) {
+
+		return driver.findElement(By.cssSelector("#finding-"+(whichThumbnail-1)+"> div.checkbox > label > span > ns-icon > div > svg rect"));
+	}
+
+	public String getCommentsFromThumbnailinExpandMode(int whichThumbnail) {
+
+		WebElement commentBox = getElement(By.cssSelector("#finding-"+(whichThumbnail-1)+" #editabletext"));
+		return getText(commentBox);
+
+	}
+
+	public String getSliceLabelCommentForSC(int whichThumbnail) {
+
+		WebElement commentBox = getElement(By.cssSelector("#finding-"+(whichThumbnail-1)+" ns-finding-level-comment div.row>div:nth-child(1)"));
+		return getText(commentBox);
+	}
+
+	public String deleteSliceLabelCommentForSC(int whichThumbnail, int whichSlice, boolean pressEnter) {
+
+		WebElement commentBox = getElements(By.cssSelector("#finding-"+(whichThumbnail-1)+" #editabletext")).get(whichSlice-1);
+		commentBox.click();
+		commentBox.clear();
+		if(pressEnter)
+			pressKeys(Keys.ENTER);
+		return getText(commentBox);
+	}
+
+	public void editSliceLabelCommentForSC(int whichThumbnail, int whichSlice, boolean pressEnter,String... comment) throws InterruptedException {
+
+		WebElement commentBox = getElements(By.cssSelector("#finding-"+(whichThumbnail-1)+" #editabletext")).get(whichSlice-1);
+
+		Actions action = new Actions(driver);
+		action.click(commentBox).sendKeys(Keys.END).build().perform();
+
+		for(int i=0;i<comment.length;i++) {
+			waitForTimePeriod(100);
+			action.keyDown(Keys.SHIFT).sendKeys(Keys.ENTER).keyUp(Keys.SHIFT).build().perform();
+			waitForTimePeriod(1000);
+			commentBox.sendKeys(comment[i]);
+		}
+
+		if(pressEnter)
+			pressKeys(Keys.ENTER);
+
+	}
+
+
+
+	public Map<String,String> getAllSliceLabelsAndComments(int whichThumbnail) {
+
+		List<WebElement> labels = getElements(By.cssSelector("#finding-"+(whichThumbnail-1)+" ns-finding-level-comment div.row>div:nth-child(1)"));
+		List<WebElement> comments = getElements(By.cssSelector("#finding-"+(whichThumbnail-1)+" ns-finding-level-comment div.row>div:nth-child(2)"));
+
+		Map<String,String> sliceLabelAndComments = new LinkedHashMap<String,String>();
+
+		for(int i =0 ;i<labels.size();i++)
+			sliceLabelAndComments.put(getText(labels.get(i)),getText(comments.get(i)));
+
+		return sliceLabelAndComments;
+	}
+
+	public void editSliceCommentForSC(int whichThumbnail, String whichSlice, boolean pressEnter,String... comment) throws InterruptedException {
+
+		WebElement commentBox = getElement(By.xpath("//*[@id='finding-"+(whichThumbnail-1)+"']/..//*[text()='"+whichSlice+"']/..//*[@id='editabletext']"));
+
+		Actions action = new Actions(driver);
+		action.click(commentBox).sendKeys(Keys.END).build().perform();
+
+		for(int i=0;i<comment.length;i++) {
+			waitForTimePeriod(100);
+			commentBox.sendKeys(comment[i]);
+			action.click(commentBox).sendKeys(Keys.END).build().perform();
+		}
+
+		if(pressEnter)
+			pressKeys(Keys.ENTER);
+		waitForTimePeriod(100);
+
+	}
+
+	public String deleteSliceLabelCommentForSC(int whichThumbnail, String whichSlice, boolean pressEnter) {
+
+		WebElement commentBox = getElement(By.xpath("//*[@id='finding-"+(whichThumbnail-1)+"']/..//*[text()='"+whichSlice+"']/..//*[@id='editabletext']"));
+		commentBox.click();
+		commentBox.clear();
+		if(pressEnter)
+			pressKeys(Keys.ENTER);
+		return getText(commentBox);
+	}
+
+
+	public List<String> getMultilineCommentsFromThumbnailinExpandMode(int whichThumbnail) {
+
+		List<WebElement> commentBox = getElements(By.cssSelector("#finding-"+(whichThumbnail-1)+" ns-editabletext"));
+		return convertWebElementToStringList(commentBox);
+
+	}
+
+	public boolean verifyLineBreakTagPresence(int whichThumbnail) {
+
+		return isElementPresent(By.cssSelector("#finding-"+(whichThumbnail-1)+" #editabletext br"));
+
+
+	}
+
+	public List<String> getCommentsFromThumbnailinCollapseMode(int whichThumbnail) {
+		List<WebElement> commentBox = getElements(By.cssSelector("#finding-"+(whichThumbnail-1)+" #header div.pad-btm div.ellipses"));
+
+
+		return convertWebElementToStringList(commentBox);
+
+	}
+	public List<WebElement> getMultilineCommentsFromThumbnailinCollapseMode(int whichThumbnail) {
+		List<WebElement> commentBox = getElements(By.cssSelector("#finding-"+(whichThumbnail-1)+" #header div.pad-btm div.ellipses br"));
+
+
+		return commentBox;
+
+	}
+
+	public boolean verifyCommentsHaveNolineBreakInCollapseMode(int whichThumbnail) {
+
+		return getElements(By.cssSelector("#finding-"+(whichThumbnail-1)+" #header div.pad-btm div.ellipses br")).size() ==0;
+
+	}
+
+	public boolean addCommentFromOutputPanel(int whichThumbnail,String comment) {
+
+		WebElement commentBox = getElement(By.cssSelector("#finding-"+(whichThumbnail-1)+" #editabletext"));
+		click(commentBox);
+		boolean noLabelPresence = isElementPresent(By.cssSelector("#finding-"+(whichThumbnail-1)+" #editabletext #label"));
+		String noTextPresent = getText(commentBox);        
+		boolean border = getCssValue(commentBox, "border").equalsIgnoreCase(ViewerPageConstants.OUTPUT_PANEL_COMMENTBOX_BLUE_BORDER);
+		commentBox.sendKeys(comment);
+		pressKeys(Keys.ENTER);
+		return noLabelPresence && noTextPresent.isEmpty() && border;
+	}
+
+	public boolean addCommentFromOutputPanel(int whichThumbnail, String... comment) throws InterruptedException 
+	{
+
+		WebElement commentBox = getElement(By.cssSelector("#finding-"+(whichThumbnail-1)+" #editabletext"));
+		click(commentBox);
+		boolean noLabelPresence = isElementPresent(By.cssSelector("#finding-"+(whichThumbnail-1)+" #editabletext #label"));
+		String noTextPresent = getText(commentBox);    
+		boolean border = getCssValue(commentBox, "border").equalsIgnoreCase(ViewerPageConstants.OUTPUT_PANEL_COMMENTBOX_BLUE_BORDER);
+		commentBox.sendKeys(comment[0]);
+		for(int i=1; i<comment.length;i++) {            
+			String keysPressed = Keys.chord(Keys.LEFT_SHIFT, Keys.ENTER);
+			commentBox.sendKeys(keysPressed);
+			enterText(comment[i]);
+		}
+		pressKeys(Keys.ENTER);
+		return noLabelPresence && noTextPresent.isEmpty() && border;
+	}
+
+	public void deleteCommentFromOutputPanel(int whichThumbnail, boolean pressEnter) throws InterruptedException {
+
+		WebElement commentBox = getElement(By.cssSelector("#finding-"+(whichThumbnail-1)+" #editabletext"));
+		click(commentBox);
+		commentBox.clear();
+		commentBox.click();
+		if(pressEnter)
+			pressKeys(Keys.ENTER);
+
+		waitForTimePeriod(2000);
+	}
+
+	public void editCommentFromOutputPanel(int whichThumbnail,int position, String comment, boolean pressEnter) {
+
+		WebElement commentBox = driver.findElement(By.cssSelector("#finding-"+(whichThumbnail-1)+" #editabletext"));
+		Actions action = new Actions(driver);
+		action.click(commentBox).sendKeys(Keys.HOME).build().perform();
+
+		for(int i=0;i<position;i++) {
+			action.sendKeys(Keys.ARROW_RIGHT).perform();
+
+		}
+		action.sendKeys(comment).perform();
+
+		if(pressEnter)
+			pressKeys(Keys.ENTER);
+	}
+
+	public boolean editCommentFromOutputPanel(int whichThumbnail,boolean pressEnter, String... comment) throws InterruptedException {
+
+		WebElement commentBox = getElement(By.cssSelector("#finding-"+(whichThumbnail-1)+" #editabletext"));
+
+		Actions action = new Actions(driver);
+		action.click(commentBox).sendKeys(Keys.END).build().perform();
+
+		for(int i=0;i<comment.length;i++) {
+			waitForTimePeriod(100);
+			action.keyDown(Keys.SHIFT).sendKeys(Keys.ENTER).keyUp(Keys.SHIFT).build().perform();
+			waitForTimePeriod(1000);
+			commentBox.sendKeys(comment[i]);
+		}
+
+		WebElement verticalScrollbar = getElement(By.cssSelector("#finding-"+(whichThumbnail-1)+" .ps__rail-y .ps__thumb-y"));
+
+		int value = Integer.parseInt(verticalScrollbar.getCssValue("width").replace("px", ""));
+
+
+		if(pressEnter)
+			pressKeys(Keys.ENTER);
+
+		return value > 0;
+	}
+
+	public void addCommentFromOutputPanelForSC(int whichThumbnail,int editbox ,String comment) {
+
+		List<WebElement>commentBox = driver.findElements(By.cssSelector("#finding-"+(whichThumbnail-1)+" #editabletext"));
+		click(commentBox.get(editbox));		
+		commentBox.get(editbox).sendKeys(comment);
+		pressKeys(Keys.ENTER);
+	}
+
+	public boolean verifyThumbnailInOutputPanel(int thumbnailCount) throws InterruptedException {
+
+		boolean status = false;
+
+		try{
+
+			if(Integer.parseInt(getThumbnailImage(thumbnailCount).getAttribute(NSGenericConstants.HEIGHT)) > 0 && Integer.parseInt(getThumbnailImage(thumbnailCount).getAttribute(NSGenericConstants.WIDTH))>0 )
+				status = true;
+			else
+				status= Integer.parseInt(driver.findElement(By.cssSelector("#finding-"+(thumbnailCount-1)+" .nonDicom-container > img")).getAttribute(NSGenericConstants.HEIGHT))>0 ;
+		}
+		catch (Exception e) 
+		{
+			WebElement pdf=driver.findElement(By.cssSelector("#pdf-viewer div.page"));
+			status=Integer.parseInt(pdf.getCssValue(NSGenericConstants.WIDTH).replace("px", "")) > 0 && Integer.parseInt(pdf.getCssValue(NSGenericConstants.HEIGHT).replace("px", ""))>0 ;
+
+		}
+		return status;
+	}
+
+	public void editCommentFromOutputPanelFoSC(int whichThumbnail,int position,int editbox,boolean pressEnter,String  comment) throws InterruptedException {
+
+		List<WebElement>commentBox = driver.findElements(By.cssSelector("#finding-"+(whichThumbnail-1)+" #editabletext"));
+
+		Actions action = new Actions(driver);
+		action.click(commentBox.get(editbox)).sendKeys(Keys.HOME).build().perform();
+
+		for(int i=0;i<position;i++) {
+			action.sendKeys(Keys.ARROW_RIGHT).perform();
+
+		}
+		action.sendKeys(comment).perform();
+
+		if(pressEnter)
+			pressKeys(Keys.ENTER);
+
+	}
+
+	public WebElement getThumbnailMeasurement(int thumbnail){
+
+		return driver.findElement(By.cssSelector("#finding-"+thumbnail+" div.viewbox-lite-annotation > ns-textoverlay > svg > g"));
+	}
+
+	public boolean verifyPolyLineIsPresentInThumbnail(int whichThumbnail) {
+
+		boolean status = true;
+		List<WebElement> annotations = driver.findElement(By.xpath("//*[@id='thumbnailCanvas-"+(whichThumbnail-1)+"']/../div[contains(@class,'viewbox-lite-annotation')]")).findElements(By.cssSelector("g[ns-measurements] g[ns-polyline]"));
+		if(annotations.size()==0) {			
+			status = false;				
+		}
+
+
+
+		return status;
+
+	}
+
+	
+
+//	public int getThumbnailForGivenResult(String seriesResultName) throws InterruptedException
+//	{
+//		int value=0;
+//		for (int i=0;i<=thumbnailList.size();i++)
+//		{	scrollIntoView(findingsNameTitleList.get(i));
+//		if(getText(findingsNameTitleList.get(i)).contains(seriesResultName)==true) {
+//			value=i;
+//			break;
+//
+//		}
+//		}
+//		return value;
+//
+//	}
+
+
+	public int getCountOfLinesInPolylineInThumbnail(int whichThumbnail) {
+
+		WebElement polyline = driver.findElement(By.xpath("//*[@id='thumbnailCanvas-"+(whichThumbnail-1)+"']/../div[contains(@class,'viewbox-lite-annotation')]")).findElement(By.cssSelector("g[ns-measurements] g[ns-polyline] path"));
+		String coordinates = getAttributeValue(polyline, ViewerPageConstants.ATTRIBUTE_D);		
+		return coordinates.split(",").length-1;		
+	}
+
+	public boolean verifySliceLabelAndCommentForSC(int whichThumbnail,String sliceLable,String comment)
+	{
+		boolean status=false;
+		Set set = getAllSliceLabelsAndComments(whichThumbnail).entrySet();
+
+		// Get an iterator
+		Iterator i = set.iterator();
+		while(i.hasNext()) 
+		{
+			Map.Entry sliceLabelAndComment = (Map.Entry)i.next();
+
+			status=(sliceLabelAndComment.getKey().toString()).equalsIgnoreCase(sliceLable);
+			status=status && (sliceLabelAndComment.getValue().toString()).equalsIgnoreCase(comment);
+
+		}
+		return status;
+
+
+	}
+
+	public String getThumbnailWarningMsg(int whichThumbnail) {
+
+		WebElement element = getElement(By.cssSelector("#finding-"+(whichThumbnail-1)+ " div.message"));
+		scrollIntoView(element);
+		return getText(element);
+
+	}
+
+	public String convertDateFormat(Date date,String format)
+	{
+		DateFormat targetFormat = new SimpleDateFormat(format);
+		String formattedDate=targetFormat.format(date);
+
+		return formattedDate;
+	}
+}
+

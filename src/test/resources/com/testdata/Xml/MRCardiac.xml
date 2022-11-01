@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patient>
+	<Name>MR Cardiac</Name>
+	<ID>irv6</ID>
+	<PatientClass>class</PatientClass>
+	<PatientSex>M</PatientSex>
+	<Study name="STUDY01">
+		<StudyDescription>MRI Cardiac w/Cont w/Flow Quant-Ross</StudyDescription>
+				
+	</Study>
+
+</Patient>
+

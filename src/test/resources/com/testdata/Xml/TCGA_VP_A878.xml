@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patient>
+	<Name>TCGA-VP-A878</Name>
+	<ID>TCGA-VP-A878</ID>
+	<PatientClass>class</PatientClass>
+	<Machine>tcga</Machine>
+	<Study name="STUDY01">
+		<StudyDescription>Abdomen^05_CAP (Adult)</StudyDescription>
+		<Series id="STUDY01_SERIES01">
+			<SeriesDescription>Chest/Abd/Pel soft tissue 3.0 B20f</SeriesDescription>
+		</Series>
+		<Result id="STUDY01_RESULT01">
+		<ResultDescription>Microsoft Corp. Radiomics AIC RT Structure Set</ResultDescription>
+		</Result>
+	</Study>
+	<Contour id="option_1">
+		<description>External</description>
+		<color>rgba(193, 211, 87, 1)</color>
+	</Contour>
+	
+	<Contour id="option_2">
+		<description>Aorta</description>
+		<color>rgba(238, 17, 17, 1)</color>
+	</Contour>
+	
+	<Contour id="option_3">
+		<description>Kidney_L</description>
+		<color>rgba(184, 237, 255, 1)</color>
+	</Contour>
+	
+	<Contour id="option_4">
+		<description>Kidney_R</description>
+		<color>rgba(184, 237, 255, 1)</color>
+	</Contour>
+	
+	<Contour id="option_5">
+		<description>Femur_L</description>
+		<color>rgba(45, 137, 239, 1)</color>
+	</Contour>
+	
+	<Contour id="option_6">
+		<description>Bladder</description>
+		<color>rgba(255, 255, 0, 1)</color>
+	</Contour>
+	
+	<Contour id="option_7">
+		<description>Rectum</description>
+		<color>rgba(167, 246, 202, 1)</color>
+	</Contour>
+	
+	<Contour id="option_8">
+		<description>Femur_R</description>
+		<color>rgba(43, 87, 151, 1)</color>
+	</Contour>
+	
+	<Contour id="option_9">
+		<description>Prostate</description>
+		<color>rgba(155, 0, 255, 1)</color>
+	</Contour>	
+	
+	
+	
+</Patient>
+

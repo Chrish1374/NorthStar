@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patient>
+	<Name>Mammo_irv5</Name>
+	<Study name="STUDY01">
+		<StudyDescription>MAM US BREAST UNILAT, RT</StudyDescription>
+		<StudyDateTime>Dec 10, 2010 3:53:41 PM</StudyDateTime> 
+		<Series id="STUDY01_SERIES01">
+			<SeriesDescription>MAM US BREAST UNILAT, RT</SeriesDescription>
+		</Series>
+		<Series id="STUDY01_SERIES02">
+			<SeriesDescription>Imported WIA Results</SeriesDescription>
+		</Series>
+	</Study>
+
+</Patient>
+
+

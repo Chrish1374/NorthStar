@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patient>
+	<Name>CT-PET multiphase</Name>
+	<Study name="STUDY01">
+		<StudyDescription>PET^PETCT_Cardiac_LM_HUG (Adult)</StudyDescription>
+		<StudyDateTime>Apr 19, 2007 2:41:45 PM</StudyDateTime>
+		<Series id="STUDY01_SERIES01">
+			<SeriesDescription>CorCTA2 3.0 B20f 10 phases</SeriesDescription>
+		</Series>
+		<Series id="STUDY01_SERIES02">
+			<SeriesDescription>PET 10 phases iter 6-8 AC_CT#1 Volume (Corrected)</SeriesDescription>
+		</Series>
+		
+		
+	</Study>
+</Patient>

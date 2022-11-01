@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patient>
+	<Name>AH.4_US675</Name>
+	<ID>AH.4_US675</ID>
+	<IssuerofPatientID1>frhprod</IssuerofPatientID1>
+	<IssuerofPatientID2>sqatest</IssuerofPatientID2>
+	<Study name="STUDY01">
+		<StudyDescription>CT_BRAIN_WO</StudyDescription>
+		<StudyDateTime>Feb 12, 2015 12:32:07 AM</StudyDateTime>
+	</Study>
+		<Study name="STUDY02">
+		<StudyDescription>CT_BRAIN_WO</StudyDescription>
+		<StudyDateTime>Jul 18, 2013 9:42:20 PM</StudyDateTime>
+	</Study>
+</Patient>

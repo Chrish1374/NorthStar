@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patient>
+	<Name>CerebralAngioWithResults1</Name>
+	<Study name="STUDY01">
+		<StudyDescription></StudyDescription>
+		<StudyDateTime>Feb 27, 1996 8:46:00 AM</StudyDateTime>
+		<Series id="STUDY01_SERIES01">
+			<SeriesDescription>Imported WIA Results</SeriesDescription>
+		</Series>
+		<Series id="STUDY01_SERIES02">
+			<SeriesDescription>105</SeriesDescription>
+		</Series>
+	</Study>
+
+</Patient>
+
+

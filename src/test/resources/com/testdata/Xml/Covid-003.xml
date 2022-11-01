@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patient>
+	<Name>Covid-003</Name>
+	<ID>GVM811048</ID>
+	<PatientSex>M</PatientSex>
+	<Study name="STUDY01">
+		<Accession>3304932</Accession>
+		<StudyDateTime>Jun 19, 2007 8:58:37 PM</StudyDateTime>
+		<Series id="STUDY01_SERIES01">
+			<SeriesDescription>Torace med. 2.0  I30f  3</SeriesDescription>
+		</Series>
+		   <Result id="STUDY01_RESULT01">
+			<ResultDescription>Colorful Overlay Pmap</ResultDescription>
+			</Result>
+	</Study>
+
+</Patient>
+

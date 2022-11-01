@@ -1,0 +1,46 @@
+{
+  "batch-id": {
+    "id": "7957aae7-0171-4dd2-8950-52a8b1f74fbf",
+    "url": "http://liaison-w3:4566/results/machine/prod%2Friverain-technologies%2Fclearreadctdetect%3A10000226017907162020?study-instance-uid=2.25.50594030447405667242728448975439755033400595820170498034548&batch-id=7957aae7-0171-4dd2-8950-52a8b1f74fbf",
+    "status": "done",
+    "finishedAt": "2020-06-15T00:37:26.5982733-07:00"
+  },
+  "machine-id": {
+    "name": "prod/riverain-technologies/clearreadctdetect:10000226017907162020",
+    "url": "http://liaison-w3:4566/machines/prod%2Friverain-technologies%2Fclearreadctdetect%3A10000226017907162020",
+    "interactive": null,
+    "info": {
+      "name": "ClearRead CT Detect",
+      "title": "ClearRead CT Detect",
+      "author": "Staff",
+      "organization": "Riverain"
+    }
+  },
+  "input-summary": [
+    {
+      "patient-id": "Riverain ClearRead CT Detect Test 1",
+      "accessionNumber": "CRCTDetect Test1",
+      "study-instance-uid": "2.25.50594030447405667242728448975439755033400595820170498034548",
+      "url": "http://localhost:8042/dicom-web/studies/2.25.50594030447405667242728448975439755033400595820170498034548",
+      "viewerUri": null
+    }
+  ],
+  "input-elements": {
+    "dicom-series-in": {
+      "description": "",
+      "type": "Series",
+      "study-instance-uid": "2.25.50594030447405667242728448975439755033400595820170498034548",
+      "series-instance-uid": "2.25.56318059276642685680446759602479066946631813508060352639148",
+      "url": "http://localhost:8042/dicom-web/studies/2.25.50594030447405667242728448975439755033400595820170498034548/series/2.25.56318059276642685680446759602479066946631813508060352639148"
+    }
+  },
+  "result-elements": {
+    "dicom-series-out": {
+      "description": "",
+      "type": "Series",
+      "study-instance-uid": "2.25.50594030447405667242728448975439755033400595820170498034548",
+      "series-instance-uid": "1.3.6.1.4.1.11157.102502.729.645521626499589.2014",
+      "url": "http://localhost:8042/dicom-web/studies/2.25.50594030447405667242728448975439755033400595820170498034548/series/1.3.6.1.4.1.11157.102502.729.645521626499589.2014"
+    }
+  }
+}

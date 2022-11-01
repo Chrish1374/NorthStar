@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patient>
+	<Name>MR LSP</Name>
+	<ID>MRLSP_MR</ID>
+	<PatientClass>class</PatientClass>
+	<PatientSex>M</PatientSex>
+	<Study name="STUDY01">
+		<StudyDescription>SPINE^L SPINE</StudyDescription>
+		<StudyDateTime>Mar 4, 2011 9:28:28 AM</StudyDateTime>
+		<Series id="STUDY01_SERIES01">
+			<SeriesDescription>SAG T2 LSP</SeriesDescription>
+		</Series>
+		<Series id="STUDY01_SERIES02">
+			<SeriesDescription>SAG T1 LSP</SeriesDescription>
+		</Series>
+		<Series id="STUDY01_SERIES03">
+			<SeriesDescription>SAG IR LSP</SeriesDescription>
+		</Series>
+		<Series id="STUDY01_SERIES04">
+			<SeriesDescription>AX T2 LSP</SeriesDescription>
+		</Series>
+		<Series id="STUDY01_SERIES05">
+			<SeriesDescription>AX T1 LSP</SeriesDescription>
+		</Series>
+		
+	</Study>
+</Patient>

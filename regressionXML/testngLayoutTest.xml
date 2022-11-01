@@ -1,0 +1,42 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Viewer Page - Layout Tests" verbose="1"> <!--parallel="classes" thread-count="2"> -->
+
+
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener
+			class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+
+	<test name="Better Layout Test" preserve-order="true">
+		<classes>
+			<class name="com.trn.ns.test.viewer.layout.BetterLayoutTest" />
+		</classes>
+	</test>
+
+	<test name="Layout Change Test" preserve-order="true">
+		<classes>
+			<class name="com.trn.ns.test.viewer.layout.LayoutChangeTest" />
+		</classes>
+	</test>
+
+	<test name="Save By Default option Test" preserve-order="true">
+		<classes>
+			<class name="com.trn.ns.test.viewer.layout.SaveByDefaultTest" />
+		</classes>
+	</test>
+
+	<test name="Viewbox Resize Test" preserve-order="true">
+		<classes>
+			<class name="com.trn.ns.test.viewer.layout.ViewboxResizeTest" />
+		</classes>
+	</test>
+
+	<test name="Viewer Layout Test" preserve-order="true">
+		<classes>
+			<class name="com.trn.ns.test.viewer.layout.ViewerLayoutTest" />
+		</classes>
+	</test>
+	
+</suite>

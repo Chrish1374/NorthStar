@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patient>
+	<Name>DX_D55R573B101</Name>
+	<ID>D55R573B101</ID>
+	<PatientClass>class</PatientClass>
+	<PatientSex>M</PatientSex>
+	<Study name="STUDY01">
+		<StudyDescription>CT_BRAIN_WO</StudyDescription>
+		<StudyDateTime>Jul 18, 2013 9:42:20 PM</StudyDateTime>
+		<Series id="STUDY01_SERIES01">
+			<SeriesDescription>Chest</SeriesDescription>
+		</Series>
+		<Result id="STUDY01_RESULT01">
+			<ResultDescription>GSPS_one</ResultDescription>
+		</Result>
+		<Result id="STUDY01_RESULT02">
+			<ResultDescription>GSPS_two</ResultDescription>
+		</Result>
+	</Study>
+
+</Patient>
+	

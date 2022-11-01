@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patient>
+	<Name>GAEL^KUHN</Name>
+	<ID>GK00001</ID>
+	<PatientClass>class</PatientClass>
+	<PatientSex>M</PatientSex>
+	<Study name="STUDY01">
+		<StudyDescription>CHEST_PORTABLE_1-VIEW</StudyDescription>
+		<StudyDateTime>Feb 10, 2015 3:00:49 PM</StudyDateTime>
+		<Series id="STUDY01_SERIES01">
+			<SeriesDescription>5170</SeriesDescription>
+		</Series>
+	</Study>
+
+</Patient>
+

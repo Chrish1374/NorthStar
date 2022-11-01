@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patient>
+	<Name>NorthStar^CT^Neck</Name>
+	<Study name="STUDY01">
+		<Series id="STUDY01_SERIES01">
+			<SeriesDescription>SUPINE SCOUT</SeriesDescription>
+		</Series>
+		<Series id="STUDY01_SERIES02">
+			<SeriesDescription>AXIAL IMAGES WITH</SeriesDescription>
+		</Series>
+		<Series id="STUDY01_SERIES03">
+			<SeriesDescription>Recon 2: AXIAL IMAGES WITH</SeriesDescription>
+		</Series>
+	</Study>
+</Patient>

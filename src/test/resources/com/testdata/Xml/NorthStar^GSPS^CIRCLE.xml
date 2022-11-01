@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patient>
+	<Name>NorthStar^GSPS^CIRCLE</Name>
+	<Study name="STUDY01">
+		<Series id="STUDY01_SERIES01">
+			<SeriesDescription>AP</SeriesDescription>
+     	</Series>
+     </Study>
+</Patient>

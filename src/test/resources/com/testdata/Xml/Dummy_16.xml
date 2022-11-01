@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patient>
+	<Name>*****^******</Name>
+	<ID>dummy_16!</ID>
+	<PatientClass>class</PatientClass>
+	<PatientSex>F</PatientSex>
+	<DOB>Apr 1, 1952</DOB>
+	<Study name="STUDY01">
+		<StudyDescription>MAMMOGRAPHY</StudyDescription>
+		<Accession_num>dummy_16!</Accession_num>
+		<StudyDateTime>Apr 19,2013 10:36:41 AM</StudyDateTime>
+		<num_Images>79</num_Images>
+		<Modality>CT</Modality>
+		<ReferringPhysician>GUDGEON^A^DR</ReferringPhysician>
+		<Series id="STUDY01_SERIES01">
+			<SeriesDescription>TOMO R-MLO,St_Seg_A, Diagnosis</SeriesDescription>
+			<ImageMatrix>2760 x 968</ImageMatrix>
+			<ImagePosition>0, 0, 0</ImagePosition>
+			<SliceThickness>1 mm</SliceThickness>
+			<SliceLocation>0</SliceLocation>
+			<Kvp>28</Kvp>
+			<FOV>0</FOV>
+			<ImageNumberCurrentSCrollPosition>1</ImageNumberCurrentSCrollPosition>
+			<ImageNumberMaxSCrollPosition>44</ImageNumberMaxSCrollPosition>
+
+			<mAs>157</mAs>
+			<ImageType>DERIVED</ImageType>
+			<WindowWidth>1203</WindowWidth>
+			<WindowCenter>1488</WindowCenter>
+		</Series>
+		<Series id="STUDY01_SERIES02">
+			<SeriesDescription>TOMO L-MLO,St_Seg_A, Diagnosis</SeriesDescription>
+			<ImageMatrix>2808 x 1079</ImageMatrix>
+			<ImagePosition>0, 0, 0</ImagePosition>
+			<SliceThickness>1 mm</SliceThickness>
+			<SliceLocation>0</SliceLocation>
+			<Kvp>27</Kvp>
+			<FOV>0</FOV>
+			<ImageNumberCurrentSCrollPosition>1</ImageNumberCurrentSCrollPosition>
+			<ImageNumberMaxSCrollPosition>35</ImageNumberMaxSCrollPosition>
+
+			<mAs>113</mAs>
+			<ImageType>DERIVED</ImageType>
+			<WindowWidth>908</WindowWidth>
+			<WindowCenter>1859</WindowCenter>
+		</Series>
+	</Study>
+
+</Patient>

@@ -1,0 +1,26 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="ContentSelector Tests" verbose="1"> <!--parallel="classes" thread-count="2"> -->
+
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener
+			class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+	
+	<test name="Content Selector 01 Test" preserve-order="true">
+		<classes>
+				<class
+				name="com.trn.ns.test.viewer.contentSelector.ContentSelectorTest01" />
+		</classes>
+	</test>
+	
+	<test name="Content Selector 02 Test" preserve-order="true">
+		<classes>
+				<class
+				name="com.trn.ns.test.viewer.contentSelector.ContentSelectorTest02" />
+		</classes>
+	</test>
+
+	
+</suite>

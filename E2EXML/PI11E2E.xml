@@ -1,0 +1,249 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="PI11 - E2E Tests" verbose="1"> <!--parallel="classes" thread-count="2"> -->
+
+
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener
+			class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+
+
+
+
+	<test
+		name="F782 - Clinical application: Brain Perfusion CT - Artery 
+		and vein change support slice and phase - MVP"
+		preserve-order="true">
+		<groups>
+			<run>
+				<include name="E2E" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.trn.ns.test.viewer.GSPS.GSPSGroupObjectTest" />
+			<class name="com.trn.ns.test.viewer.GSPS.CutPasteFindingTest" />
+			<class
+				name="com.trn.ns.test.viewer.GSPS.CutPasteContextMenuTest" />
+		</classes>
+	</test>
+
+
+	<test
+		name="F888 - Clinical application: LungAI - HighHU - support MFA - V2"
+		preserve-order="true">
+		<groups>
+
+			<run>
+				<include name="E2E" />
+			</run>
+		</groups>
+
+		<classes>
+			<class name="com.trn.ns.test.basic.MFASupportTest" />
+		</classes>
+	</test>
+
+
+	<test name="F306 - sorting image in the viewer"
+		preserve-order="true">
+		<groups>
+			<run>
+				<include name="E2E" />
+			</run>
+		</groups>
+		<classes>
+			<class
+				name="com.trn.ns.test.viewer.loadingAndDataFormatSupport.SliceOrderTest" />
+		</classes>
+	</test>
+	<test
+		name="F737 - Clinical application: LungAI - HighHU 
+		- Segmentation edition interpolation - implementation - V2"
+		preserve-order="true">
+		<groups>
+			<run>
+				<include name="E2E" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.trn.ns.test.viewer.GSPS.InterpolationTest" />
+		</classes>
+	</test>
+	<test
+		name="F884 - Clinical application: LungAI - HighHU 
+		- DICOM Parametric Map Support ReferencedSOPInstanceUID - V2"
+		preserve-order="true">
+		<groups>
+			<run>
+				<include name="E2E" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.trn.ns.test.viewer.PMAP.PMAPOutputPanelTest" />
+			<class name="com.trn.ns.test.viewer.PMAP.PMAPSupportTest" />
+		</classes>
+	</test>
+	<test
+		name="F631 - Clinical application: LungAI - HighHU - DICOM Parametric 
+		Map support LUT from algorithm - V2"
+		preserve-order="true">
+		<groups>
+			<run>
+				<include name="E2E" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.trn.ns.test.API.GetAPITest" />
+			<class name="com.trn.ns.test.viewer.PMAP.PMAPLossySupportTest" />
+			<class name="com.trn.ns.test.viewer.PMAP.PMAPSupportTest" />
+			<class name="com.trn.ns.test.viewer.PMAP.PMAPLutBarColorTest" />
+		</classes>
+	</test>
+	<test
+		name="F930 - TeraRecon Northstar Branding Update 
+		to match Eureka - Login"
+		preserve-order="true">
+		<groups>
+			<run>
+				<include name="E2E" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.trn.ns.test.basic.LoginTest" />
+			<class name="com.trn.ns.test.basic.AboutIconTest" />
+		</classes>
+	</test>
+	<test
+		name="F957 - TeraRecon Eureka result explorer to support new patient 
+		list - Patient list and F966 - TeraRecon Eureka result explorer to support 
+		new patient list - Study list"
+		preserve-order="true">
+		<groups>
+			<run>
+				<include name="E2E" />
+			</run>
+		</groups>
+		<classes>
+			<class
+				name="com.trn.ns.test.patientList.HideColumnNewPatientListTest" />
+			<class name="com.trn.ns.test.patientList.NewPatientListTest" />
+		</classes>
+	</test>
+	<test
+		name="F923 - TeraRecon Northstar Branding Update to match Eureka- 
+		Theme support and F931 - TeraRecon Northstar Branding Update to match Eureka 
+		- desktop"
+		preserve-order="true">
+		<groups>
+			<run>
+				<include name="E2E" />
+				<include name="F923" />
+				<include name="F931" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.trn.ns.test.basic.AboutIconTest" />
+			<class name="com.trn.ns.test.basic.ActiveDirectoryTest" />
+			<class name="com.trn.ns.test.basic.PasswordPolicyTest" />
+			<class name="com.trn.ns.test.basic.UserCreationTest" />
+			<class name="com.trn.ns.test.basic.EurekaHeaderTest" />
+			<class name="com.trn.ns.test.viewer.basic.ViewerThemeTest" />
+			<class name="com.trn.ns.test.basic.NavigationToErrorPages" />
+			
+		</classes>
+	</test>
+
+
+	<test
+		name="F956 - TeraRecon Eureka result explorer 
+		to support new patient list - Search"
+		preserve-order="true">
+		<groups>
+			<run>
+				<include name="E2E" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.trn.ns.test.patientList.ModalitySearchTest" />
+			<class
+				name="com.trn.ns.test.patientList.SearchOnPatientListTest" />
+			<class name="com.trn.ns.test.patientList.SearchPanelThemeTest" />
+		</classes>
+	</test>
+	<test name="F195 - Configuring lossy or only RPD"
+		preserve-order="true">
+		<groups>
+			<run>
+				<include name="E2E" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.trn.ns.test.basic.UserCreationTest" />
+			<class name="com.trn.ns.test.viewer.loadingAndDataFormatSupport.LossyAnnotationTest" />
+			<class name="com.trn.ns.test.viewer.loadingAndDataFormatSupport.LossyOverlayTest" />
+			<class name="com.trn.ns.test.viewer.caching.AutoModeRpdCaching" />
+			<class name="com.trn.ns.test.viewer.caching.LossyCaching" />
+			<class name="com.trn.ns.test.viewer.PMAP.PMAPFrameTest" />
+		</classes>
+	</test>
+	<test
+		name="F994 - TeraRecon Eureka result explorer 
+		to support new patient list - Recently viewed patients"
+		preserve-order="true">
+		<groups>
+			<run>
+				<include name="E2E" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.trn.ns.test.patientList.SearchAndRecentlyViewedTest" />
+			<class name="com.trn.ns.test.basic.NavigationForNonUILogin" />
+		</classes>
+	</test>
+	<test
+		name="F996 - TeraRecon Eureka result explorer to support new 
+		patient list - Page navigation"
+		preserve-order="true">
+		<groups>
+			<run>
+				<include name="E2E" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.trn.ns.test.basic.NavigationBetweenAppPages" />
+			<class name="com.trn.ns.test.basic.NavigationForNonUILogin" />
+		</classes>
+	</test>
+	<test
+		name="F777 - Volume rendering support - General infrastructure 
+		support"
+		preserve-order="true">
+		<groups>
+			<run>
+				<include name="E2E" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.trn.ns.test.viewer.plane.PlaneTest" />
+		</classes>
+	</test>
+	<test
+		name="F917 - Clinical application: Brain Perfusion 
+		CT - do not duplicate data import when data already exist in the viewer - 
+		MVP"
+		preserve-order="true">
+		<groups>
+			<run>
+				<include name="E2E" />
+			</run>
+		</groups>
+		<classes>
+			<class
+				name="com.trn.ns.test.viewer.liasionE2E.MultipleBatchV3Test" />
+		</classes>
+	</test>
+
+
+</suite>

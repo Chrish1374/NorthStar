@@ -1,0 +1,58 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="PMAP Tests" verbose="1"> <!--parallel="classes" thread-count="2"> -->
+
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener
+			class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+
+	<test name="PMAP Support Test" preserve-order="true">
+		<classes>
+			<class name="com.trn.ns.test.viewer.PMAP.PMAPSupportTest" />
+
+		</classes>
+	</test>
+	
+	<test name="PMAP LUT bar Test" preserve-order="true">
+		<classes>
+			<class name="com.trn.ns.test.viewer.PMAP.PMAPLutBarColorTest" />
+
+		</classes>
+	</test>	
+
+	<test name="PMAP - Output Panel and SendToPACS " preserve-order="true">
+		<classes>
+			<class name="com.trn.ns.test.viewer.PMAP.PMAPOutputPanelTest" />
+
+		</classes>
+	</test>
+
+
+	
+	
+		<test name="PMAP - Lossy Support Test" preserve-order="true">
+		<classes>
+			<class name="com.trn.ns.test.viewer.PMAP.PMAPLossySupportTest" />
+
+		</classes>
+	</test>
+	
+	<test name="PMAP - Multiframe Support Test" preserve-order="true">
+		<classes>
+			<class name="com.trn.ns.test.viewer.PMAP.PMAPFrameTest" />
+
+		</classes>
+	</test>
+	
+	
+	<test name="PMAP - Lossy Support with WEBGL Test" preserve-order="true">
+		<classes>
+			<class name="com.trn.ns.test.viewer.PMAP.PMAPSupportWithWebGLTest" />
+
+		</classes>
+	</test>
+	
+	
+</suite>

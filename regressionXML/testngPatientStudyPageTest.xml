@@ -1,0 +1,73 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Patient and Study Page Tests" verbose="1"> <!--parallel="classes" thread-count="2"> -->
+
+
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener
+			class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+
+	
+	<test name="Search on Patient Study Test" preserve-order="true">
+		<classes>
+			<class
+				name="com.trn.ns.test.patientList.SearchOnPatientListTest" />
+		</classes>
+	</test>
+
+	<test name="Patient List Test"
+		preserve-order="true">
+		<groups>
+			<run>
+				<exclude name="multimonitor" />
+			</run>
+		</groups>
+
+		<classes>
+			<class
+				name="com.trn.ns.test.patientList.NewPatientListTest" />
+		</classes>
+	</test>
+	
+	<test name="Basic Navigation Patient List Test"
+		preserve-order="true">
+		<groups>
+			<run>
+				<exclude name="multimonitor" />
+			</run>
+		</groups>
+
+		<classes>
+			<class
+				name="com.trn.ns.test.patientList.BasicNavigationPatientListTest" />
+		</classes>
+	</test>
+	
+		<test name="Hide / UnHide columns from patient, study and studylist pages"
+		preserve-order="true">
+		
+		<classes>
+			<class
+				name="com.trn.ns.test.patientList.HideColumnPatientListTest" />
+		</classes>
+	</test>
+	
+	<test name="Search Functionality Using Modality"
+		preserve-order="true">
+		
+		<classes>
+			<class
+				name="com.trn.ns.test.patientList.ModalitySearchTest" />
+		</classes>
+	</test>
+	<test name="Search Panel Theme Test"
+		preserve-order="true">
+		
+		<classes>
+			<class
+				name="com.trn.ns.test.patientList.SearchPanelThemeTest" />
+		</classes>
+	</test>
+</suite>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patient>
+	<ID>LIDC-IDRI-0012</ID>
+	<PatientClass>class</PatientClass>
+	<PatientSex>M</PatientSex>
+	<Study name="STUDY01">
+	<Accession>2819497684894126</Accession>
+		<StudyDateTime>Jan 1, 2000 12:00:00 AM</StudyDateTime>
+		<Series id="STUDY01_SERIES01">
+			<SeriesDescription>3000561</SeriesDescription>
+		</Series>
+	</Study>
+
+</Patient>
+

@@ -1,0 +1,89 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Viewer Page - GSPS PART 03 Tests" verbose="1"> <!--parallel="classes" thread-count="2"> -->
+
+
+
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+
+	<test name="GSPS Editing Test" preserve-order="true">
+		<groups>
+			<run>
+				<exclude name="multimonitor" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.trn.ns.test.viewer.GSPS.GSPSFindingEditingTest" />
+		</classes>
+	</test>
+
+	<test name="GSPS Finding Reload Test" preserve-order="true">
+		<groups>
+			<run>
+				<exclude name="multimonitor" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.trn.ns.test.viewer.GSPS.GSPSFindingReloadTest" />
+		</classes>
+	</test>
+	
+	<test name="GSPS Finding Annimation Test" preserve-order="true">
+		<groups>
+			<run>
+				<exclude name="multimonitor" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.trn.ns.test.viewer.GSPS.GSPSfindingAnnimationTest" />
+		</classes>
+	</test>
+
+	<test name="Watermark Functionality Test" preserve-order="true">
+		<groups>
+			<run>
+				<exclude name="multimonitor" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.trn.ns.test.viewer.GSPS.WatermarkForDifferentBatchTest" />
+		</classes>
+	</test>	
+	
+	<test name="Localizer Line Test" preserve-order="true">
+		<groups>
+			<run>
+				<exclude name="multimonitor" />
+			</run>
+		</groups>
+		<classes>
+			<class
+				name="com.trn.ns.test.viewer.GSPS.LocalizerLineTest" />
+		</classes>
+	</test>	
+	
+	<test name="Traingulation Tool" preserve-order="true">
+		<classes>
+			<class
+				name="com.trn.ns.test.viewer.GSPS.TriangulationToolTest" />
+		</classes>
+	</test>	
+	
+	<test name="Bump Tool" preserve-order="true">
+		<classes>
+			<class
+				name="com.trn.ns.test.viewer.GSPS.BumpToolCircleTest" />
+		</classes>
+	</test>	
+	
+	<test name="Interpolation Polyline test" preserve-order="true">
+		<classes>
+			<class
+				name="com.trn.ns.test.viewer.GSPS.InterpolationTest" />
+		</classes>
+	</test>	
+
+</suite>

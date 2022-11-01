@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patient>
+	<Name>NMWithResults</Name>
+	<Study name="STUDY01">
+		<StudyDescription>Technegas Vent Perf</StudyDescription>
+		<StudyDateTime>Jan 22, 2004 11:12:41 AM</StudyDateTime>
+		<Series id="STUDY01_SERIES01">
+			<SeriesDescription>Result1-2.16.840.1.113669.632.21.106351257.1694.1057225720322104</SeriesDescription>
+		</Series>
+		<Series id="STUDY01_SERIES02">
+			<SeriesDescription>ANTERIOR</SeriesDescription>
+		</Series>
+		<Series id="STUDY01_SERIES03">
+			<SeriesDescription>LPO</SeriesDescription>
+		</Series>
+		<Series id="STUDY01_SERIES04">
+			<SeriesDescription>POSTP</SeriesDescription>
+		</Series>
+	</Study>
+
+</Patient>
+
+

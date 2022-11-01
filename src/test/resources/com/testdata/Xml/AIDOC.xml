@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patient>
+	<Name>aidoc</Name>
+	<ID>aidoc</ID>
+	<Study name="STUDY01">
+		<Series id="STUDY01_SERIES01">
+			<SeriesDescription>SAGITTAL</SeriesDescription>
+			<ImageNumberCurrentSCrollPosition>5</ImageNumberCurrentSCrollPosition>
+		</Series>
+		<StudyUID>1.2.826.0.1.3680043.9.6883.1.84440840011895572432833554</StudyUID>
+		<Series id="STUDY01_SERIES02">
+			<SeriesDescription>AXIAL</SeriesDescription>
+			<ImageNumberCurrentSCrollPosition>94</ImageNumberCurrentSCrollPosition>
+		</Series>
+		<Series id="STUDY01_SERIES03">
+			<SeriesDescription>CORONAL</SeriesDescription>
+			<ImageNumberCurrentSCrollPosition>15</ImageNumberCurrentSCrollPosition>
+		</Series>
+		
+				<Result id="STUDY01_RESULT01">
+		<ResultDescription>AIDOC hyperdense 2</ResultDescription>
+	</Result> 
+	
+	<Result id="STUDY01_RESULT02">
+		<ResultDescription>1</ResultDescription>
+	</Result>
+	</Study>
+</Patient>

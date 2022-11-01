@@ -1,0 +1,104 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Viewer Page Tests" verbose="1"> <!--parallel="classes" thread-count="2"> -->
+
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener
+			class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+
+	<test name="PMAP Support Test" preserve-order="true">
+		<groups>
+			<run>
+				<include name="BVT" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.trn.ns.test.viewer.PMAP.PMAPSupportTest" />
+
+		</classes>
+	</test>
+	
+	<test name="PMAP - Lossy Support Test" preserve-order="true">
+		<groups>
+			<run>
+				<include name="BVT" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.trn.ns.test.viewer.PMAP.PMAPLossySupportTest" />
+
+		</classes>
+	</test>
+
+	<test name="Accept Reject SC Test" preserve-order="true">
+		<groups>
+			<run>
+				<include name="BVT" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.trn.ns.test.viewer.SC.AcceptRejectForSCTest" />
+		</classes>
+	</test>
+
+	<test name="Output panel for SC Test" preserve-order="true">
+		<groups>
+			<run>
+				<include name="BVT" />
+			</run>
+		</groups>
+		<classes>
+			<class
+				name="com.trn.ns.test.viewer.SC.OutputPanelForSCDataTest" />
+		</classes>
+	</test>
+
+	<test name="Send To PACS SC Test" preserve-order="true">
+		<groups>
+			<run>
+				<include name="BVT" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.trn.ns.test.viewer.SC.SendToPACSForSCTest" />
+		</classes>
+	</test>
+	
+	
+	<test name="Display Basic SR Test" preserve-order="true">
+		<groups>
+			<run>
+				<include name="BVT" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.trn.ns.test.viewer.SR4D.DisplayOfBasicTextSRTest" />
+		</classes>
+	</test>
+
+	<test name="Output panel for SR Test" preserve-order="true">
+		<groups>
+			<run>
+				<include name="BVT" />
+			</run>
+		</groups>
+		<classes>
+			<class
+				name="com.trn.ns.test.viewer.SR4D.OutputPanelForSRTest" />
+		</classes>
+	</test>
+
+	<test name="SR Data Functionality Test" preserve-order="true">
+		<groups>
+			<run>
+				<include name="BVT" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.trn.ns.test.viewer.SR4D.SRDataTest" />
+		</classes>
+	</test>
+
+</suite>

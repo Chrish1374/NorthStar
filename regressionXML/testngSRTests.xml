@@ -1,0 +1,31 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="SR Tests" verbose="1"> <!--parallel="classes" thread-count="2"> -->
+
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener
+			class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+
+	
+	<test name="Display Basic SR Test" preserve-order="true">
+		<classes>
+			<class name="com.trn.ns.test.viewer.SR4D.DisplayOfBasicTextSRTest" />
+		</classes>
+	</test>
+
+	<test name="Output panel for SR Test" preserve-order="true">
+		<classes>
+			<class
+				name="com.trn.ns.test.viewer.SR4D.OutputPanelForSRTest" />
+		</classes>
+	</test>
+
+	<test name="SR Data Functionality Test" preserve-order="true">
+		<classes>
+			<class name="com.trn.ns.test.viewer.SR4D.SRDataTest" />
+		</classes>
+	</test>
+
+</suite>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patient>
+	<Name>PT__000104_20120213_100430</Name>
+	<ID>PT__000104</ID>
+	<PatientBirthDate></PatientBirthDate>
+	<PatientClass>class</PatientClass>
+	<PatientSex>F</PatientSex>
+	<Study name="STUDY01">
+		<StudyDescription>Chest children</StudyDescription>
+		<StudyDateTime>Jul 28, 2016 10:22:17 AM</StudyDateTime>
+		<ReferringPhysiciansName></ReferringPhysiciansName>
+		<EnvoyAI>
+			<EnvoyAI.title></EnvoyAI.title>
+			<EnvoyAI.description></EnvoyAI.description>
+		</EnvoyAI>
+		<Series id="STUDY01_SERIES01">
+			<PatientExternalID>ID</PatientExternalID>
+			<type></type>
+			<SeriesDescription>Chest children</SeriesDescription>
+			<AcquisitionDevice></AcquisitionDevice>
+
+			<AccessionNumber></AccessionNumber>
+			<ImageMatrix>2087 x 2117</ImageMatrix>
+			<StudyAcquisitionSite></StudyAcquisitionSite>
+
+			<ImagePosition>0,0,0</ImagePosition>
+			<SliceThickness>0 mm</SliceThickness>
+			<Detector></Detector>
+			<SliceLocation>0</SliceLocation>
+			<Kvp>125</Kvp>
+			<FOV>0</FOV>
+			<ImageNumberCurrentSCrollPosition>1</ImageNumberCurrentSCrollPosition>
+			<ImageNumberMaxSCrollPosition>2</ImageNumberMaxSCrollPosition>
+
+			<mAs>2</mAs>
+			<Target></Target>
+			<ImageType>ORIGINAL</ImageType>
+			<ImageAcquisitionDateTime></ImageAcquisitionDateTime>
+			<WindowWidth>4095</WindowWidth>
+			<WindowCenter>2047</WindowCenter>
+		</Series>
+		<Result id="STUDY01_RESULT01">
+			<type>jpeg</type>
+			<ResultDescription>atlas</ResultDescription>
+			<zoom>98</zoom>
+		</Result>
+	</Study>
+</Patient>

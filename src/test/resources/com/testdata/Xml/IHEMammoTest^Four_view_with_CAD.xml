@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patient>
+	<Name>IHEMammoTest^Four view with CAD</Name>
+	<ID>013001</ID>
+	<DOB>Jan 1, 1901</DOB>
+	<Sex>F</Sex>
+	<Study name="STUDY01">
+	<StudyID> </StudyID>
+	 <StudyDescription>Four view with CAD</StudyDescription>
+		<Series id="STUDY01_SERIES01">
+			<SeriesDescription>Four view</SeriesDescription>
+     	</Series>
+     	<Series id="STUDY01_SERIES02">
+			<SeriesDescription>Four view</SeriesDescription>
+     	</Series>
+     	<Series id="STUDY01_SERIES03">
+			<SeriesDescription>Four view</SeriesDescription>
+     	</Series>
+     	<Series id="STUDY01_SERIES04">
+			<SeriesDescription>Four view</SeriesDescription>
+     	</Series>
+     	<Result id="STUDY01_RESULT01">
+			<ResultDescription>CAD</ResultDescription>
+     	</Result>
+     	<Result id="STUDY01_RESULT02">
+			<ResultDescription>CAD</ResultDescription>
+     	</Result>
+     	<Result id="STUDY01_RESULT03">
+			<ResultDescription>CAD</ResultDescription>
+     	</Result>
+     	<Result id="STUDY01_RESULT04">
+			<ResultDescription>CAD</ResultDescription>
+     	</Result>
+     	
+     </Study>
+</Patient>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patient>
+	<Name>MSK_MG_Current</Name>
+	<ID>35295479</ID>
+	<PatientClass>class</PatientClass>
+	<PatientSex>F</PatientSex>
+	<Study name="STUDY02">
+		<StudyDescription>SCREEN MAMMO DIRECT DIG</StudyDescription>
+		<StudyDateTime>Dec 28, 2012 8:53:34 AM</StudyDateTime>
+		<num_Images>4</num_Images>
+		<Modality>MG</Modality>
+		<Series id="STUDY02_SERIES01">
+			<SeriesDescription>R CC</SeriesDescription>
+			<ImageMatrix>3328 x 2560</ImageMatrix>
+			<ImagePosition>0, 0, 0</ImagePosition>
+			<SliceThickness>0 mm</SliceThickness>
+			<SliceLocation>0</SliceLocation>
+			<Kvp>32</Kvp>
+			<FOV>0</FOV>
+			<ImageNumberCurrentSCrollPosition>1</ImageNumberCurrentSCrollPosition>
+			<ImageNumberMaxSCrollPosition>1</ImageNumberMaxSCrollPosition>
+
+			<mAs>148</mAs>
+			<ImageType>DERIVED</ImageType>
+			<WindowWidth>4096</WindowWidth>
+			<WindowCenter>2047</WindowCenter>
+		</Series>
+		<Series id="STUDY02_SERIES02">
+			<SeriesDescription>R MLO</SeriesDescription>
+			<ImageMatrix>3328 x 2560</ImageMatrix>
+			<ImagePosition>0, 0, 0</ImagePosition>
+			<SliceThickness>0 mm</SliceThickness>
+			<SliceLocation>0</SliceLocation>
+			<Kvp>32</Kvp>
+			<FOV>0</FOV>
+			<ImageNumberCurrentSCrollPosition>1</ImageNumberCurrentSCrollPosition>
+			<ImageNumberMaxSCrollPosition>1</ImageNumberMaxSCrollPosition>
+
+			<mAs>98</mAs>
+			<ImageType>DERIVED</ImageType>
+			<WindowWidth>4096</WindowWidth>
+			<WindowCenter>2047</WindowCenter>
+		</Series>
+				<Series id="STUDY02_SERIES03">
+			<SeriesDescription>L CC</SeriesDescription>
+			<ImageMatrix>3328 x 2560</ImageMatrix>
+			<ImagePosition>0, 0, 0</ImagePosition>
+			<SliceThickness>0 mm</SliceThickness>
+			<SliceLocation>0</SliceLocation>
+			<Kvp>32</Kvp>
+			<FOV>0</FOV>
+			<ImageNumberCurrentSCrollPosition>1</ImageNumberCurrentSCrollPosition>
+			<ImageNumberMaxSCrollPosition>1</ImageNumberMaxSCrollPosition>
+
+			<mAs>120</mAs>
+			<ImageType>DERIVED</ImageType>
+			<WindowWidth>4096</WindowWidth>
+			<WindowCenter>2047</WindowCenter>
+		</Series>
+				<Series id="STUDY02_SERIES04">
+			<SeriesDescription>L MLO</SeriesDescription>
+			<ImageMatrix>3328 x 2560</ImageMatrix>
+			<ImagePosition>0, 0, 0</ImagePosition>
+			<SliceThickness>0 mm</SliceThickness>
+			<SliceLocation>0</SliceLocation>
+			<Kvp>32</Kvp>
+			<FOV>0</FOV>
+			<ImageNumberCurrentSCrollPosition>1</ImageNumberCurrentSCrollPosition>
+			<ImageNumberMaxSCrollPosition>1</ImageNumberMaxSCrollPosition>
+
+			<mAs>90</mAs>
+			<ImageType>DERIVED</ImageType>
+			<WindowWidth>4096</WindowWidth>
+			<WindowCenter>2047</WindowCenter>
+		</Series>
+	</Study>
+
+</Patient>

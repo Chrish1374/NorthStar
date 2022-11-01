@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patient>
+	<Name>IBL_JohnDoe</Name>
+	<ID>IBL_JohnDoe</ID>
+	<PatientClass>class</PatientClass>
+	<PatientSex>F</PatientSex>
+	<Study name="STUDY01">
+		<StudyDescription>Knie u. Patella li</StudyDescription>
+		<StudyDateTime>Jan 30, 2013 2:11:11 PM</StudyDateTime>
+		<Series id="STUDY01_SERIES01">
+			<SeriesDescription>Knie AP LI STEHEND</SeriesDescription>
+		</Series>
+	</Study>
+
+</Patient>
+

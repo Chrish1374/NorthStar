@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patient>
+	<Name>DX-THORAX-RIBS1</Name>
+	<ID>DX.3.2.1</ID>
+	<PatientClass>class</PatientClass>
+	<PatientSex>M</PatientSex>
+	<Study name="STUDY01">
+		<StudyDescription>RIBS</StudyDescription>
+		<StudyDateTime>Apr 29,2011 11:44:31 AM</StudyDateTime>
+		<num_Images>1</num_Images>
+		<Modality>DX</Modality>
+		<Series id="STUDY01_SERIES01">
+			<SeriesDescription>Chest</SeriesDescription>
+			<ImageMatrix>2021 x 2021</ImageMatrix>
+			<ImagePosition>0, 0, 0</ImagePosition>
+			<SliceThickness>0 mm</SliceThickness>
+
+			<SliceLocation>0</SliceLocation>
+			<Kvp>120</Kvp>
+			<FOV>404</FOV>
+			<ImageNumberCurrentSCrollPosition>1</ImageNumberCurrentSCrollPosition>
+			<ImageNumberMaxSCrollPosition>1</ImageNumberMaxSCrollPosition>
+
+			<mAs>1</mAs>
+			<ImageType>ORIGINAL</ImageType>
+			<ImageAcquisitionDateTime>Apr 29,2011 11:53:27 AM</ImageAcquisitionDateTime>
+			<WindowWidth>3176</WindowWidth>
+			<WindowCenter>5182</WindowCenter>
+		</Series>
+	</Study>
+
+</Patient>

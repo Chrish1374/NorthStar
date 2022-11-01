@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patient>
+	<Name>RANDO^ENT_with2RtStructSeries</Name>
+	<ID>TEST PHYS ENT</ID>
+	<PatientClass>class</PatientClass>
+	<Contour id="option_1">
+		<description>optBRAIN</description>
+		<color>rgb(0, 64, 128)</color>
+	</Contour>	
+	<Contour id="option_2">
+		<description>BRAI</description>
+		<color>rgb(10, 10, 250)</color>
+	</Contour>
+	
+	<Contour id="option_3">
+		<description>BRAIN</description>
+		<color>rgb(0, 255, 0)</color>
+	</Contour>
+	
+	<Contour id="option_4">
+		<description>BRSTEM</description>
+		<color>rgb(192, 0, 192)</color>
+	</Contour>
+	
+	<Contour id="option_5">
+		<description>CTV</description>
+		<color>rgb(128, 255, 255)</color>
+	</Contour>
+	<Contour id="option_6">
+		<description>Dose 5200[cGy]</description>
+		<color>rgb(255, 128, 0)</color>
+	</Contour>
+	
+	<Contour id="option_7">
+		<description>GTV</description>
+		<color>rgb(255, 0, 0)</color>
+	</Contour>
+	
+	<Contour id="option_8">
+		<description>Lens - left</description>
+		<color>rgb(255, 255, 128)</color>
+	</Contour>
+	
+	<Contour id="option_9">
+		<description>Lens - right</description>
+		<color>rgb(255, 128, 0)</color>
+	</Contour>
+	
+	<Contour id="option_10">
+		<description>Optic Chiasm</description>
+		<color>rgb(255, 128, 128)</color>
+	</Contour>
+	
+	<Contour id="option_11">
+		<description>Optic Nerve - Rt</description>
+		<color>rgb(255, 128, 0)</color>
+	</Contour>
+	
+	<Contour id="option_12">
+		<description>Optic Nerve-Lt</description>
+		<color>rgb(255, 255, 128)</color>
+	</Contour>
+	
+	<Contour id="option_13">
+		<description>Orbit - left</description>
+		<color>rgb(255, 0, 0)</color>
+	</Contour>
+	
+	<Contour id="option_14">
+		<description>Orbit - right</description>
+		<color>rgb(128, 255, 255)</color>
+	</Contour>
+	
+	<Contour id="option_15">
+		<description>PTV1</description>
+		<color>rgb(0, 0, 220)</color>
+	</Contour>
+	
+	<Contour id="option_16">
+		<description>Spinal Canal</description>
+		<color>rgb(255, 0, 0)</color>
+	</Contour>
+	
+	<Contour id="option_17">
+		<description>optOptic</description>
+		<color>rgb(255, 0, 0)</color>
+	</Contour>
+	
+	<Contour id="option_18">
+		<description>BODY</description>
+		<color>rgb(255, 0, 0)</color>
+	</Contour>
+</Patient>
+

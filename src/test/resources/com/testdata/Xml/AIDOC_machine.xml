@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patient>
+	<Name>aidoc_machine</Name>
+	<ID>a65d103c11</ID>
+	<Study name="STUDY01">
+		<Series id="STUDY01_SERIES01">
+			<SeriesDescription>SAGITTAL</SeriesDescription>
+			<ImageNumberCurrentSCrollPosition>60
+			</ImageNumberCurrentSCrollPosition>
+		</Series>
+		<StudyUID>1.2.826.0.1.3680043.9.6883.1.84440840011895572432833554
+		</StudyUID>
+		<Series id="STUDY01_SERIES02">
+			<SeriesDescription>AXIAL</SeriesDescription>
+			<ImageNumberCurrentSCrollPosition>93
+			</ImageNumberCurrentSCrollPosition>
+		</Series>
+		<Series id="STUDY01_SERIES03">
+			<SeriesDescription>CORONAL</SeriesDescription>
+			<ImageNumberCurrentSCrollPosition>54
+			</ImageNumberCurrentSCrollPosition>
+		</Series>
+		<Result id="STUDY01_RESULT01">
+			<ResultDescription>1</ResultDescription>
+		</Result>
+	</Study>
+</Patient>

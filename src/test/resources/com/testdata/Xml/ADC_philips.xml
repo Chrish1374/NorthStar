@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patient>
+	<Name>ADC philips</Name>
+	<Study name="STUDY01">
+		<StudyDescription>IRM PROSTATIQUE</StudyDescription>
+		<StudyDateTime>Oct 28, 2013 10:47:24 AM</StudyDateTime>
+		<Series id="STUDY01_SERIES01">
+			<SeriesDescription>AX dyn THRIVE</SeriesDescription>
+		</Series>
+		<Series id="STUDY01_SERIES02">
+			<SeriesDescription>sSOUSTRACTION</SeriesDescription>
+		</Series>
+		
+		<Series id="STUDY01_SERIES03">
+			<SeriesDescription>T2 TSE AX</SeriesDescription>
+		</Series>
+		
+		<Series id="STUDY01_SERIES04">
+			<SeriesDescription>T2_TSE_Sag</SeriesDescription>
+		</Series>
+		
+		
+	</Study>
+</Patient>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patient>
+	<Name>S10671^CT^SR</Name>
+	<ID>S10671CTSR</ID>
+	<Study name="STUDY01">
+		<Series id="STUDY01_SERIES01">
+			<SeriesDescription>1</SeriesDescription>
+		</Series>
+		<Series id="STUDY01_SERIES02">
+			<SeriesDescription>100</SeriesDescription>
+		</Series>
+		<Series id="STUDY01_SERIES03">
+			<SeriesDescription>110</SeriesDescription>
+		</Series>
+		<Series id="STUDY01_SERIES04">
+			<SeriesDescription>200</SeriesDescription>
+			<ImageNumberCurrentSCrollPosition>52</ImageNumberCurrentSCrollPosition>
+		</Series>
+		<Series id="STUDY01_SERIES05">
+			<SeriesDescription>9999</SeriesDescription>
+		</Series>
+	</Study>
+</Patient>
